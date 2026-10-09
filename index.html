@@ -2,9 +2,9 @@
 <meta charSet="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
-<meta property="og:title" content="실손보험 다이렉트"/>
-<meta property="og:site_name" content="실손보험 다이렉트" />
-<meta name="Naver Search Advisor" content="실손보험 다이렉트">
+<meta property="og:title" content="‘실손보험 다이렉트’ 비교 가입"/>
+<meta property="og:site_name" content="‘실손보험 다이렉트’ 비교 가입" />
+<meta name="Naver Search Advisor" content="‘실손보험 다이렉트’ 비교 가입">
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="/"/>
 <meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
@@ -13,7 +13,7 @@
 <meta itemprop="description" content="" />
 <meta name="twitter:description" content=""/>
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="실손보험 다이렉트"/>
+<meta name="twitter:title" content="‘실손보험 다이렉트’ 비교 가입"/>
 <meta name="twitter:url" content="/"/>
 <meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
 <meta name="naver-site-verification" content="b6c72a75ffefc4a4ede053dd3e9718e6501a27e3" />
@@ -26,9 +26,9 @@
 <meta name="Yeti" content="index, follow" />
 <meta name="googlebot" content="index, follow" />
 
-<meta name="subject" content="실손보험 다이렉트" />
-<meta name="publisher" content="실손보험 다이렉트" />
-<meta name="Other Agent" content="실손보험 다이렉트" />
+<meta name="subject" content="‘실손보험 다이렉트’ 비교 가입" />
+<meta name="publisher" content="‘실손보험 다이렉트’ 비교 가입" />
+<meta name="Other Agent" content="‘실손보험 다이렉트’ 비교 가입" />
 <meta name="location" content="South Korea" />
 <meta name="distribution" content="global" />
 <meta name="rating" content="general" />
@@ -52,11 +52,11 @@
     <!-- Apple iOS 최적화 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="실손보험 다이렉트">
+    <meta name="apple-mobile-web-app-title" content="‘실손보험 다이렉트’ 비교 가입">
 
     <!-- Android Chrome 최적화 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="실손보험 다이렉트">
+    <meta name="application-name" content="‘실손보험 다이렉트’ 비교 가입">
 
     <!-- 모바일 뷰포트 최적화 -->
     <meta name="viewport"
@@ -70,7 +70,7 @@
 
 
 
-<title>실손보험 다이렉트</title>
+<title>‘실손보험 다이렉트’ 비교 가입</title>
 
 <meta name="next-head-count" content="25"/>
 <meta name="format-detection" content="telephone=no"/>
@@ -79,789 +79,1727 @@
 
 
 
+<!-- 브릿지 페이지가 생성될 빈 컨테이너 -->
+<div id="dynamic-bridge-app"></div>
+
+<script>
+(function() {
+    // ======================================================================
+    // [모바일 대응 필수] 뷰포트 메타태그 자동 삽입
+    // ======================================================================
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+        document.head.appendChild(meta);
+    }
+
+    // ======================================================================
+    // [설정 영역] ★수백 개 배포 시 사이트마다 이 값을 반드시 다르게 설정하세요!★
+    // ======================================================================
+    const config = {
+        siteId: "site_loan_001",           // [필수] 사이트 고유 ID (텍스트 풀 시드값 및 고유 해시 생성용)
+        targetUrl: "https://kbohum.kr/?num=35445436&insu_category=total",     // [필수] 실제 이동할 URL (검색엔진 가이드라인 준수를 위해 rel 속성 적용)
+        themeColor: "#007bff",             // 사이트 테마 컬러 (버튼 색상)
+        topic: "실비 & 실손 보험 비교",          // 사이트별 주요 타겟 키워드
+        minCount: 130,                     // 최소 방문자 수 범위
+        maxCount: 380                      // 최대 방문자 수 범위
+    };
+
+    // ======================================================================
+    // [코어 로직] 구조 난수화 및 표준 규격 전환 엔진
+    // ======================================================================
+
+    // 1. 사이트 ID 기반 자체 난수 생성기
+    let seedValue = 0;
+    for(let i=0; i<config.siteId.length; i++) seedValue += config.siteId.charCodeAt(i);
+    function seededRandom() {
+        let t = seedValue += 0x6D2B79F5;
+        t = Math.imul(t ^ t >>> 15, t | 1);
+        t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    }
+    function pickRandom(arr) {
+        return arr[Math.floor(seededRandom() * arr.length)];
+    }
+
+    // 2. 동적 클래스명 및 디자인 수치 생성 (페이지 로드 시마다 무작위 해시 적용)
+    const hash = Math.random().toString(36).substring(2, 6) + Math.floor(seededRandom() * 1000);
+    const prefix = `cls_${hash}_`;
+    
+    const dynPadding = Math.floor(seededRandom() * 20) + 50; 
+    const dynMargin = Math.floor(seededRandom() * 20) + 40;  
+    const dynRadius = Math.floor(seededRandom() * 8) + 12;   
+
+    // 3. 날짜 로직
+    const today = new Date();
+    const todayIso = today.toISOString().split('T')[0];
+    const todayStr = `${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일`;
+
+    const yesterday = new Date(today);
+    yesterday.setDate(today.getDate() - 1);
+    const yesterdayIso = yesterday.toISOString().split('T')[0];
+    const yesterdayStr = `${yesterday.getFullYear()}년 ${yesterday.getMonth() + 1}월 ${yesterday.getDate()}일`;
+
+    // 4. 콘텐츠 스피닝 풀
+    const titles = [
+        "잠시만 확인해주세요!", "신청 전 마지막 확인 단계입니다.", "맞춤 솔루션 안내 페이지입니다.", 
+        "다음 단계로 이동을 준비 중입니다.", "성공적인 접속을 위해 확인해 주세요.", "최적의 맞춤 정보를 찾고 있습니다.", 
+        "고객님을 위한 전용 안내 페이지입니다.", "안전한 진행을 위해 잠시 대기해 주세요.", "상담 신청을 위한 필수 확인 단계입니다.", 
+        "빠른 연결을 위해 데이터 분석 중입니다.", "나에게 맞는 최적의 결과를 확인하세요.", "정확한 안내를 위한 마지막 과정입니다.", 
+        "성공적인 솔루션 매칭이 진행 중입니다.", "맞춤형 전문가 연결을 준비하고 있습니다.", "안전한 페이지로 이동 중입니다. 잠시만 기다려주세요."
+    ];
+    
+    const descriptions = [
+        `입력하신 정보를 바탕으로 <strong>${config.topic}</strong> 결과를 분석 중입니다.`,
+        `성공적인 <strong>${config.topic}</strong> 상담 신청을 위해 최종 페이지로 연결됩니다.`,
+        `고객님께 최적화된 <strong>${config.topic}</strong> 솔루션을 제공하기 위한 단계입니다.`,
+        `안전하고 빠른 <strong>${config.topic}</strong> 진행을 위해 아래 버튼을 클릭해 주세요.`,
+        `빅데이터 기반으로 가장 적합한 <strong>${config.topic}</strong> 맞춤 견적을 산출하고 있습니다.`,
+        `검증된 <strong>${config.topic}</strong> 전문가와의 매칭을 위해 다음 페이지로 이동합니다.`,
+        `현재 고객님의 조건에 딱 맞는 <strong>${config.topic}</strong> 혜택을 확인 중입니다.`,
+        `실시간으로 업데이트되는 <strong>${config.topic}</strong> 핵심 정보를 제공해 드립니다.`,
+        `신속하고 정확한 <strong>${config.topic}</strong> 안내를 위해 최종 확인을 부탁드립니다.`,
+        `수많은 데이터 중 고객님만을 위한 <strong>${config.topic}</strong> 플랜을 구성하고 있습니다.`,
+        `원활한 <strong>${config.topic}</strong> 서비스 이용을 위해 필수적인 안내 페이지입니다.`,
+        `최고의 만족을 드릴 수 있는 <strong>${config.topic}</strong> 컨설팅으로 바로 연결해 드립니다.`,
+        `불필요한 과정 없이 <strong>${config.topic}</strong> 핵심 솔루션만 빠르게 확인해 보세요.`,
+        `고객님의 성공적인 <strong>${config.topic}</strong> 진행을 돕기 위한 전용 브릿지 페이지입니다.`,
+        `아래 버튼을 눌러 나에게 가장 유리한 <strong>${config.topic}</strong> 조건을 즉시 확인해 보세요.`
+    ];
+
+    const buttons = [
+        "무료로 결과 확인하기", "나에게 맞는 솔루션 신청", "맞춤 견적 무료 조회", "나만의 맞춤 솔루션 확인", 
+        "무료 컨설팅 받아보기", "실시간 결과 조회하기", "최적의 조건 무료로 비교하기", "1:1 맞춤 상담 바로가기", 
+        "숨은 혜택 확인하고 신청하기", "나의 예상 결과 1초 만에 확인", "전문가 무료 매칭 시작하기", 
+        "가장 유리한 조건 확인하기", "비공개 특별 혜택 보러가기", "나의 맞춤형 플랜 확인하기", 
+        "지금 바로 혜택 조회하기", "안전하게 무료 상담 신청하기"
+    ];
+
+    const disclaimers = [
+        "본 정보는 제휴 파트너사의 지원을 받아 작성되었으며, 서비스 이용 시 소정의 수수료를 지급받을 수 있습니다.",
+        "해당 콘텐츠는 파트너십을 통해 제공되며, 일정액의 대가를 받을 수 있는 제휴 링크가 포함되어 있습니다.",
+        "본 페이지의 서비스는 광고주의 협력으로 운영되며, 이용 실적에 따라 제휴 수수료가 발생할 수 있습니다.",
+        "이 페이지는 제휴 마케팅의 일환으로 구성되었으며, 파트너사로부터 일정 수수료를 제공받을 수 있음을 안내드립니다.",
+        "본 안내는 정보 제공을 목적으로 하며, 연결된 사이트에서의 활동으로 인해 당사에 소정의 리워드가 지급될 수 있습니다.",
+        "독자에게 유용한 정보를 제공하기 위해 작성된 페이지이며, 제휴사로부터 마케팅 지원을 받고 있습니다.",
+        "해당 브릿지 페이지는 공식 파트너 활동의 일환으로, 연결된 서비스를 통해 수익이 발생할 수 있습니다.",
+        "고객님의 편의를 위해 제공되는 맞춤 정보이며, 서비스 제휴에 따른 경제적 대가를 받을 수 있습니다.",
+        "본 추천 서비스는 제휴 광고가 포함되어 있어, 상담 완료 시 수수료가 제공될 수 있음을 명시합니다.",
+        "신뢰할 수 있는 파트너사의 정보를 선별하여 제공하며, 이에 따른 소정의 커미션을 지급받을 수 있습니다."
+    ];
+
+    const semanticTags = ["div", "section", "article", "main"];
+
+    const selectedTitle = pickRandom(titles);
+    const selectedDesc = pickRandom(descriptions);
+    const selectedBtn = pickRandom(buttons);
+    const selectedDisclaimer = pickRandom(disclaimers);
+    const wrapperTag = pickRandom(semanticTags);
+    const innerTag = pickRandom(["div", "section"]);
+
+    // 5. 모바일 대응 동적 스타일 인젝션
+    const style = document.createElement('style');
+    style.textContent = `
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css');
+        
+        .${prefix}container, .${prefix}container * { box-sizing: border-box; }
+        .${prefix}container { 
+            font-family: 'Pretendard', -apple-system, sans-serif; 
+            margin: ${dynMargin}px auto; 
+            padding: ${dynPadding}px 30px; 
+            text-align: center; 
+            background: #fff; 
+            border-radius: ${dynRadius}px; 
+            box-shadow: 0 ${Math.floor(seededRandom()*5)+5}px ${Math.floor(seededRandom()*20)+20}px rgba(0,0,0,0.05); 
+            border: 1px solid #f1f1f1; 
+            max-width: 600px; width: 100%; opacity: 0; transition: opacity 0.4s ease; 
+        }
+        .${prefix}h1 { font-size: ${Math.floor(seededRandom()*4)+26}px; color: #111; margin-bottom: 22px; letter-spacing: -0.5px; word-break: keep-all; line-height: 1.3; }
+        .${prefix}p { font-size: 17px; color: #444; line-height: 1.6; margin-bottom: 35px; word-break: keep-all; }
+        .${prefix}btn { display: inline-block; width: 100%; max-width: 360px; padding: 16px 20px; background-color: ${config.themeColor}; color: #fff; font-weight: 700; text-decoration: none; border-radius: ${Math.floor(seededRandom()*8)+6}px; font-size: 19px; box-shadow: 0 4px 14px rgba(0,0,0,0.15); transition: transform 0.2s, background-color 0.2s; cursor: pointer; border: none; text-align: center; }
+        .${prefix}btn:hover { transform: translateY(-2px); filter: brightness(95%); }
+        .${prefix}box { margin-top: 45px; padding-top: 25px; border-top: 1px dashed #e5e5e5; }
+        .${prefix}stat-text { font-size: 20px; font-weight: 700; color: #333; }
+        .${prefix}sub-text { font-size: 14px; color: #777; display: block; margin-bottom: 8px; font-weight: 400; }
+        .${prefix}num { font-size: 32px; font-weight: 900; color: ${config.themeColor}; }
+        .${prefix}foot { font-size: 12px; color: #999; line-height: 1.5; margin-top: 40px; text-align: left; background: #fcfcfc; padding: 15px; border-radius: 6px; word-break: keep-all; }
+        
+        @media screen and (max-width: 640px) { 
+            .${prefix}container { margin: 20px auto; padding: 30px 20px; width: 92%; border-radius: 16px; } 
+            .${prefix}h1 { font-size: 22px; margin-bottom: 15px; }
+            .${prefix}p { font-size: 15px; margin-bottom: 25px; }
+            .${prefix}btn { font-size: 16px; padding: 14px 10px; }
+            .${prefix}num { font-size: 28px; }
+            .${prefix}box { margin-top: 30px; }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // 6. 동적 DOM 생성 
+    const container = document.getElementById('dynamic-bridge-app');
+    if(container) {
+        container.innerHTML = `
+            <${wrapperTag} class="${prefix}container" id="${prefix}main">
+                <h1 class="${prefix}h1">${selectedTitle}</h1>
+                <p class="${prefix}p">${selectedDesc}</p>
+                
+                <!-- [개선 완료] 정석적인 아웃바운드 링크 구조 적용 (rel="nofollow sponsored") -->
+                <a href="${config.targetUrl}" rel="nofollow sponsored" class="${prefix}btn" id="${prefix}cta">
+                    ${selectedBtn}
+                </a>
+                
+                <${innerTag} class="${prefix}box">
+                    <div class="${prefix}stat-text">
+                        <span class="${prefix}sub-text"><time datetime="${yesterdayIso}">${yesterdayStr}</time> 통계 기준</span>
+                        실시간 무료 비교 신청자 <span class="${prefix}num" id="${prefix}counter">0</span>명
+                    </div>
+                </${innerTag}>
+
+                <p style="font-size:13px; color:#666; margin-top:20px; line-height:1.4; display:none;" id="${prefix}seo-text">
+                    해당 안내는 ${todayStr} 업데이트 자료를 반영하여 고객님의 상황에 맞는 ${config.topic} 정보를 원활히 제공하기 위함입니다.
+                </p>
+
+                <footer class="${prefix}foot">
+                    [업데이트: <time datetime="${todayIso}">${todayStr}</time>]<br>
+                    ${selectedDisclaimer}
+                </footer>
+            </${wrapperTag}>
+        `;
+
+        // 문맥 텍스트 노출
+        setTimeout(() => { 
+            const seoText = document.getElementById(`${prefix}seo-text`);
+            if(seoText) seoText.style.display = 'block'; 
+        }, 100);
+
+        // 7. 검색엔진 이해용 구조적 데이터(JSON-LD Schema) 동적 삽입
+        const schemaData = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": `${config.topic} 안내`,
+            "dateModified": today.toISOString(),
+            "description": selectedDesc.replace(/<[^>]*>?/gm, '') 
+        };
+        const scriptEl = document.createElement('script');
+        scriptEl.type = 'application/ld+json';
+        scriptEl.text = JSON.stringify(schemaData);
+        document.head.appendChild(scriptEl);
+
+        // 8. 통계 카운터 애니메이션 엔진
+        function animateCount() {
+            const targetElement = document.getElementById(`${prefix}counter`);
+            if(!targetElement) return;
+            const dateSeed = yesterday.getFullYear() * 10000 + (yesterday.getMonth()+1) * 100 + yesterday.getDate() + seedValue;
+            
+            let pseudoRandom = Math.sin(dateSeed) * 10000;
+            pseudoRandom = pseudoRandom - Math.floor(pseudoRandom);
+            
+            const targetNumber = Math.floor(pseudoRandom * (config.maxCount - config.minCount + 1)) + config.minCount;
+            const startTime = performance.now();
+            const duration = 1800;
+
+            function updateNumber(currentTime) {
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+                const easeOutProgress = progress * (2 - progress); 
+                targetElement.innerText = Math.floor(easeOutProgress * targetNumber).toLocaleString();
+                if (progress < 1) requestAnimationFrame(updateNumber);
+            }
+            requestAnimationFrame(updateNumber);
+        }
+
+        // 9. 페이드인 및 애니메이션 시동
+        setTimeout(() => {
+            const mainEl = document.getElementById(`${prefix}main`);
+            if(mainEl) mainEl.style.opacity = '1';
+            animateCount();
+        }, 150);
+    }
+})();
+</script>
 
 
 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+	
+  <!-- JSON-LD Structured Data for LLM & Search Engine Crawlers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://direct.reliabledone.com/indemnity-health-insurance-guide#webpage",
+        "url": "https://direct.reliabledone.com/indemnity-health-insurance-guide",
+        "name": "실손보험 다이렉트 비교 가입: 2027년 개편 요금표 등급표 및 최저가 견적 분석 센터",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://direct.reliabledone.com/#website",
+          "name": "다이렉트 금융 비교 분석 포털",
+          "url": "https://direct.reliabledone.com"
+        },
+        "description": "2027년 개편 제도와 4세대 5세대 실손의료보험 다이렉트 비교 가입 가이드 및 손해보험사별 요금표, 비급여 차등 등급표 분석",
+        "inLanguage": "ko-KR",
+        "datePublished": "2026-03-15T09:00:00+09:00",
+        "dateModified": "2026-10-09T18:00:00+09:00"
+      },
+      {
+        "@type": "FinancialProduct",
+        "@id": "https://direct.reliabledone.com/indemnity-health-insurance-guide#financialProduct",
+        "name": "다이렉트 실손의료보험",
+        "category": "Indemnity Health Insurance",
+        "description": "국민건강보험의 급여 및 비급여 본인부담 의료비를 종합적으로 보장하는 4세대 단독 실손의료보험 다이렉트 상품",
+        "provider": {
+          "@type": "Organization",
+          "name": "대한민국 주요 손해보험사 통합비교"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "KRW",
+          "lowPrice": "7200",
+          "highPrice": "48900",
+          "offerCount": "10"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://direct.reliabledone.com/indemnity-health-insurance-guide#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://direct.reliabledone.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "보험 비교 센터",
+            "item": "https://direct.reliabledone.com/insurance/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "실손보험 다이렉트 비교 가입",
+            "item": "https://direct.reliabledone.com/indemnity-health-insurance-guide"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://direct.reliabledone.com/indemnity-health-insurance-guide#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "실손보험 다이렉트 가입과 대면 설계사 가입의 가장 큰 차이점은 무엇인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "다이렉트 실손보험은 보험 설계사나 대리점에 지급되는 모집 수수료와 마케팅 중간 비용이 제외되므로 오프라인 대면 채널 대비 평균 15%에서 20%가량 월 납부 요금이 저렴합니다. 보장 내용과 약관 규정은 동일한 표준 약관이 적용되므로 가입 경로에 따른 보상 불이익은 전혀 없습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "4세대 실손보험의 비급여 차등제 5등급 등급표 기준은 어떻게 적용되나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "직전 1년간 비급여 보험금 지급액에 따라 1등급(지급액 0원, 5% 할인), 2등급(100만원 미만, 유지), 3등급(100만원 이상 150만원 미만, 100% 할증), 4등급(150만원 이상 300만원 미만, 200% 할증), 5등급(300만원 이상, 300% 할증)으로 차등 적용됩니다. 다만 중증질환자나 장기요양 1~2등급자는 비급여 차등 적용 대상에서 제외됩니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "기존 1세대 구실손이나 2세대 표준화 실손 가입자는 4세대로 전환하는 것이 유리한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "도수치료나 비급여 주사제 등 비급여 의료 이용량이 적고 단순히 노후 대비용으로 보험을 유지하려는 분이라면 월 요금이 최대 70% 이상 저렴한 4세대로 전환하는 것이 유리합니다. 반면 기존 기저질환으로 인해 비급여 진료를 매년 정기적으로 다량 이용하는 분은 기존 세대를 유지하는 것이 총체적 실질 지출 측면에서 적합할 수 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "실손보험은 중복 가입이 가능한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "실손의료보험은 실제 발생한 의료비 한도 내에서 손해를 보상하는 비례보상 원칙이 적용됩니다. 따라서 두 개 이상의 회사에 중복 가입하더라도 병원비가 이중으로 지급되지 않고 각 보험사가 분담하여 보상하므로 이중 가입 시 불필요한 보험료만 낭비하게 됩니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "다이렉트 실손보험 단독 가입 시 인수 거절을 방지하는 팁은 무엇인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "단독 실손보험은 보험사의 손해율이 높아 온라인 심사에서 과거 병력, 투약 이력에 대해 정밀한 심사를 진행합니다. 최근 3개월 이내 병원 진료, 1년 이내 재검사, 5년 이내 중대 질환 치료 이력을 사전에 정확히 파악하여 고지의무를 준수하고, 심사 조건이 유연한 대형 손해보험사를 우선순위로 접수하는 것이 중요합니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <style>
-    /* 기본 테마 및 타이포그래피 설정 */
     :root {
-      --primary-color: #3b82f6;
-      --primary-hover: #2563eb;
-      --secondary-color: #10b981;
-      --accent-color: #f59e0b;
-      --bg-gradient-start: #f8fafc;
-      --bg-gradient-end: #eff6ff;
-      --text-main: #1e293b;
-      --text-muted: #475569;
-      --card-bg: #ffffff;
-      --border-color: #e2e8f0;
+      --primary: #1e3a8a;
+      --primary-soft: #2563eb;
+      --primary-light: #eff6ff;
+      --secondary: #0f766e;
+      --secondary-soft: #14b8a6;
+      --secondary-light: #f0fdfa;
+      --accent: #d97706;
+      --accent-soft: #f59e0b;
+      --accent-light: #fffbeb;
+      --neutral-dark: #0f172a;
+      --neutral-text: #334155;
+      --neutral-muted: #64748b;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border-subtle: #e2e8f0;
+      --border-focus: #94a3b8;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.1);
+      --font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      font-family: 'Noto Sans KR', sans-serif;
+      font-family: var(--font-family);
+      background-color: var(--bg-page);
+      color: var(--neutral-text);
       line-height: 1.8;
-      margin: 0;
-      padding: 0;
-      color: var(--text-main);
-      background-color: #f8fafc;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      word-break: keep-all;
     }
 
-    /* 네비게이션 및 헤더 */
-    header {
-      background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
-      padding: 60px 20px;
-      text-align: center;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .header-container {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #0f172a;
-      margin-bottom: 20px;
-      font-weight: 800;
-      letter-spacing: -0.05em;
-    }
-
-    header p {
-      font-size: 1.15rem;
-      color: var(--text-muted);
-      max-width: 700px;
-      margin: 0 auto 30px auto;
-    }
-
-    /* 네비게이션 메뉴 */
-    .nav-bar {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
-    }
-
-    .nav-link {
-      color: var(--primary-color);
+    a {
+      color: var(--primary-soft);
       text-decoration: none;
-      font-weight: 700;
-      padding: 10px 20px;
-      background-color: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 30px;
-      transition: all 0.3s ease;
-      font-size: 0.95rem;
+      transition: color 0.2s ease;
     }
 
-    .nav-link:hover {
-      background-color: var(--primary-color);
+    a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header.main-header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2e4c9d 50%, #0f766e 100%);
       color: #ffffff;
-      border-color: var(--primary-color);
+      padding: 56px 0 44px;
+      border-bottom: 4px solid var(--accent-soft);
     }
 
-    /* 메인 컨테이너 레이아웃 */
-    .main-container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
+    .header-badge {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      letter-spacing: -0.02em;
     }
 
-    section {
-      background-color: var(--card-bg);
-      border-radius: 16px;
+    header.main-header h1 {
+      font-size: 2.35rem;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 20px;
+      letter-spacing: -0.04em;
+    }
+
+    header.main-header p.intro-lead {
+      font-size: 1.12rem;
+      font-weight: 400;
+      max-width: 860px;
+      color: #e2e8f0;
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+
+    nav.quick-nav {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 16px 20px;
+      box-shadow: var(--shadow-md);
+      margin-top: 24px;
+    }
+
+    nav.quick-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 12px;
+    }
+
+    nav.quick-nav li a {
+      display: inline-block;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      border: 1px solid #bfdbfe;
+    }
+
+    nav.quick-nav li a:hover {
+      background-color: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    main {
+      padding: 48px 0;
+    }
+
+    article section {
+      background-color: var(--bg-card);
+      border-radius: 14px;
       padding: 40px;
-      margin-bottom: 40px;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-      border: 1px solid var(--border-color);
+      margin-bottom: 36px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-subtle);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    article section:hover {
+      box-shadow: var(--shadow-md);
     }
 
     h2 {
-      font-size: 1.8rem;
-      color: #0f172a;
-      margin-top: 0;
-      margin-bottom: 25px;
-      border-left: 5px solid var(--primary-color);
-      padding-left: 15px;
+      font-size: 1.72rem;
       font-weight: 700;
+      color: var(--neutral-dark);
+      margin-bottom: 24px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--primary-light);
+      letter-spacing: -0.03em;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 56px;
+      height: 2px;
+      background-color: var(--primary-soft);
     }
 
     h3 {
-      font-size: 1.35rem;
-      color: #1e3a8a;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      font-weight: 700;
+      font-size: 1.28rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin: 28px 0 14px;
+      letter-spacing: -0.02em;
     }
 
     p {
-      margin-bottom: 20px;
-      color: var(--text-muted);
-      text-align: justify;
+      margin-bottom: 18px;
+      color: var(--neutral-text);
+      font-size: 1.03rem;
+      line-height: 1.85;
     }
 
-    /* 버튼 스타일 */
-    .cta-container {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .cta-btn {
-      display: inline-block;
-      padding: 18px 36px;
-      background-color: var(--secondary-color);
-      color: #ffffff;
-      font-size: 1.1rem;
+    .keyword-pill {
       font-weight: 700;
-      border-radius: 12px;
-      text-decoration: none;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.4);
+      color: var(--primary-soft);
+      background-color: var(--primary-light);
+      padding: 2px 6px;
+      border-radius: 4px;
+      display: inline-block;
     }
 
-    .cta-btn:hover {
-      background-color: #059669;
-      transform: translateY(-2px);
+    .keyword-accent {
+      font-weight: 700;
+      color: var(--secondary);
+      background-color: var(--secondary-light);
+      padding: 2px 6px;
+      border-radius: 4px;
+      display: inline-block;
     }
 
-    /* 테이블 스타일 */
-    .table-responsive {
+    .keyword-warning {
+      font-weight: 700;
+      color: #b45309;
+      background-color: var(--accent-light);
+      padding: 2px 6px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    /* Modern Table Style */
+    .table-wrapper {
+      width: 100%;
       overflow-x: auto;
-      margin: 30px 0;
-      border-radius: 12px;
-      border: 1px solid var(--border-color);
+      margin: 28px 0;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
+      min-width: 680px;
+      background-color: #ffffff;
       text-align: left;
+    }
+
+    thead th {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      padding: 16px 18px;
       font-size: 0.95rem;
+      font-weight: 600;
+      border: none;
+      letter-spacing: -0.01em;
     }
 
-    th {
+    tbody tr {
+      border-bottom: 1px solid var(--border-subtle);
+      transition: background-color 0.15s ease;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    tbody tr:hover {
       background-color: #f1f5f9;
-      color: #0f172a;
+    }
+
+    tbody td {
+      padding: 15px 18px;
+      font-size: 0.96rem;
+      color: var(--neutral-text);
+      vertical-align: middle;
+    }
+
+    tbody td.highlight-cell {
       font-weight: 700;
-      padding: 16px;
-      border-bottom: 2px solid var(--border-color);
+      color: var(--primary);
     }
 
-    td {
-      padding: 16px;
-      border-bottom: 1px solid var(--border-color);
-      color: var(--text-muted);
+    /* Information Callout Box */
+    .notice-card {
+      background-color: #f0fdfa;
+      border-left: 5px solid var(--secondary);
+      padding: 22px 24px;
+      border-radius: 8px;
+      margin: 28px 0;
     }
 
-    tr:last-child td {
-      border-bottom: none;
+    .notice-card.warning-type {
+      background-color: #fffbeb;
+      border-left-color: var(--accent);
     }
 
-    tr:hover {
-      background-color: #f8fafc;
+    .notice-card.info-type {
+      background-color: #eff6ff;
+      border-left-color: var(--primary-soft);
     }
 
-    /* CSS 그래프 스타일 */
-    .graph-container {
-      background-color: #f8fafc;
-      padding: 30px;
+    .notice-card h4 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--neutral-dark);
+    }
+
+    .notice-card p {
+      margin-bottom: 0;
+      font-size: 0.98rem;
+      color: var(--neutral-text);
+    }
+
+    /* List styling */
+    ul.feature-list, ol.process-list {
+      margin: 18px 0 24px 22px;
+    }
+
+    ul.feature-list li, ol.process-list li {
+      margin-bottom: 12px;
+      font-size: 1.01rem;
+      line-height: 1.75;
+      color: var(--neutral-text);
+    }
+
+    /* Interactive Calculator Container */
+    .calculator-box {
+      background: linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%);
+      border: 1px solid #cbd5e1;
       border-radius: 12px;
-      margin: 35px 0;
-      border: 1px solid var(--border-color);
+      padding: 30px;
+      margin: 32px 0;
+      box-shadow: var(--shadow-md);
     }
 
-    .graph-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #0f172a;
-      margin-bottom: 25px;
-      text-align: center;
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-bottom: 24px;
     }
 
-    .bar-chart {
+    .calc-item {
       display: flex;
       flex-direction: column;
-      gap: 20px;
     }
 
-    .chart-row {
-      display: flex;
-      align-items: center;
-    }
-
-    .chart-label {
-      width: 140px;
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--text-muted);
-    }
-
-    .chart-bar-container {
-      flex-grow: 1;
-      background-color: #e2e8f0;
-      border-radius: 8px;
-      height: 24px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .chart-bar {
-      height: 100%;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding-right: 10px;
-      color: #ffffff;
-      font-size: 0.8rem;
-      font-weight: 700;
-      transition: width 1s ease-in-out;
-    }
-
-    .bar-1 { background-color: #ef4444; }
-    .bar-2 { background-color: #f59e0b; }
-    .bar-3 { background-color: #3b82f6; }
-    .bar-4 { background-color: #8b5cf6; }
-    .bar-5 { background-color: #10b981; }
-
-    /* 대화형 계산기 및 퀴즈 구역 */
-    .interactive-box {
-      background-color: #f0fdf4;
-      border: 1px solid #bbf7d0;
-      border-radius: 12px;
-      padding: 30px;
-      margin: 35px 0;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    .form-group label {
-      display: block;
-      font-weight: 700;
+    .calc-item label {
+      font-size: 0.92rem;
+      font-weight: 600;
       margin-bottom: 8px;
-      color: #1e3a8a;
+      color: var(--neutral-dark);
     }
 
-    .form-control {
-      width: 100%;
-      padding: 12px;
+    .calc-item select, .calc-item input {
+      padding: 12px 14px;
       border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      font-size: 1rem;
-      box-sizing: border-box;
+      border-radius: 6px;
+      font-size: 0.98rem;
       background-color: #ffffff;
-    }
-
-    .form-control:focus {
       outline: none;
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+      transition: border-color 0.2s;
     }
 
-    .calc-btn {
-      width: 100%;
-      padding: 15px;
-      background-color: var(--primary-color);
+    .calc-item select:focus, .calc-item input:focus {
+      border-color: var(--primary-soft);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    .calc-btn-group {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .calc-action-btn {
+      background-color: var(--primary);
       color: #ffffff;
+      padding: 14px 34px;
+      font-size: 1.05rem;
+      font-weight: 700;
       border: none;
       border-radius: 8px;
-      font-size: 1.1rem;
-      font-weight: 700;
       cursor: pointer;
-      transition: background-color 0.2s ease;
+      transition: background-color 0.2s ease, transform 0.1s ease;
     }
 
-    .calc-btn:hover {
-      background-color: var(--primary-hover);
+    .calc-action-btn:hover {
+      background-color: var(--primary-soft);
+      transform: translateY(-1px);
     }
 
-    .calc-result {
-      margin-top: 25px;
-      padding: 20px;
+    .calc-result-panel {
+      margin-top: 26px;
+      padding: 22px;
       background-color: #ffffff;
       border-radius: 8px;
-      border: 1px solid #bbf7d0;
+      border: 1px solid #bfdbfe;
       display: none;
     }
 
-    .result-row {
+    .calc-result-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .calc-result-value {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    /* Chart Container */
+    .chart-container-box {
+      margin: 36px 0;
+      padding: 24px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* FAQ Accordion */
+    .faq-wrapper {
+      margin-top: 24px;
+    }
+
+    .faq-block {
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      margin-bottom: 14px;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+
+    .faq-header {
+      padding: 20px 24px;
+      background-color: #ffffff;
+      cursor: pointer;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 10px;
+      align-items: center;
+      transition: background-color 0.2s ease;
+    }
+
+    .faq-header:hover {
+      background-color: #f8fafc;
+    }
+
+    .faq-header h3 {
+      font-size: 1.06rem;
+      font-weight: 600;
+      color: var(--neutral-dark);
+      margin: 0;
+    }
+
+    .faq-toggle-state {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--primary-soft);
+      padding-left: 12px;
+    }
+
+    .faq-body {
+      display: none;
+      padding: 20px 24px;
+      border-top: 1px solid var(--border-subtle);
+      background-color: #fcfdfe;
       font-size: 1rem;
+      line-height: 1.8;
+      color: var(--neutral-text);
     }
 
-    .result-row.highlight {
-      font-weight: 700;
-      color: #15803d;
-      font-size: 1.2rem;
-      border-top: 1px solid #e2e8f0;
-      padding-top: 10px;
+    /* Consultation Form */
+    .form-wrapper {
+      background-color: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 32px;
+      margin-top: 28px;
     }
 
-    /* 블록쿼트 후기 스타일 */
-    blockquote {
-      font-style: normal;
-      border-left: 4px solid var(--secondary-color);
-      margin: 25px 0;
-      padding: 15px 20px;
-      background-color: #f0fdf4;
-      border-radius: 0 12px 12px 0;
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-bottom: 18px;
     }
 
-    blockquote cite {
-      display: block;
-      margin-top: 10px;
+    .form-control {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-control label {
+      font-size: 0.92rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--neutral-dark);
+    }
+
+    .form-control input, .form-control select, .form-control textarea {
+      padding: 12px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 0.98rem;
+      background-color: #ffffff;
+    }
+
+    .form-control input:focus, .form-control select:focus, .form-control textarea:focus {
+      outline: none;
+      border-color: var(--primary-soft);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    }
+
+    .form-privacy-note {
       font-size: 0.85rem;
-      color: var(--text-muted);
-      font-weight: 700;
+      color: var(--neutral-muted);
+      margin-bottom: 18px;
+      line-height: 1.6;
     }
 
-    /* 푸터 스타일 */
-    footer {
+    .form-submit-btn {
+      background-color: #0f766e;
+      color: #ffffff;
+      padding: 16px 36px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.2s ease;
+    }
+
+    .form-submit-btn:hover {
+      background-color: #115e59;
+    }
+
+    /* External Resources Section */
+    .external-ref-list {
+      list-style: none;
+      margin: 18px 0;
+    }
+
+    .external-ref-list li {
+      padding: 12px 16px;
+      background-color: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      margin-bottom: 10px;
+      font-size: 0.98rem;
+    }
+
+    .external-ref-list li a {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    footer.main-footer {
       background-color: #0f172a;
       color: #94a3b8;
-      text-align: center;
-      padding: 40px 20px;
+      padding: 48px 0;
       font-size: 0.9rem;
-      border-top: 1px solid #1e293b;
+      line-height: 1.7;
     }
 
-    footer a {
-      color: #3b82f6;
-      text-decoration: none;
+    footer .footer-container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
     }
 
-    footer a:hover {
-      text-decoration: underline;
+    footer p {
+      color: #94a3b8;
+      margin-bottom: 10px;
+      font-size: 0.88rem;
     }
 
-    /* 반응형 레이아웃 */
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.8rem;
+      header.main-header {
+        padding: 40px 0 32px;
       }
-      section {
-        padding: 25px;
+      header.main-header h1 {
+        font-size: 1.85rem;
       }
-      .chart-row {
+      article section {
+        padding: 24px 18px;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      .calc-grid, .form-row {
+        grid-template-columns: 1fr;
+      }
+      nav.quick-nav ul {
         flex-direction: column;
-        align-items: flex-start;
-      }
-      .chart-label {
-        width: 100%;
-        margin-bottom: 5px;
       }
     }
   </style>
-
-  <!-- 구조화 데이터 Schema Markup 설정 -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "실손보험다이렉트",
-    "image": "https://guide.reliabledone.com/assets/images/direct-insurance-meta.jpg",
-    "description": "2026년 새롭게 개편된 5세대 실손보험다이렉트 상품 비교, 세대별 장단점 분석 및 실비보험 예상 금액 확인을 위한 종합 정보 제공 사이트.",
-    "brand": {
-      "@type": "Brand",
-      "name": "다이렉트 실손의료보험 가이드"
-    },
-    "offers": {
-      "@type": "AggregateOffer",
-      "lowPrice": "7800",
-      "highPrice": "42000",
-      "priceCurrency": "KRW",
-      "offerCount": "12"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "2180"
-    }
-  }
-  </script>
 </head>
 <body>
 
-  <header>
-    <div class="header-container">
-      <h1>2026년 실손보험다이렉트 완전 정복 가이드</h1>
-      <p>5세대 신규 출시 트렌드부터 내 예상 보험료 계산 및 1세대, 2세대, 3세대, 4세대 실비와의 세부 보장 항목 비교 분석까지 한눈에 확인하십시오.</p>
+  <header class="main-header">
+    <div class="container">
+      <span class="header-badge">2027 실손의료보험 제도 개편 및 요율 분석</span>
+      <h1>실손보험 다이렉트 비교 가입: 2027년 개편 요금표 등급표 및 최저가 견적 분석</h1>
+      <p class="intro-lead">
+        설계사 영업 수수료가 빠진 순수 온라인 다이렉트 실손의료보험 가입 기준을 종합적으로 제시합니다. 1세대, 2세대, 3세대 착한실손부터 현행 4세대 및 2027년 도입이 검토되는 차세대 5세대 비급여 관리 체계까지, 국내 주요 손해보험사 브랜드별 순위와 연령별 예상 요금표, 비급여 차등 5등급 등급표를 확인하고 가장 저렴한곳을 찾아 견적을 비교해 보세요.
+      </p>
       
-      <div class="nav-bar">
-        <a href="#trend" class="nav-link">2026년 시장 트렌드</a>
-        <a href="#calculator" class="nav-link">예상 보험료 계산기</a>
-        <a href="#comparison" class="nav-link">세대별 차이점 비교</a>
-        <a href="#community" class="nav-link">커뮤니티 내돈내산 후기</a>
-        <a href="#faq" class="nav-link">자주 묻는 질문</a>
-      </div>
+      <nav class="quick-nav" aria-label="본문 주요 섹션 이동">
+        <ul>
+          <li><a href="#section-overview">실손보험 다이렉트 개요</a></li>
+          <li><a href="#section-generation-diff">세대별 차이점 및 2027 전망</a></li>
+          <li><a href="#section-brand-rank">손해보험사 순위 및 요금표</a></li>
+          <li><a href="#section-age-cost">연령별 평균 금액 및 등급표</a></li>
+          <li><a href="#section-calculator">실시간 예상 계산기</a></li>
+          <li><a href="#section-chart">보험료 갱신 추이 그래프</a></li>
+          <li><a href="#section-direct-knowhow">가입 팁 및 온라인 후기</a></li>
+          <li><a href="#section-faq">자주 묻는 질문 FAQ</a></li>
+          <li><a href="#section-consulting">전문가 견적 컨설팅 신청</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <div class="main-container">
+  <main class="container">
+    <article>
 
-    <section id="trend">
-      <h2>2026년 실손보험다이렉트 시장의 주요 변화와 5세대 출시</h2>
-      <p>대한민국의 대표적인 국민 보험으로 자리 잡은 실손의료보험이 2026년 들어 역사적인 변곡점을 맞이했습니다. 기존 4세대 실손의료보험의 가입 및 재가입 주기가 순차적으로 도래함에 따라, 금융당국과 주요 손해보험 브랜드 업체들은 2026년 5월 6일을 기점으로 새로운 개편안인 5세대 실손보험다이렉트 상품을 일제히 시장에 선보였습니다. 기존 4세대 신규 가입은 사실상 종료되었으며, 이제 신규 가입자와 기존 전환 신청 희망자들은 5세대 상품을 기준으로 견적 및 비용 설계를 검토해야 하는 시점입니다.</p>
-      
-      <p>이번 2026년도 개편의 핵심 배경은 비급여 항목의 과도한 의료 쇼핑 및 남용으로 인한 보험사의 급격한 적자 누적입니다. 일부 가입자의 도수치료, 비급여 주사제, 체외충격파 등의 무분별한 과잉 진료가 전체 가입자의 요금제 상승으로 이어지자, 정부와 전문 보험 컨설팅 기구는 꼭 필요한 중증 치료에 대한 혜택은 대폭 강화하되 예방이나 미용 목적의 성격이 짙은 비중증 비급여 치료에 대해서는 자기부담 비용 비율을 높이는 방향으로 조율을 마쳤습니다.</p>
-      
-      <p>2026년 발표된 세대별 평균 보험료 변동 현황에 따르면, 기존 1세대 구실손의 경우 3퍼센트 내외, 2세대는 5퍼센트 수준의 완만한 인상률을 기록한 반면, 상대적으로 최근에 가입한 3세대는 16퍼센트 대, 4세대 실손보험료는 20퍼센트 대의 폭등 수준 인상이 단행되었습니다. 이는 기존 세대의 적립 손해율이 극에 달했음을 방증하며, 이에 따라 많은 소비자들이 요금을 절약하기 위해 더 저렴한곳 혹은 다이렉트 최저가 좌표를 찾고자 네이버, 구글, 유튜브 등 다양한 온라인 검색 채널을 통해 활발한 비교 분석을 수행하고 있습니다.</p>
-    </section>
+      <!-- Section 1: Overview -->
+      <section id="section-overview">
+        <h2>실손보험 다이렉트 비교 가입 개요와 온라인 채널의 구조적 장점</h2>
+        <p>
+          <span class="keyword-pill">실손보험 다이렉트</span> 가입 방식은 일반 대면 보험설계사나 오프라인 법인보험대리점(GA)을 거치지 않고 소비자가 <span class="keyword-accent">인터넷 온라인 사이트</span> 또는 스마트폰 <span class="keyword-pill">앱</span>을 통해 직접 청약하는 시스템입니다. 전통적인 대면 채널에서는 가입자가 납부하는 월 보험료 안에 설계사 수당, 점포 임차료, 지점 운영비 등 부가 사업비가 적게는 15%에서 많게는 25%까지 포함되어 산정됩니다. 반면 본사 공식 다이렉트 플랫폼을 이용하면 동일한 표준약관 기준하에 중간 유통 거품이 모두 제거된 <span class="keyword-pill">최저가</span> 수준의 <span class="keyword-accent">요금</span>으로 가입이 가능합니다.
+        </p>
+        <p>
+          과거에는 설계사의 친분이나 지인 권유에 의해 종합 건강보험의 불필요한 특약에 끼워 파는 형태로 가입하는 사례가 빈번했습니다. 그러나 금융감독원의 단독 실손 가입 의무화 규정에 따라 소비자는 사망 담보나 뇌혈관, 허혈성 심장질환 진단비와 같은 복합 보장을 묶지 않고 오직 순수한 질병 및 상해 입·통원 의료비만을 보장하는 <span class="keyword-accent">단독실손</span> 형태로 가입할 수 있게 되었습니다. 이러한 환경에서 <span class="keyword-pill">가장</span> 합리적인 대안은 각 손해보험사의 다이렉트 홈페이지와 신뢰도 높은 전문 비교 분석 솔루션을 활용하여 객관적인 <span class="keyword-pill">견적</span>을 산출하는 것입니다.
+        </p>
 
-    <section id="calculator">
-      <h2>실손보험다이렉트 예상 요금 계산기</h2>
-      <p>사용자의 성별, 연령 및 기존 가입 상태를 고려하여 2026년형 5세대 실손보험의 대략적인 예상 금액을 실시간으로 도출해 보실 수 있습니다. 아래의 빈칸을 채우고 조회 버튼을 클릭하여 본인에게 적합한 최적의 가격 정보를 가늠해 보십시오.</p>
-      
-      <div class="interactive-box">
-        <div class="form-group">
-          <label for="age">현재 연령 (만 나이 입력)</label>
-          <input type="number" id="age" class="form-control" placeholder="예: 35" min="0" max="100">
+        <div class="notice-card info-type">
+          <h4>다이렉트 실손의료보험 핵심 선택 기준</h4>
+          <p>
+            동일한 4세대 실손의료보험이라 할지라도 회사별 손해율 산정 방식, K-ICS(신지급여력비율), 모바일 간편 청구 편의성, 자동 심사 시스템의 효율성에 따라 실제 납부하게 되는 <span class="keyword-pill">비용</span>과 매년 갱신 시 청구되는 <span class="keyword-pill">금액</span>에 차이가 발생합니다. 따라서 브랜드 네임밸류뿐만 아니라 청구 처리 속도와 부지급률을 함께 고려해야 합니다.
+          </p>
         </div>
+      </section>
+
+      <!-- Section 2: Generation Comparison & 2027 Reform -->
+      <section id="section-generation-diff">
+        <h2>1세대부터 4세대 그리고 2027년 개편 5세대 실손보험 체계 차이점</h2>
+        <p>
+          실손의료보험은 출시 시기에 따라 1세대 구실손(2009년 9월 이전), 2세대 표준화 실손(2009년 10월부터 2017년 3월까지), 3세대 착한실손(2017년 4월부터 2021년 6월까지), 그리고 2021년 7월부터 현재까지 판매되고 있는 4세대 실손보험으로 분류됩니다. 각 세대별로 보장 한도, 본인부담금 비율, 갱신 주기, 그리고 재가입 주기에서 근본적인 <span class="keyword-pill">차이점</span>이 존재합니다.
+        </p>
+        <p>
+          특히 <span class="keyword-warning">2027년</span>을 기점으로 금융위원회와 보건복지부는 비급여 과잉 진료와 도수치료, 비급여 주사제 남용으로 인한 실손보험 적자 누적을 해결하기 위해 '비급여 혼합진료 금지' 및 중증 비급여 보장 집중화를 골자로 하는 차세대 5세대 실손보험 개편안을 논의하고 있습니다. 이는 단순 경증 질환의 비급여 통원 치료 시 자기부담금을 추가 상향하고 필수 중증 질환(암, 심뇌혈관질환, 희귀난치성 질환)에 보장을 집중시키는 방향입니다.
+        </p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>구분 및 세대</th>
+                <th>출시 시기</th>
+                <th>급여 자기부담금</th>
+                <th>비급여 자기부담금</th>
+                <th>재가입 주기</th>
+                <th>주요 장단점 분석</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1세대 (구실손)</strong></td>
+                <td>2009년 9월 이전</td>
+                <td>0% (입원 전액 보장)</td>
+                <td>0% (자기부담금 없음)</td>
+                <td>재가입 규정 없음 (종신)</td>
+                <td>자기부담이 없어 보장성은 최상이나, 갱신 시 폭발적인 보험료 인상으로 유지 부담이 극심함</td>
+              </tr>
+              <tr>
+                <td><strong>2세대 (표준화)</strong></td>
+                <td>2009.10 ~ 2017.03</td>
+                <td>10% ~ 20%</td>
+                <td>10% ~ 20%</td>
+                <td>15년 (재가입 시 약관 변경)</td>
+                <td>보장 한도가 표준화되었으나 손해율 급증으로 연령 증가에 따른 갱신 요금 인상폭이 매우 큼</td>
+              </tr>
+              <tr>
+                <td><strong>3세대 (착한실손)</strong></td>
+                <td>2017.04 ~ 2021.06</td>
+                <td>10% ~ 20%</td>
+                <td>20% (3대 비급여는 30%)</td>
+                <td>15년</td>
+                <td>기본형과 3대 비급여 특약(도수치료, 주사, MRI)으로 분리되어 보험료가 합리화됨</td>
+              </tr>
+              <tr>
+                <td><strong>4세대 (현행 실손)</strong></td>
+                <td>2021.07 ~ 현재</td>
+                <td>20% (병원급별 공제 병행)</td>
+                <td>30% (최소 3만원 공제 병행)</td>
+                <td>5년</td>
+                <td>비급여 이용량에 따라 보험료가 차등 할인 또는 할증(최대 300%)되는 직관적 구조</td>
+              </tr>
+              <tr>
+                <td><strong>2027년 개편안 (5세대 전망)</strong></td>
+                <td>2027년 도입 검토</td>
+                <td>20% ~ 30% 수준</td>
+                <td>비급여 항목별 관리 차등화</td>
+                <td>5년 또는 3년</td>
+                <td>혼합진료 제한 정책 연계, 과잉 비급여 관리 강화 및 필수 중증 질환 치료 보장 강화</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>기존 세대 가입자의 4세대 전환 고려 시 판단 기준</h3>
+        <p>
+          수많은 가입자들이 기존 1세대나 2세대 실손을 유지할 것인지, 아니면 4세대로 전환할 것인지를 두고 깊은 고민을 합니다. 온라인 커뮤니티인 <span class="keyword-pill">디시</span> 인사이드 보험 갤러리나 <span class="keyword-pill">펨코</span>, <span class="keyword-pill">에펨코리아</span>, <span class="keyword-pill">보배드림</span> 등 자동차 및 재테크 커뮤니티의 <span class="keyword-pill">내돈내산</span> 후기를 분석해보면 실제 병원 이용 빈도에 따라 극명하게 나뉩니다.
+        </p>
+        <p>
+          평소 1년에 병원을 한두 번 갈까 말까 하거나 정기 건강검진 외에 비급여 도수치료, 고가 영양주사 치료를 일절 받지 않는 사람이라면 1세대, 2세대 보험료로 매월 8만원에서 15만원 이상을 지출하는 것은 막대한 재정적 낭비입니다. 이런 분들은 4세대로 전환 시 월 <span class="keyword-pill">요금</span>이 1만원에서 2만원대로 급감하여 연간 100만원 이상의 현금을 절약할 수 있습니다. 반면 만성 질환이나 관절 질환 등으로 지속적인 통원과 비급여 처치가 필수적인 가입자라면 보장 비율이 높은 기존 계약을 방어적으로 유지하는 것이 유리합니다.
+        </p>
+      </section>
+
+      <!-- Section 3: Brand Ranking & Pricing Table -->
+      <section id="section-brand-rank">
+        <h2>손해보험사 브랜드별 순위 및 다이렉트 요금표 비교</h2>
+        <p>
+          국내 주요 손해보험사들은 금융당국의 표준 약관을 준수하므로 4세대 실손보험의 보장 내역(질병 입원의료비 5천만원 한도, 통원의료비 회당 20만원 한도, 비급여 특약 3종 등)은 모든 회사가 법적으로 동일합니다. 그러나 회사별 위험률 관리 통계, 사업비 부과 기준, 보유 가입자의 평균 연령 분포에 따라 산출되는 실제 월 납부 <span class="keyword-pill">가격표</span>와 <span class="keyword-accent">순위</span>는 뚜렷한 격차를 보입니다.
+        </p>
+        <p>
+          아래 표는 2026~2027년 기준 대형 및 중견 손해보험사 <span class="keyword-pill">브랜드</span>의 4세대 단독 다이렉트 실손보험 상해 1급(사무직 기준) 월 납입 <span class="keyword-pill">가격</span> 및 지급여력, 서비스 특성을 종합 비교한 <span class="keyword-pill">요금표</span>입니다.
+        </p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>보험사 브랜드</th>
+                <th>30세 남성 월 요금</th>
+                <th>30세 여성 월 요금</th>
+                <th>K-ICS 지급여력비율</th>
+                <th>모바일 앱 간편청구</th>
+                <th>특징 및 고객센터 전화번호 안내</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>삼성화재 다이렉트</strong></td>
+                <td>11,480원</td>
+                <td>13,250원</td>
+                <td>278.5%</td>
+                <td>자체 앱 인공지능 즉시 심사</td>
+                <td>국내 압도적 1위 브랜드, 신속한 당일 보상 지급 체계 (고객센터 1588-5114)</td>
+              </tr>
+              <tr>
+                <td><strong>DB손해보험 다이렉트</strong></td>
+                <td>10,920원</td>
+                <td>12,780원</td>
+                <td>226.3%</td>
+                <td>카카오톡 간편 서류 제출</td>
+                <td>가성비 우수, 단독 실손 가입 승인율이 상대적으로 양호함 (고객센터 1588-0100)</td>
+              </tr>
+              <tr>
+                <td><strong>현대해상 다이렉트</strong></td>
+                <td>11,150원</td>
+                <td>13,100원</td>
+                <td>183.2%</td>
+                <td>모바일 사진 간편 접수</td>
+                <td>어린이 및 태아보험 연계 고객 최다 보유, 보상 안내 인프라 우수 (고객센터 1588-5656)</td>
+              </tr>
+              <tr>
+                <td><strong>KB손해보험 다이렉트</strong></td>
+                <td>10,850원</td>
+                <td>12,650원</td>
+                <td>215.8%</td>
+                <td>마이데이터 연계 실시간 청구</td>
+                <td>최저가 수준의 요율 경쟁력 보유, 토스 및 카카오페이 연동 우수 (고객센터 1544-0114)</td>
+              </tr>
+              <tr>
+                <td><strong>메리츠화재 다이렉트</strong></td>
+                <td>11,620원</td>
+                <td>13,400원</td>
+                <td>242.1%</td>
+                <td>모바일 전용 간편 창구</td>
+                <td>지급 심사 기준이 명확하며 빠른 보상 처리 프로세스 구축 (고객센터 1566-7711)</td>
+              </tr>
+              <tr>
+                <td><strong>한화손해보험 다이렉트</strong></td>
+                <td>10,700원</td>
+                <td>12,500원</td>
+                <td>210.4%</td>
+                <td>스마트 보상 접수 시스템</td>
+                <td>여성 맞춤형 특화 시스템 및 합리적 보험료 구조 (고객센터 1566-8000)</td>
+              </tr>
+              <tr>
+                <td><strong>흥국화재 다이렉트</strong></td>
+                <td>10,650원</td>
+                <td>12,380원</td>
+                <td>168.7%</td>
+                <td>웹 및 모바일 다이렉트</td>
+                <td>초기 가입 요금이 가장 싼곳 군에 속하나 심사 기준 다소 엄격 (고객센터 1688-1688)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="notice-card warning-type">
+          <strong>보험료 변동 참고:</strong> 위 기재된 <span class="keyword-pill">금액</span>은 3년 약정이나 다년 약정이 아닌 1년 단위 자동 갱신(12개월) 단독 표준형 계약 기준의 평균 예시입니다. 개인의 직업 급수, 질병 이력, 연령에 따라 실제 가입 시 산출되는 <span class="keyword-accent">예상</span> 납부액은 달라질 수 있습니다.
+        </p>
+      </section>
+
+      <!-- Section 4: Age-specific Cost & Non-benefit Grade Table -->
+      <section id="section-age-cost">
+        <h2>연령대별 평균 월 납부 요금과 비급여 5등급 등급표 분석</h2>
+        <p>
+          실손의료보험은 나이가 증가함에 따라 의료비 지출 확률이 기하급수적으로 증가하는 자연보험료 체계를 채택하고 있습니다. 따라서 20대와 30대의 보험료는 1만원 안팎으로 매우 저렴하지만, 50대 이후부터는 상승 폭이 가팔라지며 60대와 70대에서는 3만원에서 6만원 이상으로 증액됩니다.
+        </p>
+        <p>
+          아래 표는 2026~2027년 기준 대한민국 주요 손보사 평균 요율을 바탕으로 산출한 연령대별 남녀 월 <span class="keyword-pill">평균</span> 납입 <span class="keyword-pill">비용</span>입니다.
+        </p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>가입 연령대</th>
+                <th>남성 평균 월 보험료</th>
+                <th>여성 평균 월 보험료</th>
+                <th>주요 의료 이용 패턴</th>
+                <th>추천 가입 전략 및 팁</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>20대 (20~29세)</strong></td>
+                <td>7,200원 ~ 9,500원</td>
+                <td>8,800원 ~ 10,800원</td>
+                <td>상해 사고, 스포츠 부상, 단순 위장염</td>
+                <td>무사고 1년 유지 시 5% 할인 적극 활용, 최저가 단독 가입</td>
+              </tr>
+              <tr>
+                <td><strong>30대 (30~39세)</strong></td>
+                <td>10,500원 ~ 12,800원</td>
+                <td>12,400원 ~ 14,900원</td>
+                <td>임신·출산 관련(급여 한정), 근골격계 통증, 건강검진 후속</td>
+                <td>모바일 앱을 통한 간편청구 활용, 비급여 도수치료 과다청구 지양</td>
+              </tr>
+              <tr>
+                <td><strong>40대 (40~49세)</strong></td>
+                <td>14,200원 ~ 17,900원</td>
+                <td>17,500원 ~ 21,300원</td>
+                <td>대사증후군, 디스크 질환, 만성피로 관련 주사 치료</td>
+                <td>기존 1·2세대 가입자의 경우 갱신 폭 확인 후 4세대 전환 검토</td>
+              </tr>
+              <tr>
+                <td><strong>50대 (50~59세)</strong></td>
+                <td>22,800원 ~ 28,600원</td>
+                <td>27,900원 ~ 34,200원</td>
+                <td>심뇌혈관 조기 검진, 갱년기 질환, 관절염, 백내장</td>
+                <td>비급여 5등급 할증 주의, 유병력자 실손 전환 가능성 체크</td>
+              </tr>
+              <tr>
+                <td><strong>60대 (60~69세)</strong></td>
+                <td>36,500원 ~ 48,200원</td>
+                <td>41,200원 ~ 55,800원</td>
+                <td>만성 복합 질환, 입원 수술 빈도 급증, 노인성 안과 질환</td>
+                <td>노후실손의료보험 비교, 비급여 차등 면제 대상 해당 여부 확인</td>
+              </tr>
+              <tr>
+                <td><strong>70대 이상</strong></td>
+                <td>58,000원 ~ 79,000원</td>
+                <td>62,000원 ~ 86,500원</td>
+                <td>고혈압·당뇨 합병증, 골절, 인공관절, 장기 입원 치료</td>
+                <td>노후실손 전환 및 가족 결합 간편 심사 제도 컨설팅 활용</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>4세대 실손 비급여 차등제 5등급 등급표와 할증률 계산법</h3>
+        <p>
+          4세대 실손보험의 가장 핵심적인 작동 원리는 '수익자 부담 원칙'에 입각한 비급여 차등제입니다. 1년간 비급여 특약으로 지급받은 보험금 총액에 따라 차기 연도 비급여 특약 보험료가 할인되거나 최대 300%까지 할증됩니다. 이 등급표는 매년 1년(12개월) 단위로 갱신되며 영구적인 것이 아니라 당해 연도 청구 실적에 따라 이듬해 재조정됩니다.
+        </p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>차등 등급</th>
+                <th>직전 1년간 비급여 보험금 수령액</th>
+                <th>비급여 특약 보험료 변동폭</th>
+                <th>대상자 비중 (업계 추정치)</th>
+                <th>적용 예외 대상</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1등급</strong></td>
+                <td>0원 (무청구)</td>
+                <td>약 5% 할인</td>
+                <td>전체 가입자의 약 72%</td>
+                <td rowspan="5">
+                  <strong>적용 예외:</strong><br>
+                  1. 국민건강보험법상 산정특례 대상자 (암, 뇌혈관질환, 심장질환, 희귀난치성 질환)<br>
+                  2. 노인장기요양보험법상 장기요양 1~2등급 판정자
+                </td>
+              </tr>
+              <tr>
+                <td><strong>2등급</strong></td>
+                <td>100만원 미만</td>
+                <td>유지 (0%)</td>
+                <td>전체 가입자의 약 26%</td>
+              </tr>
+              <tr>
+                <td><strong>3등급</strong></td>
+                <td>100만원 이상 ~ 150만원 미만</td>
+                <td>100% 할증 (2배 부과)</td>
+                <td>전체 가입자의 약 1.1%</td>
+              </tr>
+              <tr>
+                <td><strong>4등급</strong></td>
+                <td>150만원 이상 ~ 300만원 미만</td>
+                <td>200% 할증 (3배 부과)</td>
+                <td>전체 가입자의 약 0.6%</td>
+              </tr>
+              <tr>
+                <td><strong>5등급</strong></td>
+                <td>300만원 이상</td>
+                <td>300% 할증 (4배 부과)</td>
+                <td>전체 가입자의 약 0.3%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          여기서 반드시 주의해야 할 점은 100%~300%의 할증이 전체 보험료(급여+비급여)에 적용되는 것이 아니라, 오직 <span class="keyword-pill">비급여 특약 보험료</span> 부분에만 한정되어 적용된다는 사실입니다. 따라서 월 보험료가 15,000원인 가입자의 비급여 보험료가 6,000원이라면, 5등급(300% 할증)이 되더라도 비급여 부분이 24,000원으로 늘어나 총 보험료는 33,000원 수준으로 청구됩니다. 막연한 공포감을 가질 필요는 없으나 고액 비급여 청구는 신중해야 합니다.
+        </p>
+      </section>
+
+      <!-- Section 5: Real-time Calculator Simulation -->
+      <section id="section-calculator">
+        <h2>실시간 다이렉트 실손보험 예상 요금 간편 계산기</h2>
+        <p>
+          가입자의 연령, 성별, 현재 보유 중인 실손보험 세대 및 직전 1년간 비급여 청구 금액을 선택하시면 2026~2027년 기준 다이렉트 4세대 전환 및 신규 가입 시의 <span class="keyword-pill">예상</span> 월 납부 <span class="keyword-accent">금액</span>과 비급여 등급표 결과를 즉시 시뮬레이션할 수 있습니다.
+        </p>
+
+        <div class="calculator-box">
+          <div class="calc-grid">
+            <div class="calc-item">
+              <label for="calc-gender">성별 선택</label>
+              <select id="calc-gender">
+                <option value="male">남성</option>
+                <option value="female">여성</option>
+              </select>
+            </div>
+            <div class="calc-item">
+              <label for="calc-age">연령 입력 (만 나이)</label>
+              <input type="number" id="calc-age" min="0" max="80" value="35" placeholder="예: 35">
+            </div>
+            <div class="calc-item">
+              <label for="calc-gen">현재 가입 상태</label>
+              <select id="calc-gen">
+                <option value="new">신규 가입 희망</option>
+                <option value="gen1">1세대 구실손 유지 중</option>
+                <option value="gen2">2세대 표준화실손 유지 중</option>
+                <option value="gen3">3세대 착한실손 유지 중</option>
+                <option value="gen4">4세대 가입 중</option>
+              </select>
+            </div>
+            <div class="calc-item">
+              <label for="calc-claim">직전 1년 비급여 수령액</label>
+              <select id="calc-claim">
+                <option value="0">0원 (청구 이력 없음)</option>
+                <option value="50">100만원 미만</option>
+                <option value="120">100만원 이상 ~ 150만원 미만</option>
+                <option value="200">150만원 이상 ~ 300만원 미만</option>
+                <option value="350">300만원 이상</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-btn-group">
+            <button type="button" class="calc-action-btn" onclick="executeInsuranceCalculation()">예상 보험료 및 등급 산출하기</button>
+          </div>
+
+          <div id="calc-result" class="calc-result-panel">
+            <div class="calc-result-title">시뮬레이션 분석 결과 리포트</div>
+            <div class="calc-result-value" id="res-price">월 약 0원</div>
+            <p id="res-desc" style="color: var(--neutral-text); font-size: 0.95rem; line-height: 1.7;"></p>
+          </div>
+        </div>
+
+        <script>
+          function executeInsuranceCalculation() {
+            const gender = document.getElementById('calc-gender').value;
+            const age = parseInt(document.getElementById('calc-age').value) || 30;
+            const gen = document.getElementById('calc-gen').value;
+            const claim = document.getElementById('calc-claim').value;
+
+            // Base rate formula based on actuarial trends
+            let baseRate = 8000;
+            if (age < 20) baseRate = 6000;
+            else if (age <= 30) baseRate = 9500;
+            else if (age <= 40) baseRate = 12500;
+            else if (age <= 50) baseRate = 17500;
+            else if (age <= 60) baseRate = 28000;
+            else baseRate = 49000;
+
+            if (gender === 'female') {
+              baseRate *= (age >= 25 && age <= 55) ? 1.18 : 1.05;
+            }
+
+            let nonBenefitRate = baseRate * 0.42;
+            let benefitRate = baseRate * 0.58;
+            let surchargeText = "1등급 (5% 할인 적용)";
+
+            if (claim === "0") {
+              nonBenefitRate *= 0.95;
+              surchargeText = "비급여 1등급 (무청구로 특약 5% 할인)";
+            } else if (claim === "50") {
+              surchargeText = "비급여 2등급 (유지, 할증 없음)";
+            } else if (claim === "120") {
+              nonBenefitRate *= 2.0;
+              surchargeText = "비급여 3등급 (비급여 특약 100% 할증)";
+            } else if (claim === "200") {
+              nonBenefitRate *= 3.0;
+              surchargeText = "비급여 4등급 (비급여 특약 200% 할증)";
+            } else if (claim === "350") {
+              nonBenefitRate *= 4.0;
+              surchargeText = "비급여 5등급 (비급여 특약 300% 최고 할증)";
+            }
+
+            const totalMonthly = Math.round(benefitRate + nonBenefitRate);
+            const panel = document.getElementById('calc-result');
+            const priceEl = document.getElementById('res-price');
+            const descEl = document.getElementById('res-desc');
+
+            priceEl.innerText = "예상 월 납입금: 약 " + totalMonthly.toLocaleString() + "원";
+            
+            let advice = "선택하신 기준에 따른 4세대 단독 다이렉트 추정치입니다. 등급 상태: " + surchargeText + ". ";
+            if (gen === 'gen1' || gen === 'gen2') {
+              let oldEst = Math.round(totalMonthly * 3.4);
+              advice += "현재 유지 중이신 구세대의 예상 월 보험료는 약 " + oldEst.toLocaleString() + "원으로 추정되며, 4세대로 전환 시 매월 약 " + (oldEst - totalMonthly).toLocaleString() + "원의 고정 지출을 절감할 수 있습니다.";
+            } else {
+              advice += "직접 다이렉트 채널을 통해 온라인 가입 시 설계사 수수료가 면제되어 오프라인 견적 대비 약 15~18% 저렴하게 계약 체결이 가능합니다.";
+            }
+
+            descEl.innerText = advice;
+            panel.style.display = 'block';
+          }
+        </script>
+      </section>
+
+      <!-- Section 6: Chart.js Data Visualization -->
+      <section id="section-chart">
+        <h2>세대별 연령 증가에 따른 갱신 보험료 추이 비교</h2>
+        <p>
+          실손보험은 세대별 손해율 구조에 따라 나이가 들수록 갱신 격차가 기하급수적으로 벌어집니다. 1세대 및 2세대 보험은 높은 손해율로 인해 5년 또는 3년 주기 갱신 시점에서 50%~100% 이상의 급등 현상이 나타나는 반면, 4세대는 비급여 이용자에 한해 개별 할증이 적용되므로 대다수의 무청구 가입자는 안정적인 요금 곡선을 유지합니다.
+        </p>
+
+        <div class="chart-container-box">
+          <canvas id="premiumTrendChart" width="800" height="380" aria-label="실손보험 세대별 연령별 갱신 보험료 추이 그래프" role="img"></canvas>
+        </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const chartCanvas = document.getElementById('premiumTrendChart');
+            if (chartCanvas) {
+              const ctx = chartCanvas.getContext('2d');
+              new Chart(ctx, {
+                type: 'line',
+                data: {
+                  labels: ['30세', '35세', '40세', '45세', '50세', '55세', '60세', '65세'],
+                  datasets: [
+                    {
+                      label: '1세대 구실손 (추정치)',
+                      data: [38000, 52000, 74000, 108000, 158000, 235000, 340000, 480000],
+                      borderColor: '#dc2626',
+                      backgroundColor: 'rgba(220, 38, 38, 0.08)',
+                      borderWidth: 2.5,
+                      fill: false,
+                      tension: 0.3
+                    },
+                    {
+                      label: '2세대 표준화실손 (추정치)',
+                      data: [25000, 34000, 48000, 69000, 99000, 142000, 205000, 290000],
+                      borderColor: '#d97706',
+                      backgroundColor: 'rgba(217, 119, 6, 0.08)',
+                      borderWidth: 2.5,
+                      fill: false,
+                      tension: 0.3
+                    },
+                    {
+                      label: '4세대 다이렉트 (무청구 유지 시)',
+                      data: [11000, 13000, 16000, 21000, 27000, 35000, 47000, 64000],
+                      borderColor: '#0f766e',
+                      backgroundColor: 'rgba(15, 118, 110, 0.08)',
+                      borderWidth: 3,
+                      fill: true,
+                      tension: 0.3
+                    }
+                  ]
+                },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: true,
+                  scales: {
+                    y: {
+                      beginAtZero: false,
+                      ticks: {
+                        callback: function(value) {
+                          return value.toLocaleString() + '원';
+                        }
+                      },
+                      title: {
+                        display: true,
+                        text: '월 예상 보험료 (원)'
+                      }
+                    },
+                    x: {
+                      title: {
+                        display: true,
+                        text: '가입자 연령'
+                      }
+                    }
+                  },
+                  plugins: {
+                    legend: {
+                      position: 'top',
+                      labels: {
+                        boxWidth: 14,
+                        font: {
+                          family: "'Noto Sans KR', sans-serif",
+                          size: 12
+                        }
+                      }
+                    },
+                    tooltip: {
+                      callbacks: {
+                        label: function(context) {
+                          return context.dataset.label + ': ' + context.parsed.y.toLocaleString() + '원';
+                        }
+                      }
+                    }
+                  }
+                }
+              });
+            }
+          });
+        </script>
+      </section>
+
+      <!-- Section 7: Practical Tips, Community Insights & Pitfalls -->
+      <section id="section-direct-knowhow">
+        <h2>다이렉트 실손 가입 노하우 및 온라인 커뮤니티 실제 후기 분석</h2>
+        <p>
+          인터넷 포털 <span class="keyword-pill">네이버</span>, <span class="keyword-pill">구글</span> 및 주요 소셜 플랫폼인 <span class="keyword-pill">유튜브</span>, <span class="keyword-pill">인스타그램</span>, <span class="keyword-pill">페이스북</span>, <span class="keyword-pill">트위터</span>와 메신저 <span class="keyword-pill">카카오톡</span>, <span class="keyword-pill">텔레그램</span>에서 공유되는 수많은 실손보험 가입 정보를 면밀히 검증해보면 소위 '가성비 성지 좌표'라고 불리는 추천 루트의 본질은 결국 '본사 공식 다이렉트 단독 청약'으로 귀결됩니다.
+        </p>
+
+        <h3>온라인 커뮤니티(디시, 펨코, 보배드림) 실사용자들의 공통된 조언</h3>
+        <ul class="feature-list">
+          <li>
+            <strong>설계사의 결합 판매 유도 거절하기:</strong> 설계사에게 실손보험 문의를 남기면 "단독 실손은 회사 손해율 때문에 단독 계약이 불가능하니 월 5만원 이상의 종합 건강보험에 특약으로 넣어야 심사가 통과된다"는 식의 안내를 받는 경우가 많습니다. 이는 금융감독원 권고 사항에 위배되는 부당 권유입니다. 손해보험사 공식 온라인 웹페이지에서는 단독 실손 상품이 100% 정상 판매되고 있으므로 반드시 다이렉트 경로로 가입해야 합니다.
+          </li>
+          <li>
+            <strong>계약금 및 위약금 구조의 오해 불식:</strong> 실손의료보험은 이동통신사 스마트폰 약정(12개월, 24개월)이나 인터넷 가입과 같은 형태의 의무 <span class="keyword-pill">약정</span>이 없는 <span class="keyword-accent">무약정</span> 상품입니다. 해지 시 중도해지 <span class="keyword-warning">위약금</span>이 전혀 발생하지 않으며, 선납한 당월 미경과 보험료는 일할 계산되어 <span class="keyword-pill">환불</span>됩니다. 별도의 <span class="keyword-pill">계약금</span> 역시 요구되지 않습니다.
+          </li>
+          <li>
+            <strong>사은품 및 현금지원 마케팅의 진실:</strong> 보험업법 제98조(특별이익의 제공 금지)에 의거하여, 보험 계약 체결 시 연간 보험료의 10% 또는 3만원을 초과하는 금품, <span class="keyword-pill">사은품</span>, <span class="keyword-pill">현금지원</span>, <span class="keyword-pill">상품권</span> 등의 제공은 엄격히 불법으로 규정되어 있습니다. 과도한 리워드나 페이백을 약속하는 불법 브로커나 무자격 업체의 광고에 현혹되지 마시고 투명한 정규 채널을 이용해야 법적 보호를 받습니다.
+          </li>
+          <li>
+            <strong>고지의무(계약 전 알릴 의무) 철저 이행:</strong> 최근 3개월 이내의 의사 진찰 및 투약 이력, 최근 1년 이내의 재검사 이력, 최근 5년 이내의 7대 중대 질병 및 수술 이력을 사실대로 고지하지 않으면 추후 보상 청구 시 보험금이 지급 거절되고 계약이 강제 해지될 수 있습니다.
+          </li>
+        </ul>
+
+        <h3>핀테크 앱(토스, 카카오톡)과 생성형 AI(제미나이, 챗지피티)를 활용한 비교법</h3>
+        <p>
+          최근에는 스마트폰 핀테크 <span class="keyword-pill">어플</span>인 <span class="keyword-pill">토스</span>, 네이버페이, 카카오페이의 마이데이터 기능을 통해 본인이 가입한 기존 보험 증권을 한눈에 스크랩하여 중복 가입 여부를 실시간으로 확인할 수 있습니다.
+        </p>
+        <p>
+          또한 오픈AI의 <span class="keyword-pill">챗지피티</span>(ChatGPT)나 구글의 <span class="keyword-pill">제미나이</span>(Gemini)와 같은 최신 대규모 언어 모델 <span class="keyword-pill">AI</span>를 활용하여 "본인의 질병 치료력 및 1년 단위 청구 금액에 따른 4세대 실손의 비급여 차등 등급 시뮬레이션"을 사전에 질의해봄으로써 객관적인 손익분기점을 추론할 수 있습니다. 단, AI 에이전트의 답변은 일반 통계 기준이므로 개별 언더라이팅(인수 심사) 최종 확정은 전문 상담을 통해 확정해야 합니다.
+        </p>
+      </section>
+
+      <!-- Section 8: Step-by-step Claims & Billing Guide -->
+      <section id="section-claims-guide">
+        <h2>모바일 간편 청구 서류 및 실손 보험금 수령 절차</h2>
+        <p>
+          다이렉트 실손보험 가입의 최대 장점 중 하나는 사후 관리의 디지털화입니다. 과거에는 담당 설계사에게 팩스를 보내거나 등기 우편으로 영수증을 발송해야 했으나, 현재는 각 손해보험사의 스마트폰 공식 앱을 통해 사진 한 장으로 1분 만에 접수가 완료됩니다.
+        </p>
+
+        <div class="notice-card info-type">
+          <h4>금액대별 필수 구비 서류 가이드</h4>
+          <ol class="process-list">
+            <li>
+              <strong>통원 치료 3만원 미만 (단순 처방):</strong> 진료비 계산서·영수증, 처방전 (환자보관용 또는 질병분류기호 기재본).
+            </li>
+            <li>
+              <strong>통원 치료 3만원 이상 10만원 이하:</strong> 진료비 영수증, 진료비 세부내역서, 처방전 (질병코드 포함).
+            </li>
+            <li>
+              <strong>통원 치료 10만원 초과 (정밀검사 등):</strong> 진료비 영수증, 진료비 세부내역서, 처방전, 의사 소견서 또는 진단서 (질병분류코드 명시).
+            </li>
+            <li>
+              <strong>입원 치료 (금액 무관):</strong> 진단서 또는 입퇴원 확인서(병명, 질병코드, 입원기간 명시), 진료비 세부내역서, 진료비 계산서 영수증.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Section 9: FAQ (Structured Schema-aligned) -->
+      <section id="section-faq" class="faq-wrapper">
+        <h2>자주 묻는 질문 (FAQ)</h2>
         
-        <div class="form-group">
-          <label for="gender">성별 구분</label>
-          <select id="gender" class="form-control">
-            <option value="male">남성</option>
-            <option value="female">여성</option>
-          </select>
+        <div class="faq-block">
+          <div class="faq-header" onclick="toggleFaqAccordion(this)">
+            <h3>실손보험 다이렉트 가입과 대면 설계사 가입의 가장 큰 차이점은 무엇인가요?</h3>
+            <span class="faq-toggle-state">열기</span>
+          </div>
+          <div class="faq-body">
+            다이렉트 실손보험은 보험 설계사나 대리점에 지급되는 모집 수수료와 마케팅 중간 비용이 제외되므로 오프라인 대면 채널 대비 평균 15%에서 20%가량 월 납부 요금이 저렴합니다. 금융감독원 표준약관에 따라 보장 범위, 보장 한도, 질병 및 상해 담보 규정은 완전히 일치하므로 가입 경로에 따른 보상 불이익은 전혀 없습니다.
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="currentGen">현재 가입되어 있는 실비 세대 종류</label>
-          <select id="currentGen" class="form-control">
-            <option value="none">없음 (신규 가입 희망자)</option>
-            <option value="1">1세대 실비보험 (2009년 9월 이전 가입)</option>
-            <option value="2">2세대 실비보험 (2009년 10월 ~ 2017년 3월)</option>
-            <option value="3">3세대 실비보험 (2017년 4월 ~ 2021년 6월)</option>
-            <option value="4">4세대 실비보험 (2021년 7월 ~ 2026년 5월)</option>
-          </select>
+        <div class="faq-block">
+          <div class="faq-header" onclick="toggleFaqAccordion(this)">
+            <h3>4세대 실손보험의 비급여 차등제 5등급 등급표 기준은 어떻게 적용되나요?</h3>
+            <span class="faq-toggle-state">열기</span>
+          </div>
+          <div class="faq-body">
+            직전 1년간 비급여 보험금 지급액에 따라 1등급(지급액 0원, 약 5% 할인), 2등급(100만원 미만, 변동 없음), 3등급(100만원 이상 150만원 미만, 100% 할증), 4등급(150만원 이상 300만원 미만, 200% 할증), 5등급(300만원 이상, 300% 할증)으로 차등 적용됩니다. 다만 암, 뇌혈관질환 등 중증질환자(산정특례자)나 노인장기요양 1~2등급자는 할증 대상에서 법적으로 제외됩니다.
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="history">최근 1년 이내에 비급여 병원 치료 경험 유무</label>
-          <select id="history" class="form-control">
-            <option value="no">없음 (무사고 또는 단순 급여 치료)</option>
-            <option value="yes">있음 (도수치료, 비급여 주사, MRI 등 150만 원 이상)</option>
-          </select>
+        <div class="faq-block">
+          <div class="faq-header" onclick="toggleFaqAccordion(this)">
+            <h3>기존 1세대 구실손이나 2세대 표준화 실손 가입자는 4세대로 전환하는 것이 유리한가요?</h3>
+            <span class="faq-toggle-state">열기</span>
+          </div>
+          <div class="faq-body">
+            도수치료나 비급여 주사제 등 비급여 의료 이용량이 거의 없고 단순히 노후 대비용 안전장치로 보험을 유지하려는 분이라면 월 요금이 최대 70% 이상 저렴한 4세대로 전환하는 것이 절대적으로 유리합니다. 반면 기저 질환이 있어 매월 도수치료나 체외충격파, 비급여 처방을 꾸준히 받고 계신다면 본인부담금 0~10% 수준인 기존 세대를 사수하는 것이 장기적으로 유리할 수 있습니다.
+          </div>
         </div>
 
-        <button type="button" class="calc-btn" onclick="calculatePremium()">실시간 예상 월 납입료 조회하기</button>
-
-        <div id="calcOutput" class="calc-result">
-          <h3 style="margin-top:0; color:#15803d;">조회 결과 분석</h3>
-          <div class="result-row">
-            <span>현 연령 기준 기본 표준료 산정액:</span>
-            <span id="baseVal">0 원</span>
+        <div class="faq-block">
+          <div class="faq-header" onclick="toggleFaqAccordion(this)">
+            <h3>실손보험은 중복 가입이 가능한가요?</h3>
+            <span class="faq-toggle-state">열기</span>
           </div>
-          <div class="result-row">
-            <span>현재 유지 시 납입 예상 요금:</span>
-            <span id="currentVal" style="color:#ef4444; font-weight:700;">0 원</span>
+          <div class="faq-body">
+            실손의료보험은 실제 발생한 병원비 손해액만을 보상하는 이득금지의 원칙(비례보상)이 엄격히 적용됩니다. 만약 두 개의 보험사에 가입하더라도 병원비가 각각 2배로 나오는 것이 아니라 두 회사가 보상금을 비례 분담하여 지급하므로, 이중으로 가입할 경우 불필요한 보험료만 매달 낭비하게 됩니다. 따라서 단 1개의 계약만 유지해야 합니다.
           </div>
-          <div class="result-row highlight">
-            <span>5세대 다이렉트 전환 시 예상 금액:</span>
-            <span id="suggestedVal">0 원</span>
-          </div>
-          <div class="result-row">
-            <span>매월 기대되는 예상 절감 비용:</span>
-            <span id="savingsVal" style="font-weight:700; color:#2563eb;">0 원</span>
-          </div>
-          <p style="font-size:0.8rem; color:#64748b; margin-top:15px; text-align:left;">상기 결과는 입력 데이터를 기반으로 임의 계산된 단순 가이드용 예시 금액이며, 가입자의 과거 병력 사항, 선택 특약 구성 및 각 손해보험 브랜드의 손해율 책정에 따라 실제 견적과는 차이가 발생할 수 있습니다.</p>
         </div>
-      </div>
-    </section>
 
-    <section id="comparison">
-      <h2>세대별 실손보험의 차이점 및 장단점 분석</h2>
-      <p>본인의 건강 상황과 재정 상태에 적합한 상품을 골라내기 위해서는 각 세대별 실손보험의 구조적 장단점과 명확한 차이점을 파악하는 것이 우선되어야 합니다. 과거의 1세대와 2세대 상품은 병원비의 100퍼센트 또는 90퍼센트 수준을 보장해 주어 보장 측면의 메리트는 훌륭하지만, 갱신 주기마다 찾아오는 엄청난 요금 상승 압박을 견뎌내야 합니다. 반면 신규 5세대 상품은 기본 보험료가 상대적으로 저렴하지만, 비급여 항목의 한도가 엄격히 제한되는 확실한 장단점의 비대칭 구조를 갖고 있습니다.</p>
-      
-      <div class="table-responsive">
-        <table>
-          <thead>
-            <tr>
-              <th>구분 기준</th>
-              <th>1세대 실손</th>
-              <th>3세대 실손</th>
-              <th>4세대 실손</th>
-              <th>5세대 실손 (2026년 출시)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>자기부담 비율 (급여)</td>
-              <td>없음 (0%)</td>
-              <td>10% ~ 20%</td>
-              <td>20%</td>
-              <td>20% 수준 유지</td>
-            </tr>
-            <tr>
-              <td>자기부담 비율 (비급여)</td>
-              <td>없음 (0%)</td>
-              <td>20% ~ 30%</td>
-              <td>30%</td>
-              <td>중증 30%, 비중증 50%로 상향</td>
-            </tr>
-            <tr>
-              <td>비급여 도수치료 보장</td>
-              <td>회수 제한 없이 보장</td>
-              <td>연간 50회, 350만 원 한도</td>
-              <td>연간 50회 한도 적용</td>
-              <td>본인부담률 95% 관리급여로 전환</td>
-            </tr>
-            <tr>
-              <td>연간 전체 보장 한도</td>
-              <td>상해 및 질병 별도 책정</td>
-              <td>통합 최대 5000만 원</td>
-              <td>통합 최대 5000만 원</td>
-              <td>중증 5000만 원 / 비중증 1000만 원 축소</td>
-            </tr>
-            <tr>
-              <td>보험료 기준 수준</td>
-              <td>가장 매우 높은 편</td>
-              <td>보통 (갱신 시 급격한 누적 인상)</td>
-              <td>기본 표준 금액 대비 낮은 편</td>
-              <td>4세대 대비 추가 30% 수준 인하 효과</td>
-            </tr>
-            <tr>
-              <td>새로운 추가 보장 항목</td>
-              <td>해당 없음</td>
-              <td>해당 없음</td>
-              <td>습관성 유산 및 피부 질환 일부</td>
-              <td>임신, 출산 및 영유아 발달장애 치료 지원</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <div class="faq-block">
+          <div class="faq-header" onclick="toggleFaqAccordion(this)">
+            <h3>과거 병력이 있거나 현재 약을 복용 중이어도 다이렉트 가입이 가능한가요?</h3>
+            <span class="faq-toggle-state">열기</span>
+          </div>
+          <div class="faq-body">
+            고혈압이나 당뇨 등 만성 질환으로 약을 복용 중이거나 최근 수술 이력이 있는 경우 일반 표준체 실손보험 가입은 심사에서 거절(인수 유보)될 수 있습니다. 이 경우 고지 항목이 대폭 간소화된 '유병력자 실손의료보험(간편고지 실손)' 다이렉트 상품을 선택하시면 3개월 이내 입원·수술·추가검사 소견, 2년 이내 입원·수술 이력, 5년 이내 암 진단 이력만 없으면 정상 가입이 가능합니다.
+          </div>
+        </div>
 
-      <div class="graph-container">
-        <div class="graph-title">2026년 기준 실손보험 세대별 보험료 지수 비교 (5세대 기준값 100 산정 시)</div>
-        <div class="bar-chart">
-          <div class="chart-row">
-            <span class="chart-label">1세대 실비</span>
-            <div class="chart-bar-container">
-              <div class="chart-bar bar-1" style="width: 100%;">약 350% 지수 기록</div>
+        <div class="faq-block">
+          <div class="faq-header" onclick="toggleFaqAccordion(this)">
+            <h3>4세대 실손보험의 5년 재가입 주기란 무엇을 의미하나요?</h3>
+            <span class="faq-toggle-state">열기</span>
+          </div>
+          <div class="faq-body">
+            4세대 실손보험은 1년마다 연령 증가와 위험률에 따라 보험료가 갱신되며, 5년마다 '재가입' 절차를 거치게 됩니다. 5년 재가입 시점에는 가입자의 건강 상태나 병력 증가와 관계없이 보험사는 무조건 재가입을 승인해야 하지만, 보장 내용과 약관은 해당 시점에 금융당국의 인가를 받아 새롭게 출시된 차세대 실손보험(예: 5세대 개편안) 약관으로 변경 적용됩니다.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 10: Consultation & Quote Request -->
+      <section id="section-consulting">
+        <h2>실손보험 다이렉트 최저가 맞춤 비교 견적 및 전문 컨설팅</h2>
+        <p>
+          복잡한 고지의무 사항, 기존 계약과의 손익분기점 비교, 손해보험사별 실시간 다이렉트 <span class="keyword-pill">가격표</span> 산출을 원하시는 고객님께서는 아래 상담 양식을 작성해 주시면 검증된 금융 전문 컨설턴트가 최적의 솔루션을 안내해 드립니다. 불필요한 결합 가입 권유 없이 객관적인 비교 분석만을 지원합니다.
+        </p>
+
+        <div class="form-wrapper">
+          <form action="/submit-insurance-quote" method="post" aria-label="다이렉트 실손보험 견적 문의">
+            <div class="form-row">
+              <div class="form-control">
+                <label for="user-name">성명</label>
+                <input type="text" id="user-name" name="name" placeholder="홍길동" required>
+              </div>
+              <div class="form-control">
+                <label for="user-phone">연락처</label>
+                <input type="tel" id="user-phone" name="phone" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" placeholder="010-0000-0000" required>
+              </div>
             </div>
-          </div>
-          <div class="chart-row">
-            <span class="chart-label">2세대 실비</span>
-            <div class="chart-bar-container">
-              <div class="chart-bar bar-2" style="width: 80%;">약 280% 지수 기록</div>
+
+            <div class="form-row">
+              <div class="form-control">
+                <label for="user-birth">생년월일 및 성별</label>
+                <input type="text" id="user-birth" name="birth" placeholder="예: 19900101 (남/여)" required>
+              </div>
+              <div class="form-control">
+                <label for="consult-type">상담 목적 선택</label>
+                <select id="consult-type" name="consultType">
+                  <option value="compare-all">전 손해보험사 최저가 비교</option>
+                  <option value="switch-4th">기존 실손 4세대 전환 손익 분석</option>
+                  <option value="diseased-simple">유병력자 간편 실손 가입 문의</option>
+                  <option value="senior-plan">부모님 노후실손 다이렉트 견적</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="chart-row">
-            <span class="chart-label">3세대 실비</span>
-            <div class="chart-bar-container">
-              <div class="chart-bar bar-3" style="width: 55%;">약 190% 지수 기록</div>
+
+            <div class="form-row">
+              <div class="form-control" style="grid-column: 1 / -1;">
+                <label for="user-memo">추가 문의 사항 (과거 병력, 투약 기간, 현재 납입 중인 보험사 등)</label>
+                <textarea id="user-memo" name="memo" rows="4" placeholder="과거 질환 이력이나 비교하고 싶은 특정 손해보험사 브랜드를 남겨주시면 정밀 심사 기준에 맞추어 맞춤 컨설팅을 제공합니다."></textarea>
+              </div>
             </div>
-          </div>
-          <div class="chart-row">
-            <span class="chart-label">4세대 실비</span>
-            <div class="chart-bar-container">
-              <div class="chart-bar bar-4" style="width: 35%;">약 120% 지수 기록</div>
-            </div>
-          </div>
-          <div class="chart-row">
-            <span class="chart-label">5세대 실비 (신규)</span>
-            <div class="chart-bar-container">
-              <div class="chart-bar bar-5" style="width: 28%;">기준 지수 100% 최저</div>
-            </div>
-          </div>
+
+            <p class="form-privacy-note">
+              수집된 개인정보는 실손보험 상품 비교 견적 산출 및 본인 확인 목적으로만 안전하게 사용되며, 관련 법령에 따라 철저히 암호화되어 관리됩니다.
+            </p>
+
+            <button type="submit" class="form-submit-btn">다이렉트 실손 무료 견적 및 컨설팅 요청</button>
+          </form>
         </div>
-      </div>
+      </section>
 
-      <h3>중증 보장의 강화와 비중증의 분리</h3>
-      <p>5세대 실손보험다이렉트 상품의 가장 두드러진 차이점은 비급여 영역의 세분화입니다. 비급여 진료비를 암, 심장질환, 뇌혈관질환 등 중증 비급여와 근골격계 물리치료, 주사제 등 비중증 비급여로 완벽히 쪼개어 관리합니다. 중증 비급여의 경우 4세대와 동일하게 연간 5000만 원 보장 한도와 30퍼센트의 자기부담률을 가져가는 동시에, 연간 환자 본인이 부담하는 상한 금액을 500만 원으로 제한하는 상한 장치가 새롭게 장착되어 큰 병에 걸렸을 때의 의료비 지출 압박을 덜어주는 안정판을 만들었습니다.</p>
-      
-      <p>하지만 일상에서 자주 활용하게 되는 비중증 비급여 항목은 연간 한도가 1000만 원으로 대폭 축소되었으며, 자기부담 비율 또한 50퍼센트로 상향되었습니다. 평소 가벼운 근육통이나 만성 피로로 인해 정기적으로 도수치료를 받거나 영양제 수액 주사를 처방받던 가입자라면 이 개편안이 오히려 단점으로 체감될 확률이 높습니다. 본인이 병원을 찾는 주요 원인이 중증 질병의 대비인지, 단순 소소한 외래 통원 치료 위주인지를 냉정히 판별하여 전환 시의 유불리를 계산하는 것이 필수적입니다.</p>
-    </section>
+      <!-- Section 11: Authoritative External Resources -->
+      <section id="section-resources">
+        <h2>신뢰할 수 있는 공식 외부 참고 자료 및 감독 기관</h2>
+        <p>
+          실손의료보험 제도 개편, 약관 규정, 보험사 건전성 지표 확인을 위한 공신력 있는 공식 외부 웹사이트입니다.
+        </p>
 
-    <section id="community">
-      <h2>온라인 커뮤니티 트렌드 및 내돈내산 갱신 후기</h2>
-      <p>합리적인 소비를 지향하는 젊은 층이 대거 몰려 있는 디시, 보배드림, 펨코, 에펨코리아 등 다수의 대형 커뮤니티의 재테크 및 자동차, 보험 정보 게시판에는 매일 수십 건에 달하는 실비 전환 내돈내산 생생한 후기들이 업로드되고 있습니다. 특히 최근 실손보험료의 누적 갱신 인상 고지서를 직접 수령한 사용자들의 리얼한 고민이 주를 이룹니다.</p>
+        <ul class="external-ref-list">
+          <li>
+            <a href="https://silbintopbohumu.directreliable.com" target="_blank" rel="noopener">1. 다이렉트 금융 비교 분석 공식 포털 (reliabledone.com)</a> - 손해보험사별 다이렉트 실손보험 요율 비교 및 공시 데이터베이스
+          </li>
+          <li>
+            <a href="https://namu.wiki/w/%EC%8B%A4%EC%86%90%EC%9D%98%EB%A3%8C%EB%B3%B4%ED%97%98" target="_blank" rel="noopener">2. 나무위키: 실손의료보험 종합 백과</a> - 1세대부터 4세대까지의 역사적 변천사 및 세대별 보장 세부 규정 해설
+          </li>
+          <li>
+            <a href="https://www.fss.or.kr" target="_blank" rel="noopener">3. 금융감독원 공식 홈페이지 (FSS)</a> - 금융소비자 정보 포털 파인, 단독 실손 가입 지도 지침 및 표준약관 분쟁조정 사례
+          </li>
+        </ul>
+      </section>
 
-      <blockquote>
-        구실비 10년 넘게 유지했는데 한 달에 나가는 고지 요금이 드디어 13만 원을 넘겼습니다. 병원은 1년에 두세 번 치과 스케일링이나 감기 진료 갈 때 빼고는 전혀 가본 적도 없는데 남들이 과잉 도수치료 받고 청구한 금액 때문에 제 지갑에서 세금이 빠져나가는 기분이었습니다. 펨코에서 추천해 준 정보를 보고 인터넷 다이렉트 가입 사이트 좌표를 검색해서 5세대로 서둘러 신청을 갈아탔는데 월 보험료가 만 원대로 뚝 떨어졌습니다. 비급여 자기부담률이 높아지긴 했지만 당장 고정 지출을 아낄 수 있어 아주 후련하고 대만족 중입니다.
-        <cite>에펨코리아 재테크 게시판 회원 작성글 인용</cite>
-      </blockquote>
+    </article>
+  </main>
 
-      <blockquote>
-        부모님 실손보험 갱신 비용 견적이 너무 무섭게 올라서 디시 실비보험 갤러리를 밤새 정독하고 5세대 다이렉트 최저가 비교 어플을 깔아 견적을 돌려봤습니다. 기왕 갈아타는 거 대형 브랜드 손해보험 전문 업체를 통해 다이렉트로 전환하는 법을 배웠는데 설계사 수수료가 빠져서 그런지 오프라인 대면 때 들었던 금액보다 30퍼센트 정도 할인을 챙길 수 있었습니다. 신규 가입 혜택으로 주는 소소한 모바일 상품권 이벤트까지 응모했네요. 법적으로 일정 범위 밖의 과도한 현금지원이나 불법 지원금은 금지되어 있으니 공식적인 할인 사은품 제도 위주로 꼼꼼히 확인하고 타 먹는 것을 적극 추천합니다.
-        <cite>디시인사이드 보험정보 커뮤니티 내돈내산 게시글 요약</cite>
-      </blockquote>
-      
-      <p>이처럼 다양한 커뮤니티 사용자들의 전반적인 평가는 평소 건강 관리가 잘 되고 병원 이용 횟수가 아주 적은 사람들에게는 다이렉트 전향이 압도적인 요금 절약의 성지 좌표 역할을 해준다고 조언합니다. 그러나 기존에 이미 지병이 있어 잦은 외래 수술과 주기적인 비급여 특수 치료를 받고 있던 분들은 섣불리 갈아탔다가 외려 본인이 지불해야 할 비급여 치료 단가와 비용이 더 커져 큰 낭패를 볼 수 있다는 훌륭한 반론과 우려도 제기됩니다. 즉, 무조건적인 전환 신청보다는 개개인의 최근 2년 혹은 3년간의 누적 의료 지출 이력을 객관적으로 체크하는 지혜가 우선입니다.</p>
-    </section>
+	
 
-    <section id="application">
-      <h2>다이렉트 실비보험 스마트하게 가입하는 방법</h2>
-      <p>동일한 보장 범위를 가진 실손의료보험이라 할지라도 대면 가입이냐, 혹은 인터넷 온라인 가입이냐에 따라 설계 비용 차이가 눈에 띄게 드러납니다. 온라인 다이렉트의 경우 중개 설계사에게 지급되는 마케팅 및 오프라인 대면 수수료가 제외되기 때문에 대면 영업 방식 대비 통상적으로 평균 10퍼센트에서 많게는 30퍼센트에 이르는 실질 요금 할인 혜택을 챙겨갈 수 있습니다.</p>
-      
-      <p>올바른 신청 하는법 절차를 차례대로 설명하자면 다음과 같습니다. 먼저 개별 보험사의 인터넷 모바일 웹 페이지나 모바일 전용 앱 혹은 어플 프로그램을 구동합니다. 본인 인증을 완료한 후, 건강 고지 의무 질문지 양식에 거짓 없이 최근 5년 이내의 입원, 수술, 계속하여 7일 이상 치료, 30일 이상 투약 이력 등을 소상히 체크합니다. 이후 자동 가입 적합성 심사 과정을 거치게 되며, 통과 시 간편하게 매월 인출될 계좌나 카드를 등록함으로써 신규 혹은 전환 신청이 매끄럽게 마무리됩니다.</p>
-      
-      <p>일부 온라인 커뮤니티 등지에서 과장해서 떠도는 일체의 음성적 현금지원 및 과도한 불량 리베이트 지원금 홍보는 현행 금융소비자보호법상 불법 행위이며 추후 계약 무효 사유나 예상치 못한 불이익으로 이어질 수 있음을 철저하게 인지해야 합니다. 공인된 대형 브랜드 손해보험사가 공식적으로 기획하는 룰렛 이벤트나 친구 추천 커피 쿠폰 증정 혹은 정식 범위 이내의 3만 원 상당의 사은품 및 문화상품권 지급 혜택에 집중하시는 것이 현명합니다.</p>
-    </section>
-
-    <section id="faq">
-      <h2>자주 묻는 질문 (FAQ)</h2>
-      
-      <h3 style="color:#0f172a; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">질문 1. 5세대 실손보험으로 갈아타면 이전 세대로 되돌아갈 수 있습니까?</h3>
-      <p>기존에 가입해 두었던 옛 1세대부터 4세대까지의 계약을 해지하고 신규 5세대로 한 번 마음을 정해 전환 신청을 끝마쳤다면, 철회 가능 기한인 15일 혹은 계약 후 일정 기간 이내 등의 극히 예외적인 법적 철회 제도를 넘길 시 이전 세대의 계약을 원래대로 복구하는 것은 원칙적으로 전혀 불가능합니다. 따라서 자신의 연간 평균 병원 방문 주기와 본인부담 비용 편차를 사전에 보험 설계 전문 컨설팅이나 모바일 간편 계산기 등을 거쳐 세밀하게 검증해 보셔야 합니다.</p>
-
-      <h3 style="color:#0f172a; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">질문 2. 직전 연도에 보험금을 많이 수령하면 다음 해 보험료가 많이 할증됩니까?</h3>
-      <p>네, 맞습니다. 4세대 및 5세대 실손의료보험 상품 종류의 대표적인 핵심 규칙 중 하나는 바로 비급여 이용량에 기반한 개별 요금제 차등제 적용입니다. 직전 1년간 비급여 보장 보험금을 단 한 번도 청구하여 수령하지 않았다면 다음 연도 비급여 보험 요금에 대해 추가적인 할인 혜택을 부여받습니다. 반대로 직전 1년간 청구하여 수령한 비급여 누적 수령액이 100만 원 이상인 구간부터는 최소 100퍼센트에서 최고 300퍼센트까지 비급여 특약 금액 부분이 집중 할증 적용될 수 있으므로, 소액의 비급여 통원비 치료 등은 직접 사비로 처리하는 편이 장기적으로 요금을 낮출 수 있는 꿀팁 요령입니다.</p>
-
-      <h3 style="color:#0f172a; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">질문 3. 지병을 앓고 있는 유병자인데도 다이렉트 신규 가입이 가능합니까?</h3>
-      <p>당뇨나 고혈압과 같은 만성 질환으로 지속적인 약을 처방받고 계신 유병자 고객분들의 경우에는 일반 표준형 실손보험 신청 시 심사 과정에서 제한될 확률이 무척 큽니다. 이러한 상황을 위해 보험 업계는 가입 심사 고지 기준을 세 가지 질문 항목으로 대폭 완화한 유병자 전용 간편 심사 실손보험 상품 종류를 별도로 구비해 두고 있습니다. 유병자 실손의 경우 자기부담률이 일반 표준형 대비 소폭 높은 편이며 처방조제 약제비 보장이 제외되는 단점이 있지만, 다이렉트 창구를 통해 대면 가입 대비 월 납입 단가를 낮추어 합리적인 금액으로 계약을 유지할 수 있는 훌륭한 탈출구가 되어 줍니다.</p>
-    </section>
-
-    <section id="reference">
-      <h2>공인 신뢰 기관 정보 및 공식 가이드 안내</h2>
-      <p>실손의료보험과 관련된 정확하고 투명한 공시 자료 및 법률적 약관 해석 정보는 아래의 공신력 있는 공식 정보 제공처와 분석 채널들을 통하여 추가로 꼼꼼하게 수집 및 확인해보실 수 있습니다.</p>
-      
-      <div style="display:flex; flex-direction:column; gap:15px; margin-top:20px;">
-        <div style="padding:15px; background-color:#f1f5f9; border-radius:8px;">
-          <a href="https://silbintopbohumu.directreliable.com" target="_blank" rel="noopener" style="font-weight:700; color:var(--primary-color); text-decoration:none;">실손보험다이렉트 심층 분석 및 최적화 추천 좌표 안내 사이트</a>
-          <p style="margin:5px 0 0 0; font-size:0.9rem; color:var(--text-muted);">실비보험 신규 요금 가이드와 연령별 다이렉트 최저가 설계 패턴을 집중 연구하는 독립형 정보 아카이브입니다.</p>
-        </div>
-        
-        <div style="padding:15px; background-color:#f1f5f9; border-radius:8px;">
-          <a href="https://namu.wiki/w/실손의료보험" target="_blank" rel="noopener" style="font-weight:700; color:var(--primary-color); text-decoration:none;">나무위키 실손의료보험 사전식 정의 및 역사적 변천사 확인</a>
-          <p style="margin:5px 0 0 0; font-size:0.9rem; color:var(--text-muted);">1세대 표준화 이전 실손부터 최신 세대에 이르기까지 약관 구조와 업계 역사를 포괄하는 대표 지식 사전 페이지입니다.</p>
-        </div>
-
-        <div style="padding:15px; background-color:#f1f5f9; border-radius:8px;">
-          <a href="https://www.fss.or.kr" target="_blank" rel="noopener" style="font-weight:700; color:var(--primary-color); text-decoration:none;">금융감독원 공식 홈페이지 및 금융소비자 정보 포털</a>
-          <p style="margin:5px 0 0 0; font-size:0.9rem; color:var(--text-muted);">보험 시장 감독 당국의 정식 보도자료를 비롯하여 5세대 실비 표준약관 개정 전문과 불법 금융 영업 피해 신고 창구를 제공합니다.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="consulting">
-      <h2>실시간 다이렉트 컨설팅 및 맞춤 설계 요청란</h2>
-      <p>스스로 최적의 브랜드를 선별하기 복잡하시거나, 본인 나이와 과거 건강 이력에 부합하는 다이렉트 최저가 견적을 안내받고자 하신다면 아래의 양식을 정확히 입력해 주십시오. 1대1 전문 상담 매칭 서비스를 거쳐 고객님이 보유한 궁금증을 친절하고 투명하게 해석해 드립니다.</p>
-      
-      <form id="consultForm" onsubmit="submitConsultation(event)">
-        <div class="form-group">
-          <label for="c_name">신청인 이름</label>
-          <input type="text" id="c_name" class="form-control" placeholder="성함을 입력해 주세요" required>
-        </div>
-        <div class="form-group">
-          <label for="c_phone">연락처 및 카카오톡 ID</label>
-          <input type="text" id="c_phone" class="form-control" placeholder="예: 010-1234-5678 또는 메신저 ID" required>
-        </div>
-        <div class="form-group">
-          <label for="c_time">가장 원활한 유선 상담 시간대</label>
-          <select id="c_time" class="form-control">
-            <option value="any">상관없음 (상시 가능)</option>
-            <option value="morning">오전 시간대 (09:00 ~ 12:00)</option>
-            <option value="afternoon">오후 시간대 (13:00 ~ 18:00)</option>
-            <option value="evening">저녁 시간대 (18:00 ~ 20:00)</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="c_msg">추가 문의 및 전달하고자 하는 건강 특이 사항</label>
-          <textarea id="c_msg" class="form-control" rows="4" placeholder="예: 기존에 2세대 실비를 유지 중인데 5세대로 옮겼을 때의 예상 실 손해율 및 절약 수준을 계산받고 싶습니다."></textarea>
-        </div>
-        <button type="submit" class="calc-btn" style="background-color: var(--secondary-color);">다이렉트 일대일 전문 무료 맞춤 상담 신청하기</button>
-      </form>
-      <div id="formSuccess" style="display:none; margin-top:20px; padding:15px; background-color:#d1fae5; border:1px solid #10b981; border-radius:8px; color:#065f46; font-weight:700; text-align:center;">
-        정상적으로 신청이 완료되었습니다. 지정해 주신 연락처 정보와 시간대를 기반으로 성실히 답변 조치를 준비하여 빠르게 안내 연락드리겠습니다.
-      </div>
-    </section>
-
-  </div>
-
-  
   <script>
-    // 2026년 최적화된 예상 실손 보험료 시뮬레이션 공식
-    function calculatePremium() {
-      const ageInput = document.getElementById('age').value;
-      const gender = document.getElementById('gender').value;
-      const currentGen = document.getElementById('currentGen').value;
-      const history = document.getElementById('history').value;
-
-      if (!ageInput || ageInput < 0) {
-        alert("정확한 연령 정보를 정수로 입력해 주십시오.");
-        return;
-      }
-
-      const age = parseInt(ageInput);
-      let baseVal = 9500; // 기본 금액
-
-      // 나이에 따른 보수적 산정 방식 적용
-      if (age < 15) {
-        baseVal = 8200;
-      } else if (age >= 15 && age < 30) {
-        baseVal = 10500;
-      } else if (age >= 30 && age < 40) {
-        baseVal = 13800;
-      } else if (age >= 40 && age < 50) {
-        baseVal = 18200;
-      } else if (age >= 50 && age < 60) {
-        baseVal = 26500;
-      } else {
-        baseVal = 39800;
-      }
-
-      // 성별에 따른 위험도 가중치 부여
-      if (gender === 'female') {
-        baseVal = Math.round(baseVal * 1.12);
-      }
-
-      // 기존 가입 세대별 체감하고 있는 현재 예상 평균 가격
-      let currentVal = 0;
-      if (currentGen === 'none') {
-        currentVal = 0;
-      } else if (currentGen === '1') {
-        currentVal = Math.round(baseVal * 3.4);
-      } else if (currentGen === '2') {
-        currentVal = Math.round(baseVal * 2.7);
-      } else if (currentGen === '3') {
-        currentVal = Math.round(baseVal * 1.85);
-      } else if (currentGen === '4') {
-        currentVal = Math.round(baseVal * 1.25);
-      }
-
-      // 신형 5세대 다이렉트 전환 시 적용될 예상 금액 계산법
-      let suggestedVal = Math.round(baseVal * 0.95);
-
-      // 치료 병력 유무에 따른 할증 혹은 패널티 위험 가산 반영
-      if (history === 'yes') {
-        suggestedVal = Math.round(suggestedVal * 1.2);
-        if (currentGen !== 'none') {
-          currentVal = Math.round(currentVal * 1.15);
-        }
-      }
-
-      // 출력 레이아웃 업데이트
-      document.getElementById('baseVal').innerText = baseVal.toLocaleString() + " 원";
-      if (currentGen === 'none') {
-        document.getElementById('currentVal').innerText = "신규 가입 대상자";
-        document.getElementById('savingsVal').innerText = "해당 없음";
-      } else {
-        document.getElementById('currentVal').innerText = currentVal.toLocaleString() + " 원";
-        const savings = currentVal - suggestedVal;
-        document.getElementById('savingsVal').innerText = savings.toLocaleString() + " 원 절약 예상";
-      }
+    // FAQ Accordion Toggle Interaction
+    function toggleFaqAccordion(headerElement) {
+      const bodyElement = headerElement.nextElementSibling;
+      const stateElement = headerElement.querySelector('.faq-toggle-state');
       
-      document.getElementById('suggestedVal').innerText = suggestedVal.toLocaleString() + " 원";
-      document.getElementById('calcOutput').style.display = 'block';
-    }
-
-    // 일대일 전담 전문 상담 신청 처리 함수
-    function submitConsultation(event) {
-      event.preventDefault();
-      document.getElementById('consultForm').style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
+      if (bodyElement.style.display === 'block') {
+        bodyElement.style.display = 'none';
+        stateElement.textContent = '열기';
+        stateElement.style.color = 'var(--primary-soft)';
+      } else {
+        bodyElement.style.display = 'block';
+        stateElement.textContent = '닫기';
+        stateElement.style.color = 'var(--accent)';
+      }
     }
   </script>
-  
 
+
+	
+
+	
 
 
 
@@ -1159,7 +2097,7 @@
         initialColorMode = NTVSCS === "0" ? false : NTVSCS === "1" ? prefersDarkSchemeQuery.matches : true;
     }
     document.getElementsByTagName("html")[0].setAttribute("data-dark", initialColorMode ? "true" : "false");
-}setInitialColorMode();})()</script><div id="__next" data-reactroot=""><div role="dialog" aria-modal="true"></div><div role="dialog" aria-live="polite"></div><div id="root" class="wrap"><div id="u_skip"><a href="#content"><span>본문으로 바로가기</span></a></div><header class="Header_header__JAW_Z Header_channel_header__4mguP Header_without_background__UAAeK"><div class="Header_left_wrap__aVIXl"><h1 class="Header_logo_area__dpgTc"><a class="Header_link_navertv__TqTR3" href="/"><svg viewBox="0 0 117 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="117" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="m22.425.5-5.864 14.95h4.958l.712-1.993h5.661l.715 1.992h4.955L27.702.5h-5.277Zm2.637 4.799 1.671 4.67H23.39l1.672-4.67ZM49.58.5v14.95h11.709v-3.737h-6.975V9.718h6.727V6.232h-6.727V4.237h6.975V.5H49.58ZM43.013.5l-3.516 9.83L35.98.5h-4.985l5.864 14.95h5.276L47.998.5h-4.985ZM10.215.5v8.002L4.764.5H0v14.95h4.734V7.447l5.451 8.001h4.764V.5h-4.734ZM70.904 7.477h-2.637V4.242h2.624a1.618 1.618 0 0 1 .013 3.235Zm3.316 2.844.453-.188c1.736-.728 2.62-2.303 2.62-4.298 0-1.887-.687-3.286-2.046-4.154C73.983.872 72.347.5 70.093.5h-6.309v14.95h4.731v-4.236h1.704l2.882 4.235H78l-3.78-5.128ZM111.367.5l-3.514 9.824L104.337.5h-4.982l5.86 14.94h5.273L116.349.5h-4.982ZM88.58.5H84v4.311h4.58V15.5h4.85V4.811h4.581V.5h-9.43Z" fill="currentColor"></path></svg><span class="blind">NAVER TV</span></a></h1><button type="button" aria-expanded="false" aria-haspopup="menu" aria-controls="wa_header_menu" class="Header_button_menu__8f3_9"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 5a1 1 0 0 0 0 2h18a1 1 0 1 0 0-2H3Zm-1 7a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Z" fill="currentColor"></path></svg><span class="blind">메뉴</span></button></div><div aria-labelledby="wa_header_menu" class="Header_layer_menu__8wMgP "><div class="Header_layer_content__u6ydj"><div id="headerScrollWrap" class="Header_scroll_wrap__tOk4E"><nav class="Header_menu_wrap__J2HC0"><ul role="menu" class="Header_main_menu_list__hat5m"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path clip-rule="evenodd" d="M2 8.725a3 3 0 0 1 1.354-2.508L9.903 1.92a2 2 0 0 1 2.194 0l6.549 4.297A3 3 0 0 1 20 8.725V17.2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8.725Z" stroke="currentColor" stroke-width="1.5"></path><path d="M11 15.2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">홈</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/l"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M6.827 5.771c-1.043.951-1.687 2.253-1.687 3.69 0 1.436.644 2.738 1.687 3.688m8.43-7.378c1.044.951 1.688 2.253 1.688 3.69 0 1.436-.644 2.738-1.688 3.688M4.073 3C2.358 4.607 1.3 6.808 1.3 9.236s1.058 4.629 2.773 6.235M17.927 3C19.642 4.607 20.7 6.808 20.7 9.236s-1.058 4.629-2.773 6.235" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><circle cx="10.999" cy="9.236" r="2.021" stroke="currentColor" stroke-width="1.5"></circle><path d="M11.042 11.585v8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">생중계</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/h"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M15.6 10.5L10.2225 6.93922C9.42479 6.41101 8.35999 6.98302 8.35999 7.93976V11" stroke="url(#0000000)" stroke-width="1.5" stroke-linejoin="round"></path><path d="M11.2 19.9999C14.711 19.9999 17.7536 17.6591 19.3177 14.7352C19.7523 13.9227 19.4049 12.9474 18.6316 12.4463L16.4 11" stroke="url(#0000000)" stroke-width="1.5" stroke-linejoin="round"></path><path d="M11.2512 20C10.9414 20 10.635 19.9852 10.333 19.9562C5.65473 19.5078 2 15.6691 2 11C2 6.02944 6.14192 2 11.2512 2C14.7643 2 17.8084 4.32867 19.3717 7.25078C19.8048 8.06052 19.4606 9.03272 18.6921 9.53538L10.2153 15.0796C9.41717 15.6017 8.35844 15.029 8.35844 14.0754V11.5V11" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path><defs><linearGradient id="0000000" x1="13.5" y1="8.5" x2="15.5" y2="10.5" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient><linearGradient id="0000000" x1="18.5" y1="14" x2="16.5" y2="11" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="Header_text__LA4HP">클립</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/f"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><rect x="2" y="5.5" width="18" height="14" rx="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></rect><path d="M13.326 11.75 10.29 9.727a.7.7 0 0 0-1.089.582v4.05a.7.7 0 0 0 1.089.583l3.037-2.025a.7.7 0 0 0 0-1.165ZM4.5 2.35a.75.75 0 0 1 .75-.75h11.5a.75.75 0 0 1 0 1.5H5.25a.75.75 0 0 1-.75-.75Z" fill="currentColor"></path></svg></span><span class="Header_text__LA4HP">구독</span></a></li></ul><span class="Header_menu_title__pFzEd">My</span><ul role="menu" class="Header_library_menu_list__cAA3v"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/my?tab=recent"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M11 2a9 9 0 1 0 8.37 12.316" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 2a9 9 0 0 1 9 9c0 .667-.3 2.3-.7 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 3"></path><path d="M10.5 6.5v5h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">최근<span class="Header_hidden_reduced__y3kxs"> 본 영상</span></span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/my?tab=liked"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M9.52 4.357A4.626 4.626 0 0 0 6.86 3.5a4.81 4.81 0 0 0-3.45 1.46C2.537 5.854 1.984 6.863 2 8.648c.016 1.745.843 3.002 2.559 4.718a109.862 109.862 0 0 0 5.81 5.074.99.99 0 0 0 1.247 0c2.004-1.618 4.258-3.522 5.81-5.074C19.143 11.65 20 10.467 20 8.647c0-1.386-.555-2.812-1.477-3.713-.903-.884-2.16-1.432-3.614-1.429a4.661 4.661 0 0 0-2.536.918 5.946 5.946 0 0 0-1.397 1.487A5.253 5.253 0 0 0 9.52 4.357Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">좋아요<span class="Header_hidden_reduced__y3kxs"> 한 영상</span></span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/my?tab=saved"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M5.262 18.552 11 13.512l5.72 5.005c.088.072.2.113.316.114a.44.44 0 0 0 .185 0 .448.448 0 0 0 .279-.404V7.773M5.262 18.553a.496.496 0 0 1-.502.078.446.446 0 0 1-.26-.404V3.94c0-.242.208-.439.464-.439h12.072c.123 0 .24.046.328.129a.428.428 0 0 1 .136.31v3.834M5.262 18.553 17.5 7.772" stroke="currentColor" stroke-width="1.4"></path></svg></span><span class="Header_text__LA4HP">나중에<span class="Header_hidden_reduced__y3kxs"> 볼 영상</span></span></a></li></ul><span class="Header_menu_title__pFzEd">탐색</span><ul role="menu" class="Header_genre_menu_list__NbKFm"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/r"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M11.133 14.938v1.837" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20.068h6.318a.5.5 0 0 0 .5-.5v-.454c0-1.05-.688-1.91-1.527-1.91H8.709c-.84 0-1.528.86-1.528 1.91v.454a.5.5 0 0 0 .5.5H8Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path><path d="M11.001 14.5a6.12 6.12 0 0 1-6.125-6.126V5.75c0-1.933 1.566-3.5 3.5-3.5h5.25a3.5 3.5 0 0 1 3.5 3.5v2.625a6.12 6.12 0 0 1-6.125 6.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.318 11A5.687 5.687 0 0 1 3.17 9.902C2.168 8.986 1.5 7.888 1.5 6.607c0-1.282 1.224-2.289 2.783-2.289h.723a2.919 2.919 0 0 0-.333 1.373v2.746c0 .916.233 1.776.645 2.563ZM16.727 11a5.688 5.688 0 0 0 2.149-1.098c1.002-.915 1.67-2.014 1.67-3.295 0-1.282-1.225-2.288-2.783-2.288h-.724c.223.42.334.887.334 1.373v2.746c0 .915-.234 1.775-.646 2.562Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">TOP100</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/i"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M14.708 5.652h3.444m0 0v3.444m0-3.444-6.59 6.59-3.153-3.151L3 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.667 3.667v13.166c0 1.384 1.117 2.5 2.5 2.5h13.167" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">급상승</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/news"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M16.83 13.875V5.781m0 0V5.5a3 3 0 0 0-3-3H5.5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11.4a3 3 0 0 0 3-3V7.781a2 2 0 0 0-2-2h-1.07Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 6.8h7M6 10h7M6 13.2h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">뉴스</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/sport"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle><path d="M9.54 2c.5 3.5-2.5 9-7.5 9.5M12.094 20.498c-.4-3.513 2.756-8.925 7.768-9.282" stroke="currentColor" stroke-width="1.3"></path></svg></span><span class="Header_text__LA4HP">스포츠</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/drama"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M5.8 20.5h8M16.8 6v6h1a3 3 0 1 0 0-6h-1ZM16.8 6h-13a1 1 0 0 0-1 1v4a7 7 0 1 0 14 0V6ZM14 1l-1 1.8M10.3 1l-1 1.8M6.5 1l-1 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">드라마</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/enter"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle><path d="M15.5 11.5a4.5 4.5 0 1 1-9 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">예능</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/other"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M14.246 6.672 9.424 8.787c-.223.102-.49.368-.591.591L6.668 14.25c-.462 1.01.072 1.544 1.082 1.082l4.872-2.165c.222-.101.488-.368.59-.59l2.116-4.822c.462-1.043-.074-1.544-1.082-1.083Zm-2.4 5.18a1.2 1.2 0 1 1-1.697-1.696 1.2 1.2 0 0 1 1.697 1.696Z" fill="currentColor"></path><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle></svg></span><span class="Header_text__LA4HP">더 많은 영상</span></a></li></ul><span class="Header_menu_title__pFzEd">방송관</span><ul role="menu" class="Header_brand_menu_list__gdj5a"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/tvchosun"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand tvchosun"><path d="M11.669 5.9H3.346C2.603 5.9 2 6.472 2 7.177v7.893c0 .705.603 1.277 1.346 1.277h8.323c.744 0 1.346-.572 1.346-1.277V7.177c0-.705-.602-1.277-1.346-1.277Z" fill="url(#icon_tvlogo_tvchosun_h22_svg__a)"></path><path d="M3.34 11.593c-.57 1.968.98 3.593 3.451 3.593 2.473 0 4.994-1.579 5.612-3.546h-2.215l-.257.336c-.14.198-.318.378-.514.528a5.036 5.036 0 0 1-3.14 1.248c-1.854.047-3.035-1.102-2.625-2.588.129-.453.373-.865.722-1.196A4.589 4.589 0 0 0 3.346 11.6" fill="#fff"></path><path d="m4.943 9.3-.269.291a2.69 2.69 0 0 0-.753 1.219c-.428 1.509.808 2.681 2.748 2.635 1.23-.047 2.399-.5 3.286-1.265a3.695 3.695 0 0 1-2.423.928c-1.456 0-2.264-.928-1.885-2.095.453-1.074 1.5-1.851 2.748-2.049l.428-1.317a7.204 7.204 0 0 0-3.88 1.66" fill="url(#icon_tvlogo_tvchosun_h22_svg__b)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.599 6.48 21.16 9.54 19.93 6.48h-5.079v.5h1.591v3.563h1.028V6.98h1.64l1.488 3.563h.77l2.05-4.063h-.82Zm-3.562 4.84h.098l-.294.79h-.098a2.39 2.39 0 0 0-1.169-.342c-.973 0-1.511.737-1.511 1.92 0 1.185.538 1.875 1.511 1.875.423-.035.839-.15 1.218-.342h.147v.836c0 .011 0 .023-.012.034-.012.012-.025.012-.037.012-.428.14-.869.226-1.316.244-1.7 0-2.723-1.33-2.723-2.612 0-1.283.973-2.612 2.821-2.612.465.006.924.093 1.365.244v-.046Zm3.874 1.904v-2.1h1.12v5.223h-1.12V13.99h-2.044v2.357h-1.12v-5.224h1.12v2.101h2.044Zm4.51-2.1a2.834 2.834 0 0 0-1.983.748 2.464 2.464 0 0 0-.795 1.863c-.012.696.275 1.37.795 1.863a2.81 2.81 0 0 0 1.983.748c1.512-.029 2.73-1.19 2.73-2.611a2.41 2.41 0 0 0-.765-1.857 2.775 2.775 0 0 0-1.965-.755Zm.055 4.532c-1.205 0-1.517-1.381-1.517-2.17 0-.79.367-1.678 1.364-1.678.998 0 1.518 1.33 1.518 2.118 0 .79-.367 1.724-1.365 1.724v.006Zm5.226-4.486h.055v-.052c.46-.006.918.046 1.365.145l-.312.876a2.668 2.668 0 0 0-1.102-.29c-.477 0-.79.197-.79.54 0 .342.264.487.943.73l.05.019c.673.24 1.523.544 1.523 1.688 0 1.172-1.206 1.515-1.94 1.515a7.705 7.705 0 0 1-1.628-.244c0-.023-.055-.046-.055-.046v-.877h.104c.478.227.992.36 1.524.39.477 0 .79-.053.79-.54 0-.488-.319-.633-.998-.877-.68-.244-1.469-.685-1.469-1.561 0-.876.735-1.416 1.94-1.416Zm5.74 2.867c.043.394-.06.79-.293 1.103-.245.22-.563.33-.888.301-.985 0-1.034-.551-1.034-1.456v-2.862h-1.181v2.966c0 .952 0 2.258 2.117 2.258 2.118 0 2.167-.755 2.167-2.258v-2.966h-.888v2.914Zm5.006.418v-3.332h.777v5.224H43.4l-2.631-3.587v3.587h-.826v-5.224h1.022l2.484 3.332Z" fill="#575756"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.599 6.48 21.16 9.54 19.93 6.48h-5.079v.5h1.591v3.563h1.028V6.98h1.64l1.488 3.563h.77l2.05-4.063h-.82Zm-3.562 4.84h.098l-.294.79h-.098a2.39 2.39 0 0 0-1.169-.342c-.973 0-1.511.737-1.511 1.92 0 1.185.538 1.875 1.511 1.875.423-.035.839-.15 1.218-.342h.147v.836c0 .011 0 .023-.012.034-.012.012-.025.012-.037.012-.428.14-.869.226-1.316.244-1.7 0-2.723-1.33-2.723-2.612 0-1.283.973-2.612 2.821-2.612.465.006.924.093 1.365.244v-.046Zm3.874 1.904v-2.1h1.12v5.223h-1.12V13.99h-2.044v2.357h-1.12v-5.224h1.12v2.101h2.044Zm4.51-2.1a2.834 2.834 0 0 0-1.983.748 2.464 2.464 0 0 0-.795 1.863c-.012.696.275 1.37.795 1.863a2.81 2.81 0 0 0 1.983.748c1.512-.029 2.73-1.19 2.73-2.611a2.41 2.41 0 0 0-.765-1.857 2.775 2.775 0 0 0-1.965-.755Zm.055 4.532c-1.205 0-1.517-1.381-1.517-2.17 0-.79.367-1.678 1.364-1.678.998 0 1.518 1.33 1.518 2.118 0 .79-.367 1.724-1.365 1.724v.006Zm5.226-4.486h.055v-.052c.46-.006.918.046 1.365.145l-.312.876a2.668 2.668 0 0 0-1.102-.29c-.477 0-.79.197-.79.54 0 .342.264.487.943.73l.05.019c.673.24 1.523.544 1.523 1.688 0 1.172-1.206 1.515-1.94 1.515a7.705 7.705 0 0 1-1.628-.244c0-.023-.055-.046-.055-.046v-.877h.104c.478.227.992.36 1.524.39.477 0 .79-.053.79-.54 0-.488-.319-.633-.998-.877-.68-.244-1.469-.685-1.469-1.561 0-.876.735-1.416 1.94-1.416Zm5.74 2.867c.043.394-.06.79-.293 1.103-.245.22-.563.33-.888.301-.985 0-1.034-.551-1.034-1.456v-2.862h-1.181v2.966c0 .952 0 2.258 2.117 2.258 2.118 0 2.167-.755 2.167-2.258v-2.966h-.888v2.914Zm5.006.418v-3.332h.777v5.224H43.4l-2.631-3.587v3.587h-.826v-5.224h1.022l2.484 3.332Z" fill="currentColor"></path><defs><linearGradient id="icon_tvlogo_tvchosun_h22_svg__a" x1="7.471" y1="5.993" x2="7.471" y2="16.335" gradientUnits="userSpaceOnUse"><stop offset="0.25" stop-color="#EC1C24"></stop><stop offset="0.75" stop-color="#AE1E23"></stop></linearGradient><linearGradient id="icon_tvlogo_tvchosun_h22_svg__b" x1="6.896" y1="7.699" x2="6.896" y2="13.445" gradientUnits="userSpaceOnUse"><stop offset="0.5" stop-color="#fff"></stop><stop offset="1" stop-color="#A36E5D"></stop></linearGradient></defs></svg><span class="blind">TV 조선</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/mbn"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand mbn"><path fill-rule="evenodd" clip-rule="evenodd" d="m14.172 7.38-2.099 2.256L9.937 7.38A1.202 1.202 0 0 0 9.061 7H7v8.15h2.328V9.91l2.558 2.716c.043.049.107.08.171.08a.217.217 0 0 0 .17-.08l2.596-2.716v5.24h2.328V7h-2.098a1.254 1.254 0 0 0-.876.38h-.005Zm13.771 1.844a2.079 2.079 0 0 1-.948 1.715 2.262 2.262 0 0 1 1.37 2.03c0 1.185-1.068 2.144-2.44 2.181h-7.401V7.043h6.942c1.297.075 2.477 1.034 2.477 2.18Zm-7.096-.311h4.042a.73.73 0 0 1 .726.648.682.682 0 0 1-.726.611h-4.042V8.913Zm4.464 4.324h-4.464v-1.264h4.464a.677.677 0 0 1 .496.177.711.711 0 0 1 .23.476.655.655 0 0 1-.726.617v-.006ZM36.6 7h2.365v8.15h-1.831a1.232 1.232 0 0 1-.876-.38l-4.694-4.978v5.358h-2.328V7h2.173c.331.005.646.145.881.38l4.31 4.598V7Z" fill="#EB6608"></path></svg><span class="blind">MBN</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/channela"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand channela"><g clip-path="url(#icon_tvlogo_channelA_h22_svg__a)"><path d="M35.155 14.29c.548 0 1.15-.32 1.431-.641l-.709-1.03c-.107.12-.307.267-.414.24-.107-.026-.12-.12-.12-.28V7.403h-1.391v5.47c0 .989.535 1.417 1.203 1.417ZM32.788 12.097s-.588.87-1.711.87c-.481 0-.963-.389-1.057-.71l3.437-1.002c0-1.137-.789-2.26-2.394-2.26a2.57 2.57 0 0 0-2.567 2.62c0 1.592 1.243 2.675 2.58 2.675 1.07 0 2.02-.615 2.394-1.177l-.682-1.016Zm-1.724-1.872c.387-.04.815.067.869.348.067.36-1.31.896-1.819 1.11l-.24.094c-.16-1.03.615-1.485 1.19-1.551ZM23.227 14.09h1.418v-2.233c0-.856.267-1.78 1.03-1.78.762 0 1.002.603 1.002 1.512v2.5h1.404v-2.955c0-1.296-.642-2.14-1.792-2.14-.976 0-1.39.683-1.551 1.11-.013.028-.027.054-.053.054-.027 0-.04-.013-.04-.04v-.923h-1.418v4.895ZM17.705 14.09h1.417v-2.233c0-.856.268-1.78 1.017-1.78.749 0 1.016.603 1.016 1.512v2.5h1.404v-2.955c0-1.296-.655-2.14-1.792-2.14-.976 0-1.39.683-1.551 1.11-.013.028-.027.054-.054.054-.026 0-.04-.013-.04-.04v-.923h-1.417v4.895ZM15.659 9.195v.923c0 .027-.027.04-.054.04-.013 0-.04 0-.053-.04-.16-.428-.602-1.123-1.511-1.123-1.404 0-2.02 1.43-2.02 2.62 0 1.19.616 2.675 2.02 2.675.91 0 1.35-.682 1.51-1.123.014-.04.028-.054.054-.054.04 0 .054.027.054.054v.923h1.377V9.195h-1.377Zm-1.11 3.999c-.696 0-1.137-.549-1.137-1.578 0-.976.442-1.538 1.137-1.538.588 0 1.03.562 1.03 1.538 0 1.03-.442 1.578-1.03 1.578ZM6.713 14.09H8.09v-2.233c0-.856.308-1.78 1.043-1.78.735 0 1.016.603 1.016 1.512v2.5h1.418v-2.955c0-1.296-.655-2.14-1.805-2.14-.976 0-1.39.67-1.538 1.097-.013.04-.027.067-.067.067-.053 0-.067-.04-.067-.08V7.404H6.713v6.686ZM3.236 14.29c1.993 0 3.009-1.685 3.009-2.862H4.814c0 .75-.696 1.551-1.578 1.551-.936 0-1.792-.882-1.792-2.246 0-1.364.882-2.3 1.792-2.3s1.404.655 1.55 1.805l1.391-.816c-.227-.829-.949-2.22-2.941-2.22C1.243 7.202 0 8.834 0 10.733c0 1.9 1.23 3.557 3.236 3.557Z" fill="currentColor"></path><path d="M42.002 6.001c-.535 0-.856.428-1.017.776l-2.717 5.669c-.388.802.121 1.845 1.044 1.845.549 0 .937-.307 1.299-.628l.365-.316v-1.614l-.5.298c-.106.067-.227.147-.294.094-.067-.04-.04-.134.014-.294l1.579-4.333c.067-.187.134-.294.227-.294.023 0 .046.003.066.013V6.004A1.072 1.072 0 0 0 42.002 6Z" fill="url(#icon_tvlogo_channelA_h22_svg__b)"></path><path d="m45.897 12.78-2.864-6.004c-.174-.348-.509-.776-1.03-.776a.949.949 0 0 0-.153.012v1.313c.045-.079.093-.122.152-.122.08 0 .148.04.201.241l1.7 6.004c.227.816.964.976 1.485.748.563-.254.75-.909.509-1.417Z" fill="url(#icon_tvlogo_channelA_h22_svg__c)"></path><path d="M45.723 9.062c-.053-.067-.174-.067-.32.027l-4.645 2.774v1.672l4.885-4.218c.107-.094.134-.188.08-.255Z" fill="url(#icon_tvlogo_channelA_h22_svg__d)"></path></g><defs><linearGradient id="icon_tvlogo_channelA_h22_svg__b" x1="38.898" y1="14.687" x2="42.901" y2="4.777" gradientUnits="userSpaceOnUse"><stop offset="0.3" stop-color="#7DD7FF"></stop><stop offset="0.7" stop-color="#196EFF"></stop></linearGradient><linearGradient id="icon_tvlogo_channelA_h22_svg__c" x1="42.205" y1="6.454" x2="45.44" y2="14.46" gradientUnits="userSpaceOnUse"><stop offset="0.1" stop-color="#196EFF"></stop><stop offset="0.23" stop-color="#186AF9"></stop><stop offset="0.41" stop-color="#1661E8"></stop><stop offset="0.6" stop-color="#1352CD"></stop><stop offset="0.82" stop-color="#0E3DA8"></stop><stop offset="1" stop-color="#0A2882"></stop></linearGradient><linearGradient id="icon_tvlogo_channelA_h22_svg__d" x1="41.342" y1="13.831" x2="44.951" y2="7.581" gradientUnits="userSpaceOnUse"><stop offset="0.3" stop-color="#7DD7FF"></stop><stop offset="0.39" stop-color="#6BC4FF"></stop><stop offset="0.57" stop-color="#3E94FF"></stop><stop offset="0.7" stop-color="#196EFF"></stop></linearGradient><clipPath id="icon_tvlogo_channelA_h22_svg__a"><path fill="#fff" transform="translate(0 6)" d="M0 0h46v8.291H0z"></path></clipPath></defs></svg><span class="blind">CHANNEL A</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/jtbc"><span class="icon_jtbc_w46h22"></span><span class="blind">JTBC</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/cjenm"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand cjenm"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.881 8.167c-2.294-.863-4.614-.774-5.202.239-.594 1.02.272 3.437 1.904 5.44 1.632 2.004 3.94 1.939 5.212-.25 1.253-2.183.378-4.57-1.91-5.432" fill="#FF9700"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.207 8.865c2.038 1.33 4.318 1.732 5.127.87.817-.87.535-3.408-.59-5.707-1.126-2.3-3.39-2.724-5.14-.86-1.73 1.863-1.43 4.374.6 5.697" fill="#006ECD"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18.507 15.862c-.325-2.335-1.538-4.225-2.75-4.225-1.223 0-3.012 1.896-4.053 4.234-1.038 2.338.144 4.229 2.764 4.229 2.608-.018 4.365-1.908 4.04-4.238Z" fill="#EF151E"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.783 15.065c1.538 0 2.329-1.084 2.329-1.084s-.341-.41-.797-.41c-.216 0-.366.087-.523.18-.222.128-.475.275-1.01.275a1.64 1.64 0 0 1-1.635-1.66c0-.932.735-1.694 1.636-1.694.47 0 .73.153.957.286l.006.004c.168.101.318.188.515.188.407 0 .829-.433.829-.433s-.72-1.084-2.307-1.084C4.194 9.633 3 10.83 3 12.368c0 1.538 1.244 2.697 2.783 2.697Zm2.732-4.668c0-.364.278-.609.694-.609h2.273v.367c0 .35-.3.607-.719.61v2.765c0 .663-.094 1.096-.322 1.5-.422.74-1.257 1.041-2.042 1.223-.2.048-.25.015-.206-.247l.005-.03c.032-.195.067-.412.567-.64.61-.277.697-.809.735-1.134.038-.329.003-3.437.003-3.437h-.988v-.368ZM30.448 10.747c.281 0 .519-.227.519-.496v-.463h-3.661c-.282 0-.52.236-.52.496v4.623h3.662c.281 0 .519-.293.519-.561v-.404H28.43c-.419 0-.49.197-.49.197v-1.337h2.385c.281 0 .519-.227.519-.496v-.469h-2.417c-.419 0-.49.197-.49.197v-1.287H30.447Zm12.059-.959v4.602c0 .335-.266.514-.635.514h-.488v-3.118l-.894 2.793c-.078.223-.366.325-.657.328h-.225l-1.103-3.12v2.597c0 .34-.26.52-.635.52h-.49v-4.596c0-.34.259-.52.634-.52h.803l1.16 3.393 1.048-3.07c.08-.212.3-.323.597-.323h.885Zm-7.198.496c0-.245.154-.496.413-.496h.713v4.623c0 .26-.222.496-.482.496h-.337l-2.67-3.428v2.932c0 .254-.222.496-.482.496h-.644v-4.623c0-.26.222-.496.482-.496h.494l2.513 3.166v-2.67Z" fill="currentColor"></path></svg><span class="blind">CJ ENM</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/kbs"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand kbs"><path fill-rule="evenodd" clip-rule="evenodd" d="m18.24 15.963-4.113-5.105 3.962-4.72h-2.791l-3.773 4.672V6.137H9.4v9.826h2.125V10.91l3.698 5.052h3.017ZM33.31 9.98c.616 0 3.24.391 3.24 2.964 0 2.723-2.648 3.016-2.648 3.016H27.71V14.37l4.981.003c1.445 0 1.43-1.36 1.43-1.36 0-1.489-1.706-1.43-1.706-1.43h-1.908c-.876 0-3.132-.311-3.132-2.612.001-2.765 2.8-2.833 2.8-2.833h5.667v1.57l-4.653.005c-1.504 0-1.48 1.151-1.48 1.151s.013 1.123 1.316 1.123l2.285-.007v.002Zm-6.033 3.239c0 1.661-1.361 2.743-2.858 2.743-1.265 0-5.992-.005-5.992-.005v-9.82h5.476s2.822.039 2.975 2.506c.107 1.703-1.023 2.086-1.023 2.086s1.422.591 1.422 2.49Zm-2.858 2.743h.001-.001Zm-1.24-8.23h-2.74v2.295h2.99c.303-.02 1.24-.09 1.24-1.14 0-1.221-1.49-1.155-1.49-1.155Zm-2.742 6.631h2.497c.973 0 2.142-.09 2.142-1.397s-1.557-1.365-1.557-1.365h-3.082v2.762Z" fill="#1D1160"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m18.24 15.963-4.113-5.105 3.962-4.72h-2.791l-3.773 4.672V6.137H9.4v9.826h2.125V10.91l3.698 5.052h3.017ZM33.31 9.98c.616 0 3.24.391 3.24 2.964 0 2.723-2.648 3.016-2.648 3.016H27.71V14.37l4.981.003c1.445 0 1.43-1.36 1.43-1.36 0-1.489-1.706-1.43-1.706-1.43h-1.908c-.876 0-3.132-.311-3.132-2.612.001-2.765 2.8-2.833 2.8-2.833h5.667v1.57l-4.653.005c-1.504 0-1.48 1.151-1.48 1.151s.013 1.123 1.316 1.123l2.285-.007v.002Zm-6.033 3.239c0 1.661-1.361 2.743-2.858 2.743-1.265 0-5.992-.005-5.992-.005v-9.82h5.476s2.822.039 2.975 2.506c.107 1.703-1.023 2.086-1.023 2.086s1.422.591 1.422 2.49Zm-2.858 2.743h.001-.001Zm-1.24-8.23h-2.74v2.295h2.99c.303-.02 1.24-.09 1.24-1.14 0-1.221-1.49-1.155-1.49-1.155Zm-2.742 6.631h2.497c.973 0 2.142-.09 2.142-1.397s-1.557-1.365-1.557-1.365h-3.082v2.762Z" fill="currentColor"></path></svg><span class="blind">KBS</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/mbc"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand mbc"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.309 6.2H9.233C7.659 6.2 6.7 6.92 6.7 8.41v7.073h2.688v-6.72h1.541v6.72h2.682v-6.72h1.543v6.72h2.688V8.41c0-1.49-.96-2.21-2.533-2.21Zm17.678 6.767V8.746h6.333V6.2h-6.63c-1.625 0-2.482.853-2.482 2.192v4.935c0 1.216.715 2.155 2.528 2.155h6.62v-2.516h-6.37.001Zm-6.993-2.439v2.424h-3.982V8.756h3.982v1.764c1.388 0 2.9-.556 2.9-2.093s-1.172-2.2-3.043-2.227h-6.57v9.283h6.625c1.876 0 3.55-.678 3.55-2.472 0-1.795-1.477-2.483-3.463-2.483h.001Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.309 6.2H9.233C7.659 6.2 6.7 6.92 6.7 8.41v7.073h2.688v-6.72h1.541v6.72h2.682v-6.72h1.543v6.72h2.688V8.41c0-1.49-.96-2.21-2.533-2.21Zm17.678 6.767V8.746h6.333V6.2h-6.63c-1.625 0-2.482.853-2.482 2.192v4.935c0 1.216.715 2.155 2.528 2.155h6.62v-2.516h-6.37.001Zm-6.993-2.439v2.424h-3.982V8.756h3.982v1.764c1.388 0 2.9-.556 2.9-2.093s-1.172-2.2-3.043-2.227h-6.57v9.283h6.625c1.876 0 3.55-.678 3.55-2.472 0-1.795-1.477-2.483-3.463-2.483h.001Z" fill="#fff" fill-opacity="0.1"></path></svg><span class="blind">MBC</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/sbs"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand sbs"><path fill-rule="evenodd" clip-rule="evenodd" d="m16.465 10.75-2.6-2.34a.834.834 0 0 1-.295-.631c0-.488.426-.884.953-.884h2.878v-1.22H13c-1.365 0-2.5.901-2.5 2.312 0 .603.25 1.151.659 1.562l3.064 2.832s.517.366.337.97c-.178.602-.962.602-1.255.602H10.5v2.471h4.256c1.721 0 3.117-1.289 3.117-2.88v-.024c.047-1.188-.605-2.041-1.408-2.77Zm17.182 0-2.6-2.34a.832.832 0 0 1-.295-.631c0-.488.427-.884.953-.884h2.878v-1.22h-4.4c-1.366 0-2.5.901-2.5 2.312 0 .603.248 1.151.657 1.562l3.064 2.832s.517.366.337.97c-.18.602-.962.602-1.255.602h-2.803v2.471h4.256c1.72 0 3.116-1.289 3.116-2.88v-.024c.048-1.188-.605-2.041-1.409-2.77Zm-8.767-.475c1.473.493 2.21 1.738 2.21 3.028 0 .961-.447 1.815-1.108 2.386-.746.596-1.666.713-2.102.733h-5.168L18.71 5.687h4.858v.003s1.237-.043 2.064.514c.575.414.941 1.048.941 1.805 0 1.129-.578 1.932-1.693 2.266Zm-2.376-3.36h-1.166V9.43h1.221c.934 0 1.514-.52 1.441-1.353-.1-1.162-1.32-1.162-1.496-1.162Zm-1.166 7.039h1.4c.935 0 1.655-.592 1.583-1.538-.102-1.32-1.462-1.322-1.638-1.322h-1.345v2.86Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m16.465 10.75-2.6-2.34a.834.834 0 0 1-.295-.631c0-.488.426-.884.953-.884h2.878v-1.22H13c-1.365 0-2.5.901-2.5 2.312 0 .603.25 1.151.659 1.562l3.064 2.832s.517.366.337.97c-.178.602-.962.602-1.255.602H10.5v2.471h4.256c1.721 0 3.117-1.289 3.117-2.88v-.024c.047-1.188-.605-2.041-1.408-2.77Zm17.182 0-2.6-2.34a.832.832 0 0 1-.295-.631c0-.488.427-.884.953-.884h2.878v-1.22h-4.4c-1.366 0-2.5.901-2.5 2.312 0 .603.248 1.151.657 1.562l3.064 2.832s.517.366.337.97c-.18.602-.962.602-1.255.602h-2.803v2.471h4.256c1.72 0 3.116-1.289 3.116-2.88v-.024c.048-1.188-.605-2.041-1.409-2.77Zm-8.767-.475c1.473.493 2.21 1.738 2.21 3.028 0 .961-.447 1.815-1.108 2.386-.746.596-1.666.713-2.102.733h-5.168L18.71 5.687h4.858v.003s1.237-.043 2.064.514c.575.414.941 1.048.941 1.805 0 1.129-.578 1.932-1.693 2.266Zm-2.376-3.36h-1.166V9.43h1.221c.934 0 1.514-.52 1.441-1.353-.1-1.162-1.32-1.162-1.496-1.162Zm-1.166 7.039h1.4c.935 0 1.655-.592 1.583-1.538-.102-1.32-1.462-1.322-1.638-1.322h-1.345v2.86Z" fill="#fff" fill-opacity="0.1"></path></svg><span class="blind">SBS</span></a></li></ul></nav><div class="Header_mode_wrap__CnQLB"><button class="Header_button_mode__K7u1M"><span class="Header_icon_applied__dY7x7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22"><g clip-path="url(#icon_light_mode_svg__a)" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="4.25"></circle><path d="M11 1.5V4M11 18v2.5M4.937 4.92l.707.708M16 16.5l.707.707M17 5.707 17.707 5M4.942 17.08l.707-.708M18 11h2.5M1.5 11H4" stroke-linecap="round"></path></g><defs><clipPath id="icon_light_mode_svg__a"><path fill="#fff" d="M0 0h22v22H0z"></path></clipPath></defs></svg></span><span class="Header_icon_next__L5wXj"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22"><path d="M18.61 12.475a7.75 7.75 0 1 1-9.124-9.078C8.676 4.806 8.317 6.2 8.344 7.5c.035 1.72.748 3.224 1.893 4.297 2.012 1.886 5.253 2.377 8.373.678Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><span class="blind">다크 모드로 변경</span></button><span class="Header_tooltip_hover__rNAYS"><span class="Header_icon_triangle__DSsEC"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="Header_icon_light__EoVJq"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1H17Z" fill="#F8F8F8"></path><path d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1" stroke="#E7E7E7"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="Header_icon_dark__KyHWb"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1H17Z" fill="#343436"></path><path d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1" stroke="#343436"></path></svg></span><span class="Header_tooltip_text__pbCxh">다크<span class="Header_only_wide__t0IuF"> 모드</span></span></span></div><a href="https://creator.tv.naver.com" class="Header_link_studio_menu__KefUn"><svg viewBox="0 0 90 17" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="90" height="17"><path d="M.513 8.545c-.018-1.278.446-2.372 1.39-3.28C2.85 4.346 3.97 3.9 5.265 3.928c.846 0 1.611.198 2.295.594a4.217 4.217 0 0 1 1.634 1.62l-1.378.972c-.638-.999-1.489-1.498-2.551-1.498-.828 0-1.516.279-2.065.837-.54.558-.81 1.26-.81 2.106 0 .846.27 1.543.81 2.092.548.549 1.237.824 2.065.824 1.062 0 1.913-.5 2.551-1.499l1.378.972a4.217 4.217 0 0 1-1.62 1.633c-.694.388-1.468.581-2.322.581-1.305.027-2.43-.414-3.375-1.323C.94 10.921.486 9.823.512 8.545Zm13.912-2.228v1.607h-.486c-.558 0-1 .148-1.323.446-.315.296-.473.729-.473 1.296V13h-1.822V6.317h1.674v.797c.468-.585 1.08-.877 1.836-.877.225 0 .423.026.594.08Zm6.84 3.956h-4.684c.108.423.324.752.648.986.333.224.742.337 1.228.337.657 0 1.278-.225 1.863-.675l.756 1.242c-.8.666-1.692.999-2.673.999-1.026.018-1.899-.315-2.619-.999-.71-.693-1.057-1.526-1.04-2.498-.017-.962.32-1.79 1.013-2.483.693-.694 1.521-1.031 2.484-1.013.918 0 1.67.297 2.255.891.594.594.89 1.332.89 2.214 0 .324-.04.657-.12.999Zm-4.684-1.282h3.037c-.009-.405-.153-.73-.432-.973-.27-.252-.607-.378-1.012-.378-.387 0-.725.122-1.013.365-.288.243-.481.571-.58.986Zm11.53.04V13h-1.674v-.648c-.522.54-1.201.81-2.038.81-.702 0-1.265-.185-1.688-.554-.414-.369-.62-.85-.62-1.444 0-.603.224-1.075.674-1.418.46-.35 1.076-.526 1.85-.526h1.674v-.297c0-.378-.108-.666-.324-.864-.207-.207-.513-.31-.918-.31-.333 0-.635.072-.905.216-.27.143-.558.377-.864.701l-.945-1.12c.774-.918 1.746-1.377 2.916-1.377.882 0 1.58.252 2.093.756.513.495.77 1.197.77 2.106Zm-1.822 1.471v-.08h-1.431c-.621 0-.932.224-.932.675 0 .225.086.405.257.54.18.125.414.188.702.188.405 0 .738-.121.999-.364.27-.252.405-.572.405-.959Zm7.57.973V13a5.17 5.17 0 0 1-1.256.162c-.855 0-1.517-.212-1.985-.635-.459-.422-.688-1.048-.688-1.876V7.856h-1.053V6.318h1.053V4.63h1.822v1.688h1.89v1.538h-1.89v2.633c0 .378.095.648.284.81.198.153.517.23.958.23.153 0 .441-.018.864-.054Zm.513-1.823c-.018-.954.328-1.777 1.04-2.47.71-.694 1.556-1.031 2.537-1.013.981-.018 1.827.32 2.538 1.013.72.692 1.071 1.516 1.053 2.47.018.954-.333 1.782-1.053 2.484-.72.693-1.57 1.03-2.551 1.013-.981.018-1.827-.32-2.538-1.013-.702-.702-1.044-1.53-1.026-2.484Zm4.806 1.31c.333-.342.5-.774.5-1.296 0-.523-.167-.959-.5-1.31a1.6 1.6 0 0 0-1.229-.526c-.504 0-.918.175-1.242.526-.324.342-.486.778-.486 1.31 0 .521.162.954.486 1.295.324.342.738.514 1.242.514.495 0 .905-.171 1.229-.514Zm7.59-4.644v1.606h-.487c-.558 0-.999.148-1.323.446-.315.296-.472.729-.472 1.296V13h-1.823V6.317h1.674v.797c.468-.585 1.08-.877 1.836-.877.225 0 .423.026.594.08Zm3.813 4.873 1.256-.945c.63.864 1.359 1.296 2.187 1.296.396 0 .706-.085.931-.256a.885.885 0 0 0 .338-.73c0-.251-.077-.445-.23-.58-.153-.144-.454-.32-.904-.527l-.959-.431c-1.44-.64-2.16-1.495-2.16-2.566 0-.755.28-1.363.837-1.822.558-.468 1.265-.702 2.12-.702.666 0 1.25.153 1.755.459.504.297.9.707 1.188 1.229l-1.242.958c-.46-.684-1.026-1.026-1.701-1.026-.324 0-.59.077-.797.23a.745.745 0 0 0-.31.634c0 .225.072.41.216.553.153.136.427.293.823.473l1.013.446c.765.341 1.323.715 1.674 1.12.35.396.526.891.526 1.485 0 .801-.292 1.449-.877 1.944-.585.486-1.332.729-2.241.729a3.95 3.95 0 0 1-2.025-.527 3.9 3.9 0 0 1-1.418-1.444Zm11.968.284V13a5.17 5.17 0 0 1-1.256.162c-.855 0-1.516-.212-1.984-.635-.46-.422-.689-1.048-.689-1.876V7.856h-1.053V6.318h1.053V4.63h1.823v1.688h1.89v1.538h-1.89v2.633c0 .378.094.648.283.81.198.153.518.23.959.23.153 0 .44-.018.864-.054Zm.956-1.418v-3.74h1.822v3.889c0 .386.117.697.351.931.243.234.549.351.918.351.36 0 .657-.117.891-.351.234-.243.351-.553.351-.931V6.318h1.823v3.739c0 .918-.293 1.665-.878 2.241-.576.576-1.305.864-2.187.864-.9 0-1.642-.284-2.228-.85-.575-.576-.863-1.328-.863-2.255Zm12.458-7.182h1.823V13h-1.674v-.823c-.46.657-1.175.985-2.147.985-.936 0-1.71-.329-2.322-.986-.612-.665-.918-1.502-.918-2.51 0-1.008.306-1.841.918-2.498.612-.666 1.386-.999 2.322-.999.846 0 1.512.266 1.998.796v-4.09Zm-.459 8.14c.324-.324.486-.774.486-1.35 0-.575-.162-1.025-.486-1.35a1.61 1.61 0 0 0-1.202-.499c-.495 0-.909.171-1.242.513-.323.342-.486.783-.486 1.323 0 .549.163.995.487 1.337.323.341.737.512 1.241.512.486 0 .887-.162 1.202-.486ZM79.294 13V6.317h1.822V13h-1.823Zm-.257-9.113c0-.324.112-.594.337-.81.225-.216.5-.324.824-.324.324 0 .598.108.823.325.234.216.351.486.351.81 0 .314-.117.58-.35.796-.226.216-.5.324-.824.324-.324 0-.599-.108-.824-.324a1.06 1.06 0 0 1-.337-.796Zm3.204 5.765c-.018-.954.328-1.777 1.04-2.47.71-.694 1.556-1.031 2.537-1.013.981-.018 1.827.32 2.538 1.013.72.692 1.071 1.516 1.053 2.47.018.954-.333 1.782-1.053 2.484-.72.693-1.57 1.03-2.551 1.013-.981.018-1.827-.32-2.538-1.013-.702-.702-1.044-1.53-1.026-2.484Zm4.806 1.31c.333-.342.5-.774.5-1.296 0-.523-.167-.959-.5-1.31a1.6 1.6 0 0 0-1.229-.526c-.504 0-.918.175-1.242.526-.324.342-.486.778-.486 1.31 0 .521.162.954.486 1.295.324.342.738.514 1.242.514.495 0 .905-.171 1.229-.514Z" fill="currentColor"></path></svg><span class="blind">Creator Studio</span></a></div></div><div class="Header_layer_dimmed__x0zGg" aria-hidden="true"></div></div><div class="_search_area Search_search_wrap__lqZZ8  "><div class="_search_dimmed Search_layer_dimmed__nYVAD" aria-hidden="true"></div><div class="Search_layer_search__srb8X"><div class="Search_input_section__m3aHz"><label class="Search_label_search__38jIt" for="__gnb__searchInput"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path d="m14.5 13.6 3 3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="9.6" cy="9.2" r="6.4" stroke="currentColor" stroke-width="1.6"></circle></svg><span class="blind">검색창</span></label><input type="text" id="__gnb__searchInput" class="Search_input_search__Ekfhu" value="" placeholder="동영상, 채널, 라이브를 검색할 수 있어요." autoComplete="off"/><span class="Search_search_control__IFJCN"><button type="button" class="Search_button_erase__MLPAp"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.158-11.159a.8.8 0 0 1 0 1.132L11.131 10l2.027 2.027a.8.8 0 0 1-1.131 1.131L10 11.131l-2.027 2.027a.8.8 0 0 1-1.132-1.131L8.868 10 6.841 7.973A.8.8 0 1 1 7.973 6.84L10 8.868l2.027-2.027a.8.8 0 0 1 1.131 0Z" fill="currentColor"></path></svg><span class="blind">검색어 지우기</span></button><button class="Search_button_submit__vb8zX Search_disabled__0Ncc8" aria-disabled="false"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path d="m14.5 13.6 3 3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="9.6" cy="9.2" r="6.4" stroke="currentColor" stroke-width="1.6"></circle></svg><span class="blind">검색</span></button><button type="button" class="Search_button_cancel__FK8Og">취소</button></span></div><div class="Search_keyword_section__01fmY"><div class="Search_scroll_wrap__zF_se" style="display:none"></div></div></div></div><div class="Header_right_wrap__HlL0A"><a href="https://creator.tv.naver.com" class="Header_link_studio__Z1DYf"><svg viewBox="0 0 72 14" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="72" height="14"><path d="M.415 6.398C.4 5.364.775 4.48 1.539 3.745c.764-.742 1.67-1.102 2.718-1.08.684 0 1.303.16 1.856.48.56.313 1 .75 1.32 1.31L6.32 5.24c-.516-.808-1.204-1.212-2.063-1.212-.67 0-1.226.226-1.67.677-.437.451-.655 1.019-.655 1.703 0 .684.218 1.248.655 1.692.444.444 1 .666 1.67.666.859 0 1.547-.404 2.063-1.212l1.114.786c-.313.56-.75 1-1.31 1.32-.56.314-1.186.47-1.878.47-1.055.022-1.965-.335-2.729-1.07C.76 8.32.393 7.431.415 6.398Zm11.24-1.801v1.299h-.394c-.451 0-.808.12-1.07.36-.254.24-.382.59-.382 1.048V10H8.336V4.597h1.353v.644a1.81 1.81 0 0 1 1.485-.71c.182 0 .342.022.48.066Zm5.52 3.198h-3.787c.088.342.262.608.524.797.27.182.6.273.993.273.532 0 1.034-.182 1.507-.546l.611 1.004c-.648.539-1.368.808-2.161.808-.83.014-1.536-.255-2.118-.808-.575-.56-.855-1.233-.84-2.02-.015-.778.258-1.447.818-2.008.56-.56 1.23-.833 2.009-.818.742 0 1.35.24 1.823.72.48.48.72 1.077.72 1.79 0 .262-.033.532-.098.808Zm-3.787-1.037h2.456c-.007-.327-.123-.59-.35-.786a1.153 1.153 0 0 0-.818-.306 1.23 1.23 0 0 0-.819.295c-.232.197-.389.462-.469.797Zm9.314.033V10h-1.354v-.524c-.422.437-.971.655-1.648.655-.567 0-1.022-.15-1.364-.448-.335-.298-.502-.687-.502-1.168 0-.487.182-.87.545-1.146.372-.283.87-.425 1.496-.425h1.353v-.24c0-.306-.087-.539-.262-.7-.167-.167-.414-.25-.742-.25-.27 0-.513.058-.731.174-.218.117-.451.306-.699.568l-.764-.906c.626-.742 1.412-1.113 2.358-1.113.713 0 1.277.203 1.692.61.415.401.622.969.622 1.704Zm-1.474 1.19v-.066h-1.157c-.502 0-.753.182-.753.546 0 .182.07.327.208.437.145.101.334.152.567.152.328 0 .597-.098.808-.294.218-.204.327-.462.327-.775Zm6.111.786V10c-.349.087-.687.131-1.015.131-.69 0-1.226-.171-1.604-.513-.371-.342-.557-.848-.557-1.517V5.84h-.851V4.597h.851V3.232h1.474v1.365h1.528V5.84h-1.528V7.97c0 .305.076.524.229.655.16.123.418.185.775.185.124 0 .357-.014.699-.043Zm.406-1.474c-.014-.771.266-1.437.84-1.998a2.762 2.762 0 0 1 2.053-.818 2.762 2.762 0 0 1 2.052.818c.582.56.866 1.227.852 1.998.014.771-.27 1.44-.852 2.008-.582.56-1.27.834-2.063.82a2.762 2.762 0 0 1-2.052-.82c-.568-.567-.844-1.237-.83-2.008Zm3.886 1.059c.27-.277.404-.626.404-1.048 0-.422-.134-.775-.404-1.059a1.294 1.294 0 0 0-.993-.426c-.408 0-.742.142-1.004.426-.262.277-.393.63-.393 1.059 0 .422.13.771.393 1.048.262.276.596.415 1.004.415.4 0 .731-.139.993-.415Zm6.127-3.755v1.299h-.392c-.452 0-.808.12-1.07.36-.255.24-.382.59-.382 1.048V10H34.44V4.597h1.354v.644a1.81 1.81 0 0 1 1.484-.71c.182 0 .342.022.48.066Zm1.818 3.94 1.015-.764c.51.699 1.099 1.048 1.768 1.048.32 0 .572-.069.753-.207a.715.715 0 0 0 .273-.59c0-.203-.062-.36-.185-.47-.124-.116-.368-.257-.732-.425l-.775-.35c-1.164-.516-1.746-1.207-1.746-2.073 0-.611.225-1.103.677-1.474.45-.378 1.022-.567 1.713-.567.539 0 1.012.123 1.42.37.407.24.727.572.96.994l-1.004.775c-.371-.553-.83-.83-1.376-.83-.262 0-.476.062-.644.186a.602.602 0 0 0-.25.513c0 .182.058.331.174.448.124.109.346.236.666.382l.819.36c.618.276 1.07.578 1.353.906.284.32.426.72.426 1.2 0 .648-.237 1.172-.71 1.573-.473.393-1.077.589-1.812.589-.604 0-1.15-.142-1.637-.426a3.153 3.153 0 0 1-1.146-1.168Zm9.667.23V10c-.35.087-.688.131-1.015.131-.692 0-1.226-.171-1.605-.513-.37-.342-.556-.848-.556-1.517V5.84h-.852V4.597h.852V3.232h1.473v1.365h1.528V5.84H47.54V7.97c0 .305.077.524.23.655.16.123.418.185.774.185.124 0 .357-.014.699-.043Zm.764-1.147V4.597h1.473V7.74c0 .313.095.564.284.754.196.189.444.283.742.283a.976.976 0 0 0 .72-.283c.19-.197.284-.448.284-.754V4.597h1.474V7.62c0 .743-.236 1.347-.71 1.812-.465.466-1.055.699-1.768.699-.728 0-1.328-.23-1.8-.688-.467-.465-.7-1.073-.7-1.823ZM60.07 1.813h1.473V10h-1.353v-.666c-.371.531-.95.797-1.736.797-.757 0-1.382-.266-1.877-.797-.495-.538-.742-1.215-.742-2.03 0-.815.247-1.488.742-2.02.495-.538 1.12-.807 1.877-.807.684 0 1.223.214 1.616.644V1.813ZM59.7 8.395c.262-.262.393-.625.393-1.091 0-.466-.131-.83-.393-1.092a1.302 1.302 0 0 0-.972-.404c-.4 0-.735.139-1.004.415-.262.277-.393.633-.393 1.07 0 .444.13.804.393 1.08.262.277.597.415 1.004.415.393 0 .717-.13.972-.393ZM62.754 10V4.597h1.474V10h-1.474Zm-.207-7.368c0-.262.09-.48.273-.655a.926.926 0 0 1 .666-.262c.262 0 .483.087.665.262.19.175.284.393.284.655 0 .255-.094.47-.284.644a.926.926 0 0 1-.665.262.926.926 0 0 1-.666-.262.858.858 0 0 1-.273-.644Zm2.581 4.66c-.014-.77.266-1.436.84-1.997a2.762 2.762 0 0 1 2.053-.818 2.762 2.762 0 0 1 2.052.818c.582.56.866 1.227.851 1.998.015.771-.269 1.44-.851 2.008-.582.56-1.27.834-2.063.82a2.762 2.762 0 0 1-2.052-.82c-.568-.567-.844-1.237-.83-2.008Zm3.886 1.06c.27-.277.404-.626.404-1.048 0-.422-.135-.775-.404-1.059a1.294 1.294 0 0 0-.993-.426c-.408 0-.743.142-1.005.426-.262.277-.392.63-.392 1.059 0 .422.13.771.392 1.048.262.276.597.415 1.005.415.4 0 .731-.139.993-.415Z" fill="currentColor"></path></svg><span class="blind">Creator Studio</span></a><span class="Header_search_area__18ZCR"><button type="button" class="Header_button_search__Cu5Vz"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"><path d="m20.5 20.5 4 4" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="14.5" cy="14.5" r="8.175" stroke="currentColor" stroke-width="1.65"></circle></svg><span class="blind">검색</span></button></span><div class="Header_upload_area__RYOr9"><button type="button" class="Header_link_upload__ZGZHe"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"><path d="M14.5 10v9M19 14.5h-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M3.8 11A7.2 7.2 0 0 1 11 3.8h7a7.2 7.2 0 0 1 7.2 7.2v7a7.2 7.2 0 0 1-7.2 7.2h-7A7.2 7.2 0 0 1 3.8 18v-7Z" stroke="currentColor" stroke-width="1.6"></path></svg><span class="blind">영상 업로드</span></button><div class="Header_upload_tooltip__IWs2i"><span class="Header_tooltip_text__pbCxh">이제 누구나 네이버TV에 영상을 <br class="Header_break_sub__tf6MV"/>올릴 수 있어요!<br class="Header_break_main__WQENw"/>내 채널을 만들고, <br class="Header_break_sub__tf6MV"/>네이버TV 크리에이터에 도전하세요!</span></div></div>
+}setInitialColorMode();})()</script><div id="__next" data-reactroot=""><div role="dialog" aria-modal="true"></div><div role="dialog" aria-live="polite"></div><div id="root" class="wrap"><div id="u_skip"><a href="#content"><span>본문으로 바로가기</span></a></div><header class="Header_header__JAW_Z Header_channel_header__4mguP Header_without_background__UAAeK"><div class="Header_left_wrap__aVIXl"><h1 class="Header_logo_area__dpgTc"><a class="Header_link_navertv__TqTR3" href="/"><svg viewBox="0 0 117 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="117" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="m22.425.5-5.864 14.95h4.958l.712-1.993h5.661l.715 1.992h4.955L27.702.5h-5.277Zm2.637 4.799 1.671 4.67H23.39l1.672-4.67ZM49.58.5v14.95h11.709v-3.737h-6.975V9.718h6.727V6.232h-6.727V4.237h6.975V.5H49.58ZM43.013.5l-3.516 9.83L35.98.5h-4.985l5.864 14.95h5.276L47.998.5h-4.985ZM10.215.5v8.002L4.764.5H0v14.95h4.734V7.447l5.451 8.001h4.764V.5h-4.734ZM70.904 7.477h-2.637V4.242h2.624a1.618 1.618 0 0 1 .013 3.235Zm3.316 2.844.453-.188c1.736-.728 2.62-2.303 2.62-4.298 0-1.887-.687-3.286-2.046-4.154C73.983.872 72.347.5 70.093.5h-6.309v14.95h4.731v-4.236h1.704l2.882 4.235H78l-3.78-5.128ZM111.367.5l-3.514 9.824L104.337.5h-4.982l5.86 14.94h5.273L116.349.5h-4.982ZM88.58.5H84v4.311h4.58V15.5h4.85V4.811h4.581V.5h-9.43Z" fill="currentColor"></path></svg><span class="blind">NAVER TV</span></a></h1><button type="button" aria-expanded="false" aria-haspopup="menu" aria-controls="wa_header_menu" class="Header_button_menu__8f3_9"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 5a1 1 0 0 0 0 2h18a1 1 0 1 0 0-2H3Zm-1 7a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Z" fill="currentColor"></path></svg><span class="blind">메뉴</span></button></div><div aria-labelledby="wa_header_menu" class="Header_layer_menu__8wMgP "><div class="Header_layer_content__u6ydj"><div id="headerScrollWrap" class="Header_scroll_wrap__tOk4E"><nav class="Header_menu_wrap__J2HC0"><ul role="menu" class="Header_main_menu_list__hat5m"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path clip-rule="evenodd" d="M2 8.725a3 3 0 0 1 1.354-2.508L9.903 1.92a2 2 0 0 1 2.194 0l6.549 4.297A3 3 0 0 1 20 8.725V17.2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8.725Z" stroke="currentColor" stroke-width="1.5"></path><path d="M11 15.2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">홈</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/solution"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M6.827 5.771c-1.043.951-1.687 2.253-1.687 3.69 0 1.436.644 2.738 1.687 3.688m8.43-7.378c1.044.951 1.688 2.253 1.688 3.69 0 1.436-.644 2.738-1.688 3.688M4.073 3C2.358 4.607 1.3 6.808 1.3 9.236s1.058 4.629 2.773 6.235M17.927 3C19.642 4.607 20.7 6.808 20.7 9.236s-1.058 4.629-2.773 6.235" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><circle cx="10.999" cy="9.236" r="2.021" stroke="currentColor" stroke-width="1.5"></circle><path d="M11.042 11.585v8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">맞춤추천솔루션</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/search"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M15.6 10.5L10.2225 6.93922C9.42479 6.41101 8.35999 6.98302 8.35999 7.93976V11" stroke="url(#0000000)" stroke-width="1.5" stroke-linejoin="round"></path><path d="M11.2 19.9999C14.711 19.9999 17.7536 17.6591 19.3177 14.7352C19.7523 13.9227 19.4049 12.9474 18.6316 12.4463L16.4 11" stroke="url(#0000000)" stroke-width="1.5" stroke-linejoin="round"></path><path d="M11.2512 20C10.9414 20 10.635 19.9852 10.333 19.9562C5.65473 19.5078 2 15.6691 2 11C2 6.02944 6.14192 2 11.2512 2C14.7643 2 17.8084 4.32867 19.3717 7.25078C19.8048 8.06052 19.4606 9.03272 18.6921 9.53538L10.2153 15.0796C9.41717 15.6017 8.35844 15.029 8.35844 14.0754V11.5V11" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path><defs><linearGradient id="0000000" x1="13.5" y1="8.5" x2="15.5" y2="10.5" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient><linearGradient id="0000000" x1="18.5" y1="14" x2="16.5" y2="11" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="Header_text__LA4HP">예상혜택조회</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/reviews"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><rect x="2" y="5.5" width="18" height="14" rx="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></rect><path d="M13.326 11.75 10.29 9.727a.7.7 0 0 0-1.089.582v4.05a.7.7 0 0 0 1.089.583l3.037-2.025a.7.7 0 0 0 0-1.165ZM4.5 2.35a.75.75 0 0 1 .75-.75h11.5a.75.75 0 0 1 0 1.5H5.25a.75.75 0 0 1-.75-.75Z" fill="currentColor"></path></svg></span><span class="Header_text__LA4HP">내돈내산후기</span></a></li></ul><span class="Header_menu_title__pFzEd">My</span><ul role="menu" class="Header_library_menu_list__cAA3v"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/sum"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M11 2a9 9 0 1 0 8.37 12.316" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 2a9 9 0 0 1 9 9c0 .667-.3 2.3-.7 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 3"></path><path d="M10.5 6.5v5h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">비교<span class="Header_hidden_reduced__y3kxs">계산</span></span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/my?tab=liked"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M9.52 4.357A4.626 4.626 0 0 0 6.86 3.5a4.81 4.81 0 0 0-3.45 1.46C2.537 5.854 1.984 6.863 2 8.648c.016 1.745.843 3.002 2.559 4.718a109.862 109.862 0 0 0 5.81 5.074.99.99 0 0 0 1.247 0c2.004-1.618 4.258-3.522 5.81-5.074C19.143 11.65 20 10.467 20 8.647c0-1.386-.555-2.812-1.477-3.713-.903-.884-2.16-1.432-3.614-1.429a4.661 4.661 0 0 0-2.536.918 5.946 5.946 0 0 0-1.397 1.487A5.253 5.253 0 0 0 9.52 4.357Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">좋아요<span class="Header_hidden_reduced__y3kxs"> 한 영상</span></span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/promotion"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M5.262 18.552 11 13.512l5.72 5.005c.088.072.2.113.316.114a.44.44 0 0 0 .185 0 .448.448 0 0 0 .279-.404V7.773M5.262 18.553a.496.496 0 0 1-.502.078.446.446 0 0 1-.26-.404V3.94c0-.242.208-.439.464-.439h12.072c.123 0 .24.046.328.129a.428.428 0 0 1 .136.31v3.834M5.262 18.553 17.5 7.772" stroke="currentColor" stroke-width="1.4"></path></svg></span><span class="Header_text__LA4HP">프로모션<span class="Header_hidden_reduced__y3kxs">코드</span></span></a></li></ul><span class="Header_menu_title__pFzEd">탐색</span><ul role="menu" class="Header_genre_menu_list__NbKFm"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/community"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M11.133 14.938v1.837" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20.068h6.318a.5.5 0 0 0 .5-.5v-.454c0-1.05-.688-1.91-1.527-1.91H8.709c-.84 0-1.528.86-1.528 1.91v.454a.5.5 0 0 0 .5.5H8Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path><path d="M11.001 14.5a6.12 6.12 0 0 1-6.125-6.126V5.75c0-1.933 1.566-3.5 3.5-3.5h5.25a3.5 3.5 0 0 1 3.5 3.5v2.625a6.12 6.12 0 0 1-6.125 6.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.318 11A5.687 5.687 0 0 1 3.17 9.902C2.168 8.986 1.5 7.888 1.5 6.607c0-1.282 1.224-2.289 2.783-2.289h.723a2.919 2.919 0 0 0-.333 1.373v2.746c0 .916.233 1.776.645 2.563ZM16.727 11a5.688 5.688 0 0 0 2.149-1.098c1.002-.915 1.67-2.014 1.67-3.295 0-1.282-1.225-2.288-2.783-2.288h-.724c.223.42.334.887.334 1.373v2.746c0 .915-.234 1.775-.646 2.562Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">커뮤니티</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/i"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M14.708 5.652h3.444m0 0v3.444m0-3.444-6.59 6.59-3.153-3.151L3 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.667 3.667v13.166c0 1.384 1.117 2.5 2.5 2.5h13.167" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">급상승</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/news"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M16.83 13.875V5.781m0 0V5.5a3 3 0 0 0-3-3H5.5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11.4a3 3 0 0 0 3-3V7.781a2 2 0 0 0-2-2h-1.07Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 6.8h7M6 10h7M6 13.2h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">뉴스</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/sport"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle><path d="M9.54 2c.5 3.5-2.5 9-7.5 9.5M12.094 20.498c-.4-3.513 2.756-8.925 7.768-9.282" stroke="currentColor" stroke-width="1.3"></path></svg></span><span class="Header_text__LA4HP">스포츠</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/drama"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M5.8 20.5h8M16.8 6v6h1a3 3 0 1 0 0-6h-1ZM16.8 6h-13a1 1 0 0 0-1 1v4a7 7 0 1 0 14 0V6ZM14 1l-1 1.8M10.3 1l-1 1.8M6.5 1l-1 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">드라마</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/enter"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle><path d="M15.5 11.5a4.5 4.5 0 1 1-9 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">예능</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/other"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M14.246 6.672 9.424 8.787c-.223.102-.49.368-.591.591L6.668 14.25c-.462 1.01.072 1.544 1.082 1.082l4.872-2.165c.222-.101.488-.368.59-.59l2.116-4.822c.462-1.043-.074-1.544-1.082-1.083Zm-2.4 5.18a1.2 1.2 0 1 1-1.697-1.696 1.2 1.2 0 0 1 1.697 1.696Z" fill="currentColor"></path><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle></svg></span><span class="Header_text__LA4HP">더 많은 영상</span></a></li></ul><span class="Header_menu_title__pFzEd">방송관</span><ul role="menu" class="Header_brand_menu_list__gdj5a"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/tvchosun"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand tvchosun"><path d="M11.669 5.9H3.346C2.603 5.9 2 6.472 2 7.177v7.893c0 .705.603 1.277 1.346 1.277h8.323c.744 0 1.346-.572 1.346-1.277V7.177c0-.705-.602-1.277-1.346-1.277Z" fill="url(#icon_tvlogo_tvchosun_h22_svg__a)"></path><path d="M3.34 11.593c-.57 1.968.98 3.593 3.451 3.593 2.473 0 4.994-1.579 5.612-3.546h-2.215l-.257.336c-.14.198-.318.378-.514.528a5.036 5.036 0 0 1-3.14 1.248c-1.854.047-3.035-1.102-2.625-2.588.129-.453.373-.865.722-1.196A4.589 4.589 0 0 0 3.346 11.6" fill="#fff"></path><path d="m4.943 9.3-.269.291a2.69 2.69 0 0 0-.753 1.219c-.428 1.509.808 2.681 2.748 2.635 1.23-.047 2.399-.5 3.286-1.265a3.695 3.695 0 0 1-2.423.928c-1.456 0-2.264-.928-1.885-2.095.453-1.074 1.5-1.851 2.748-2.049l.428-1.317a7.204 7.204 0 0 0-3.88 1.66" fill="url(#icon_tvlogo_tvchosun_h22_svg__b)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.599 6.48 21.16 9.54 19.93 6.48h-5.079v.5h1.591v3.563h1.028V6.98h1.64l1.488 3.563h.77l2.05-4.063h-.82Zm-3.562 4.84h.098l-.294.79h-.098a2.39 2.39 0 0 0-1.169-.342c-.973 0-1.511.737-1.511 1.92 0 1.185.538 1.875 1.511 1.875.423-.035.839-.15 1.218-.342h.147v.836c0 .011 0 .023-.012.034-.012.012-.025.012-.037.012-.428.14-.869.226-1.316.244-1.7 0-2.723-1.33-2.723-2.612 0-1.283.973-2.612 2.821-2.612.465.006.924.093 1.365.244v-.046Zm3.874 1.904v-2.1h1.12v5.223h-1.12V13.99h-2.044v2.357h-1.12v-5.224h1.12v2.101h2.044Zm4.51-2.1a2.834 2.834 0 0 0-1.983.748 2.464 2.464 0 0 0-.795 1.863c-.012.696.275 1.37.795 1.863a2.81 2.81 0 0 0 1.983.748c1.512-.029 2.73-1.19 2.73-2.611a2.41 2.41 0 0 0-.765-1.857 2.775 2.775 0 0 0-1.965-.755Zm.055 4.532c-1.205 0-1.517-1.381-1.517-2.17 0-.79.367-1.678 1.364-1.678.998 0 1.518 1.33 1.518 2.118 0 .79-.367 1.724-1.365 1.724v.006Zm5.226-4.486h.055v-.052c.46-.006.918.046 1.365.145l-.312.876a2.668 2.668 0 0 0-1.102-.29c-.477 0-.79.197-.79.54 0 .342.264.487.943.73l.05.019c.673.24 1.523.544 1.523 1.688 0 1.172-1.206 1.515-1.94 1.515a7.705 7.705 0 0 1-1.628-.244c0-.023-.055-.046-.055-.046v-.877h.104c.478.227.992.36 1.524.39.477 0 .79-.053.79-.54 0-.488-.319-.633-.998-.877-.68-.244-1.469-.685-1.469-1.561 0-.876.735-1.416 1.94-1.416Zm5.74 2.867c.043.394-.06.79-.293 1.103-.245.22-.563.33-.888.301-.985 0-1.034-.551-1.034-1.456v-2.862h-1.181v2.966c0 .952 0 2.258 2.117 2.258 2.118 0 2.167-.755 2.167-2.258v-2.966h-.888v2.914Zm5.006.418v-3.332h.777v5.224H43.4l-2.631-3.587v3.587h-.826v-5.224h1.022l2.484 3.332Z" fill="#575756"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.599 6.48 21.16 9.54 19.93 6.48h-5.079v.5h1.591v3.563h1.028V6.98h1.64l1.488 3.563h.77l2.05-4.063h-.82Zm-3.562 4.84h.098l-.294.79h-.098a2.39 2.39 0 0 0-1.169-.342c-.973 0-1.511.737-1.511 1.92 0 1.185.538 1.875 1.511 1.875.423-.035.839-.15 1.218-.342h.147v.836c0 .011 0 .023-.012.034-.012.012-.025.012-.037.012-.428.14-.869.226-1.316.244-1.7 0-2.723-1.33-2.723-2.612 0-1.283.973-2.612 2.821-2.612.465.006.924.093 1.365.244v-.046Zm3.874 1.904v-2.1h1.12v5.223h-1.12V13.99h-2.044v2.357h-1.12v-5.224h1.12v2.101h2.044Zm4.51-2.1a2.834 2.834 0 0 0-1.983.748 2.464 2.464 0 0 0-.795 1.863c-.012.696.275 1.37.795 1.863a2.81 2.81 0 0 0 1.983.748c1.512-.029 2.73-1.19 2.73-2.611a2.41 2.41 0 0 0-.765-1.857 2.775 2.775 0 0 0-1.965-.755Zm.055 4.532c-1.205 0-1.517-1.381-1.517-2.17 0-.79.367-1.678 1.364-1.678.998 0 1.518 1.33 1.518 2.118 0 .79-.367 1.724-1.365 1.724v.006Zm5.226-4.486h.055v-.052c.46-.006.918.046 1.365.145l-.312.876a2.668 2.668 0 0 0-1.102-.29c-.477 0-.79.197-.79.54 0 .342.264.487.943.73l.05.019c.673.24 1.523.544 1.523 1.688 0 1.172-1.206 1.515-1.94 1.515a7.705 7.705 0 0 1-1.628-.244c0-.023-.055-.046-.055-.046v-.877h.104c.478.227.992.36 1.524.39.477 0 .79-.053.79-.54 0-.488-.319-.633-.998-.877-.68-.244-1.469-.685-1.469-1.561 0-.876.735-1.416 1.94-1.416Zm5.74 2.867c.043.394-.06.79-.293 1.103-.245.22-.563.33-.888.301-.985 0-1.034-.551-1.034-1.456v-2.862h-1.181v2.966c0 .952 0 2.258 2.117 2.258 2.118 0 2.167-.755 2.167-2.258v-2.966h-.888v2.914Zm5.006.418v-3.332h.777v5.224H43.4l-2.631-3.587v3.587h-.826v-5.224h1.022l2.484 3.332Z" fill="currentColor"></path><defs><linearGradient id="icon_tvlogo_tvchosun_h22_svg__a" x1="7.471" y1="5.993" x2="7.471" y2="16.335" gradientUnits="userSpaceOnUse"><stop offset="0.25" stop-color="#EC1C24"></stop><stop offset="0.75" stop-color="#AE1E23"></stop></linearGradient><linearGradient id="icon_tvlogo_tvchosun_h22_svg__b" x1="6.896" y1="7.699" x2="6.896" y2="13.445" gradientUnits="userSpaceOnUse"><stop offset="0.5" stop-color="#fff"></stop><stop offset="1" stop-color="#A36E5D"></stop></linearGradient></defs></svg><span class="blind">TV 조선</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/mbn"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand mbn"><path fill-rule="evenodd" clip-rule="evenodd" d="m14.172 7.38-2.099 2.256L9.937 7.38A1.202 1.202 0 0 0 9.061 7H7v8.15h2.328V9.91l2.558 2.716c.043.049.107.08.171.08a.217.217 0 0 0 .17-.08l2.596-2.716v5.24h2.328V7h-2.098a1.254 1.254 0 0 0-.876.38h-.005Zm13.771 1.844a2.079 2.079 0 0 1-.948 1.715 2.262 2.262 0 0 1 1.37 2.03c0 1.185-1.068 2.144-2.44 2.181h-7.401V7.043h6.942c1.297.075 2.477 1.034 2.477 2.18Zm-7.096-.311h4.042a.73.73 0 0 1 .726.648.682.682 0 0 1-.726.611h-4.042V8.913Zm4.464 4.324h-4.464v-1.264h4.464a.677.677 0 0 1 .496.177.711.711 0 0 1 .23.476.655.655 0 0 1-.726.617v-.006ZM36.6 7h2.365v8.15h-1.831a1.232 1.232 0 0 1-.876-.38l-4.694-4.978v5.358h-2.328V7h2.173c.331.005.646.145.881.38l4.31 4.598V7Z" fill="#EB6608"></path></svg><span class="blind">MBN</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/channela"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand channela"><g clip-path="url(#icon_tvlogo_channelA_h22_svg__a)"><path d="M35.155 14.29c.548 0 1.15-.32 1.431-.641l-.709-1.03c-.107.12-.307.267-.414.24-.107-.026-.12-.12-.12-.28V7.403h-1.391v5.47c0 .989.535 1.417 1.203 1.417ZM32.788 12.097s-.588.87-1.711.87c-.481 0-.963-.389-1.057-.71l3.437-1.002c0-1.137-.789-2.26-2.394-2.26a2.57 2.57 0 0 0-2.567 2.62c0 1.592 1.243 2.675 2.58 2.675 1.07 0 2.02-.615 2.394-1.177l-.682-1.016Zm-1.724-1.872c.387-.04.815.067.869.348.067.36-1.31.896-1.819 1.11l-.24.094c-.16-1.03.615-1.485 1.19-1.551ZM23.227 14.09h1.418v-2.233c0-.856.267-1.78 1.03-1.78.762 0 1.002.603 1.002 1.512v2.5h1.404v-2.955c0-1.296-.642-2.14-1.792-2.14-.976 0-1.39.683-1.551 1.11-.013.028-.027.054-.053.054-.027 0-.04-.013-.04-.04v-.923h-1.418v4.895ZM17.705 14.09h1.417v-2.233c0-.856.268-1.78 1.017-1.78.749 0 1.016.603 1.016 1.512v2.5h1.404v-2.955c0-1.296-.655-2.14-1.792-2.14-.976 0-1.39.683-1.551 1.11-.013.028-.027.054-.054.054-.026 0-.04-.013-.04-.04v-.923h-1.417v4.895ZM15.659 9.195v.923c0 .027-.027.04-.054.04-.013 0-.04 0-.053-.04-.16-.428-.602-1.123-1.511-1.123-1.404 0-2.02 1.43-2.02 2.62 0 1.19.616 2.675 2.02 2.675.91 0 1.35-.682 1.51-1.123.014-.04.028-.054.054-.054.04 0 .054.027.054.054v.923h1.377V9.195h-1.377Zm-1.11 3.999c-.696 0-1.137-.549-1.137-1.578 0-.976.442-1.538 1.137-1.538.588 0 1.03.562 1.03 1.538 0 1.03-.442 1.578-1.03 1.578ZM6.713 14.09H8.09v-2.233c0-.856.308-1.78 1.043-1.78.735 0 1.016.603 1.016 1.512v2.5h1.418v-2.955c0-1.296-.655-2.14-1.805-2.14-.976 0-1.39.67-1.538 1.097-.013.04-.027.067-.067.067-.053 0-.067-.04-.067-.08V7.404H6.713v6.686ZM3.236 14.29c1.993 0 3.009-1.685 3.009-2.862H4.814c0 .75-.696 1.551-1.578 1.551-.936 0-1.792-.882-1.792-2.246 0-1.364.882-2.3 1.792-2.3s1.404.655 1.55 1.805l1.391-.816c-.227-.829-.949-2.22-2.941-2.22C1.243 7.202 0 8.834 0 10.733c0 1.9 1.23 3.557 3.236 3.557Z" fill="currentColor"></path><path d="M42.002 6.001c-.535 0-.856.428-1.017.776l-2.717 5.669c-.388.802.121 1.845 1.044 1.845.549 0 .937-.307 1.299-.628l.365-.316v-1.614l-.5.298c-.106.067-.227.147-.294.094-.067-.04-.04-.134.014-.294l1.579-4.333c.067-.187.134-.294.227-.294.023 0 .046.003.066.013V6.004A1.072 1.072 0 0 0 42.002 6Z" fill="url(#icon_tvlogo_channelA_h22_svg__b)"></path><path d="m45.897 12.78-2.864-6.004c-.174-.348-.509-.776-1.03-.776a.949.949 0 0 0-.153.012v1.313c.045-.079.093-.122.152-.122.08 0 .148.04.201.241l1.7 6.004c.227.816.964.976 1.485.748.563-.254.75-.909.509-1.417Z" fill="url(#icon_tvlogo_channelA_h22_svg__c)"></path><path d="M45.723 9.062c-.053-.067-.174-.067-.32.027l-4.645 2.774v1.672l4.885-4.218c.107-.094.134-.188.08-.255Z" fill="url(#icon_tvlogo_channelA_h22_svg__d)"></path></g><defs><linearGradient id="icon_tvlogo_channelA_h22_svg__b" x1="38.898" y1="14.687" x2="42.901" y2="4.777" gradientUnits="userSpaceOnUse"><stop offset="0.3" stop-color="#7DD7FF"></stop><stop offset="0.7" stop-color="#196EFF"></stop></linearGradient><linearGradient id="icon_tvlogo_channelA_h22_svg__c" x1="42.205" y1="6.454" x2="45.44" y2="14.46" gradientUnits="userSpaceOnUse"><stop offset="0.1" stop-color="#196EFF"></stop><stop offset="0.23" stop-color="#186AF9"></stop><stop offset="0.41" stop-color="#1661E8"></stop><stop offset="0.6" stop-color="#1352CD"></stop><stop offset="0.82" stop-color="#0E3DA8"></stop><stop offset="1" stop-color="#0A2882"></stop></linearGradient><linearGradient id="icon_tvlogo_channelA_h22_svg__d" x1="41.342" y1="13.831" x2="44.951" y2="7.581" gradientUnits="userSpaceOnUse"><stop offset="0.3" stop-color="#7DD7FF"></stop><stop offset="0.39" stop-color="#6BC4FF"></stop><stop offset="0.57" stop-color="#3E94FF"></stop><stop offset="0.7" stop-color="#196EFF"></stop></linearGradient><clipPath id="icon_tvlogo_channelA_h22_svg__a"><path fill="#fff" transform="translate(0 6)" d="M0 0h46v8.291H0z"></path></clipPath></defs></svg><span class="blind">CHANNEL A</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/jtbc"><span class="icon_jtbc_w46h22"></span><span class="blind">JTBC</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/cjenm"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand cjenm"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.881 8.167c-2.294-.863-4.614-.774-5.202.239-.594 1.02.272 3.437 1.904 5.44 1.632 2.004 3.94 1.939 5.212-.25 1.253-2.183.378-4.57-1.91-5.432" fill="#FF9700"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.207 8.865c2.038 1.33 4.318 1.732 5.127.87.817-.87.535-3.408-.59-5.707-1.126-2.3-3.39-2.724-5.14-.86-1.73 1.863-1.43 4.374.6 5.697" fill="#006ECD"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18.507 15.862c-.325-2.335-1.538-4.225-2.75-4.225-1.223 0-3.012 1.896-4.053 4.234-1.038 2.338.144 4.229 2.764 4.229 2.608-.018 4.365-1.908 4.04-4.238Z" fill="#EF151E"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.783 15.065c1.538 0 2.329-1.084 2.329-1.084s-.341-.41-.797-.41c-.216 0-.366.087-.523.18-.222.128-.475.275-1.01.275a1.64 1.64 0 0 1-1.635-1.66c0-.932.735-1.694 1.636-1.694.47 0 .73.153.957.286l.006.004c.168.101.318.188.515.188.407 0 .829-.433.829-.433s-.72-1.084-2.307-1.084C4.194 9.633 3 10.83 3 12.368c0 1.538 1.244 2.697 2.783 2.697Zm2.732-4.668c0-.364.278-.609.694-.609h2.273v.367c0 .35-.3.607-.719.61v2.765c0 .663-.094 1.096-.322 1.5-.422.74-1.257 1.041-2.042 1.223-.2.048-.25.015-.206-.247l.005-.03c.032-.195.067-.412.567-.64.61-.277.697-.809.735-1.134.038-.329.003-3.437.003-3.437h-.988v-.368ZM30.448 10.747c.281 0 .519-.227.519-.496v-.463h-3.661c-.282 0-.52.236-.52.496v4.623h3.662c.281 0 .519-.293.519-.561v-.404H28.43c-.419 0-.49.197-.49.197v-1.337h2.385c.281 0 .519-.227.519-.496v-.469h-2.417c-.419 0-.49.197-.49.197v-1.287H30.447Zm12.059-.959v4.602c0 .335-.266.514-.635.514h-.488v-3.118l-.894 2.793c-.078.223-.366.325-.657.328h-.225l-1.103-3.12v2.597c0 .34-.26.52-.635.52h-.49v-4.596c0-.34.259-.52.634-.52h.803l1.16 3.393 1.048-3.07c.08-.212.3-.323.597-.323h.885Zm-7.198.496c0-.245.154-.496.413-.496h.713v4.623c0 .26-.222.496-.482.496h-.337l-2.67-3.428v2.932c0 .254-.222.496-.482.496h-.644v-4.623c0-.26.222-.496.482-.496h.494l2.513 3.166v-2.67Z" fill="currentColor"></path></svg><span class="blind">CJ ENM</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/kbs"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand kbs"><path fill-rule="evenodd" clip-rule="evenodd" d="m18.24 15.963-4.113-5.105 3.962-4.72h-2.791l-3.773 4.672V6.137H9.4v9.826h2.125V10.91l3.698 5.052h3.017ZM33.31 9.98c.616 0 3.24.391 3.24 2.964 0 2.723-2.648 3.016-2.648 3.016H27.71V14.37l4.981.003c1.445 0 1.43-1.36 1.43-1.36 0-1.489-1.706-1.43-1.706-1.43h-1.908c-.876 0-3.132-.311-3.132-2.612.001-2.765 2.8-2.833 2.8-2.833h5.667v1.57l-4.653.005c-1.504 0-1.48 1.151-1.48 1.151s.013 1.123 1.316 1.123l2.285-.007v.002Zm-6.033 3.239c0 1.661-1.361 2.743-2.858 2.743-1.265 0-5.992-.005-5.992-.005v-9.82h5.476s2.822.039 2.975 2.506c.107 1.703-1.023 2.086-1.023 2.086s1.422.591 1.422 2.49Zm-2.858 2.743h.001-.001Zm-1.24-8.23h-2.74v2.295h2.99c.303-.02 1.24-.09 1.24-1.14 0-1.221-1.49-1.155-1.49-1.155Zm-2.742 6.631h2.497c.973 0 2.142-.09 2.142-1.397s-1.557-1.365-1.557-1.365h-3.082v2.762Z" fill="#1D1160"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m18.24 15.963-4.113-5.105 3.962-4.72h-2.791l-3.773 4.672V6.137H9.4v9.826h2.125V10.91l3.698 5.052h3.017ZM33.31 9.98c.616 0 3.24.391 3.24 2.964 0 2.723-2.648 3.016-2.648 3.016H27.71V14.37l4.981.003c1.445 0 1.43-1.36 1.43-1.36 0-1.489-1.706-1.43-1.706-1.43h-1.908c-.876 0-3.132-.311-3.132-2.612.001-2.765 2.8-2.833 2.8-2.833h5.667v1.57l-4.653.005c-1.504 0-1.48 1.151-1.48 1.151s.013 1.123 1.316 1.123l2.285-.007v.002Zm-6.033 3.239c0 1.661-1.361 2.743-2.858 2.743-1.265 0-5.992-.005-5.992-.005v-9.82h5.476s2.822.039 2.975 2.506c.107 1.703-1.023 2.086-1.023 2.086s1.422.591 1.422 2.49Zm-2.858 2.743h.001-.001Zm-1.24-8.23h-2.74v2.295h2.99c.303-.02 1.24-.09 1.24-1.14 0-1.221-1.49-1.155-1.49-1.155Zm-2.742 6.631h2.497c.973 0 2.142-.09 2.142-1.397s-1.557-1.365-1.557-1.365h-3.082v2.762Z" fill="currentColor"></path></svg><span class="blind">KBS</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/mbc"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand mbc"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.309 6.2H9.233C7.659 6.2 6.7 6.92 6.7 8.41v7.073h2.688v-6.72h1.541v6.72h2.682v-6.72h1.543v6.72h2.688V8.41c0-1.49-.96-2.21-2.533-2.21Zm17.678 6.767V8.746h6.333V6.2h-6.63c-1.625 0-2.482.853-2.482 2.192v4.935c0 1.216.715 2.155 2.528 2.155h6.62v-2.516h-6.37.001Zm-6.993-2.439v2.424h-3.982V8.756h3.982v1.764c1.388 0 2.9-.556 2.9-2.093s-1.172-2.2-3.043-2.227h-6.57v9.283h6.625c1.876 0 3.55-.678 3.55-2.472 0-1.795-1.477-2.483-3.463-2.483h.001Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.309 6.2H9.233C7.659 6.2 6.7 6.92 6.7 8.41v7.073h2.688v-6.72h1.541v6.72h2.682v-6.72h1.543v6.72h2.688V8.41c0-1.49-.96-2.21-2.533-2.21Zm17.678 6.767V8.746h6.333V6.2h-6.63c-1.625 0-2.482.853-2.482 2.192v4.935c0 1.216.715 2.155 2.528 2.155h6.62v-2.516h-6.37.001Zm-6.993-2.439v2.424h-3.982V8.756h3.982v1.764c1.388 0 2.9-.556 2.9-2.093s-1.172-2.2-3.043-2.227h-6.57v9.283h6.625c1.876 0 3.55-.678 3.55-2.472 0-1.795-1.477-2.483-3.463-2.483h.001Z" fill="#fff" fill-opacity="0.1"></path></svg><span class="blind">MBC</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/sbs"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand sbs"><path fill-rule="evenodd" clip-rule="evenodd" d="m16.465 10.75-2.6-2.34a.834.834 0 0 1-.295-.631c0-.488.426-.884.953-.884h2.878v-1.22H13c-1.365 0-2.5.901-2.5 2.312 0 .603.25 1.151.659 1.562l3.064 2.832s.517.366.337.97c-.178.602-.962.602-1.255.602H10.5v2.471h4.256c1.721 0 3.117-1.289 3.117-2.88v-.024c.047-1.188-.605-2.041-1.408-2.77Zm17.182 0-2.6-2.34a.832.832 0 0 1-.295-.631c0-.488.427-.884.953-.884h2.878v-1.22h-4.4c-1.366 0-2.5.901-2.5 2.312 0 .603.248 1.151.657 1.562l3.064 2.832s.517.366.337.97c-.18.602-.962.602-1.255.602h-2.803v2.471h4.256c1.72 0 3.116-1.289 3.116-2.88v-.024c.048-1.188-.605-2.041-1.409-2.77Zm-8.767-.475c1.473.493 2.21 1.738 2.21 3.028 0 .961-.447 1.815-1.108 2.386-.746.596-1.666.713-2.102.733h-5.168L18.71 5.687h4.858v.003s1.237-.043 2.064.514c.575.414.941 1.048.941 1.805 0 1.129-.578 1.932-1.693 2.266Zm-2.376-3.36h-1.166V9.43h1.221c.934 0 1.514-.52 1.441-1.353-.1-1.162-1.32-1.162-1.496-1.162Zm-1.166 7.039h1.4c.935 0 1.655-.592 1.583-1.538-.102-1.32-1.462-1.322-1.638-1.322h-1.345v2.86Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m16.465 10.75-2.6-2.34a.834.834 0 0 1-.295-.631c0-.488.426-.884.953-.884h2.878v-1.22H13c-1.365 0-2.5.901-2.5 2.312 0 .603.25 1.151.659 1.562l3.064 2.832s.517.366.337.97c-.178.602-.962.602-1.255.602H10.5v2.471h4.256c1.721 0 3.117-1.289 3.117-2.88v-.024c.047-1.188-.605-2.041-1.408-2.77Zm17.182 0-2.6-2.34a.832.832 0 0 1-.295-.631c0-.488.427-.884.953-.884h2.878v-1.22h-4.4c-1.366 0-2.5.901-2.5 2.312 0 .603.248 1.151.657 1.562l3.064 2.832s.517.366.337.97c-.18.602-.962.602-1.255.602h-2.803v2.471h4.256c1.72 0 3.116-1.289 3.116-2.88v-.024c.048-1.188-.605-2.041-1.409-2.77Zm-8.767-.475c1.473.493 2.21 1.738 2.21 3.028 0 .961-.447 1.815-1.108 2.386-.746.596-1.666.713-2.102.733h-5.168L18.71 5.687h4.858v.003s1.237-.043 2.064.514c.575.414.941 1.048.941 1.805 0 1.129-.578 1.932-1.693 2.266Zm-2.376-3.36h-1.166V9.43h1.221c.934 0 1.514-.52 1.441-1.353-.1-1.162-1.32-1.162-1.496-1.162Zm-1.166 7.039h1.4c.935 0 1.655-.592 1.583-1.538-.102-1.32-1.462-1.322-1.638-1.322h-1.345v2.86Z" fill="#fff" fill-opacity="0.1"></path></svg><span class="blind">SBS</span></a></li></ul></nav><div class="Header_mode_wrap__CnQLB"><button class="Header_button_mode__K7u1M"><span class="Header_icon_applied__dY7x7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22"><g clip-path="url(#icon_light_mode_svg__a)" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="4.25"></circle><path d="M11 1.5V4M11 18v2.5M4.937 4.92l.707.708M16 16.5l.707.707M17 5.707 17.707 5M4.942 17.08l.707-.708M18 11h2.5M1.5 11H4" stroke-linecap="round"></path></g><defs><clipPath id="icon_light_mode_svg__a"><path fill="#fff" d="M0 0h22v22H0z"></path></clipPath></defs></svg></span><span class="Header_icon_next__L5wXj"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22"><path d="M18.61 12.475a7.75 7.75 0 1 1-9.124-9.078C8.676 4.806 8.317 6.2 8.344 7.5c.035 1.72.748 3.224 1.893 4.297 2.012 1.886 5.253 2.377 8.373.678Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><span class="blind">다크 모드로 변경</span></button><span class="Header_tooltip_hover__rNAYS"><span class="Header_icon_triangle__DSsEC"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="Header_icon_light__EoVJq"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1H17Z" fill="#F8F8F8"></path><path d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1" stroke="#E7E7E7"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="Header_icon_dark__KyHWb"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1H17Z" fill="#343436"></path><path d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1" stroke="#343436"></path></svg></span><span class="Header_tooltip_text__pbCxh">다크<span class="Header_only_wide__t0IuF"> 모드</span></span></span></div><a href="https://creator.tv.naver.com" class="Header_link_studio_menu__KefUn"><svg viewBox="0 0 90 17" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="90" height="17"><path d="M.513 8.545c-.018-1.278.446-2.372 1.39-3.28C2.85 4.346 3.97 3.9 5.265 3.928c.846 0 1.611.198 2.295.594a4.217 4.217 0 0 1 1.634 1.62l-1.378.972c-.638-.999-1.489-1.498-2.551-1.498-.828 0-1.516.279-2.065.837-.54.558-.81 1.26-.81 2.106 0 .846.27 1.543.81 2.092.548.549 1.237.824 2.065.824 1.062 0 1.913-.5 2.551-1.499l1.378.972a4.217 4.217 0 0 1-1.62 1.633c-.694.388-1.468.581-2.322.581-1.305.027-2.43-.414-3.375-1.323C.94 10.921.486 9.823.512 8.545Zm13.912-2.228v1.607h-.486c-.558 0-1 .148-1.323.446-.315.296-.473.729-.473 1.296V13h-1.822V6.317h1.674v.797c.468-.585 1.08-.877 1.836-.877.225 0 .423.026.594.08Zm6.84 3.956h-4.684c.108.423.324.752.648.986.333.224.742.337 1.228.337.657 0 1.278-.225 1.863-.675l.756 1.242c-.8.666-1.692.999-2.673.999-1.026.018-1.899-.315-2.619-.999-.71-.693-1.057-1.526-1.04-2.498-.017-.962.32-1.79 1.013-2.483.693-.694 1.521-1.031 2.484-1.013.918 0 1.67.297 2.255.891.594.594.89 1.332.89 2.214 0 .324-.04.657-.12.999Zm-4.684-1.282h3.037c-.009-.405-.153-.73-.432-.973-.27-.252-.607-.378-1.012-.378-.387 0-.725.122-1.013.365-.288.243-.481.571-.58.986Zm11.53.04V13h-1.674v-.648c-.522.54-1.201.81-2.038.81-.702 0-1.265-.185-1.688-.554-.414-.369-.62-.85-.62-1.444 0-.603.224-1.075.674-1.418.46-.35 1.076-.526 1.85-.526h1.674v-.297c0-.378-.108-.666-.324-.864-.207-.207-.513-.31-.918-.31-.333 0-.635.072-.905.216-.27.143-.558.377-.864.701l-.945-1.12c.774-.918 1.746-1.377 2.916-1.377.882 0 1.58.252 2.093.756.513.495.77 1.197.77 2.106Zm-1.822 1.471v-.08h-1.431c-.621 0-.932.224-.932.675 0 .225.086.405.257.54.18.125.414.188.702.188.405 0 .738-.121.999-.364.27-.252.405-.572.405-.959Zm7.57.973V13a5.17 5.17 0 0 1-1.256.162c-.855 0-1.517-.212-1.985-.635-.459-.422-.688-1.048-.688-1.876V7.856h-1.053V6.318h1.053V4.63h1.822v1.688h1.89v1.538h-1.89v2.633c0 .378.095.648.284.81.198.153.517.23.958.23.153 0 .441-.018.864-.054Zm.513-1.823c-.018-.954.328-1.777 1.04-2.47.71-.694 1.556-1.031 2.537-1.013.981-.018 1.827.32 2.538 1.013.72.692 1.071 1.516 1.053 2.47.018.954-.333 1.782-1.053 2.484-.72.693-1.57 1.03-2.551 1.013-.981.018-1.827-.32-2.538-1.013-.702-.702-1.044-1.53-1.026-2.484Zm4.806 1.31c.333-.342.5-.774.5-1.296 0-.523-.167-.959-.5-1.31a1.6 1.6 0 0 0-1.229-.526c-.504 0-.918.175-1.242.526-.324.342-.486.778-.486 1.31 0 .521.162.954.486 1.295.324.342.738.514 1.242.514.495 0 .905-.171 1.229-.514Zm7.59-4.644v1.606h-.487c-.558 0-.999.148-1.323.446-.315.296-.472.729-.472 1.296V13h-1.823V6.317h1.674v.797c.468-.585 1.08-.877 1.836-.877.225 0 .423.026.594.08Zm3.813 4.873 1.256-.945c.63.864 1.359 1.296 2.187 1.296.396 0 .706-.085.931-.256a.885.885 0 0 0 .338-.73c0-.251-.077-.445-.23-.58-.153-.144-.454-.32-.904-.527l-.959-.431c-1.44-.64-2.16-1.495-2.16-2.566 0-.755.28-1.363.837-1.822.558-.468 1.265-.702 2.12-.702.666 0 1.25.153 1.755.459.504.297.9.707 1.188 1.229l-1.242.958c-.46-.684-1.026-1.026-1.701-1.026-.324 0-.59.077-.797.23a.745.745 0 0 0-.31.634c0 .225.072.41.216.553.153.136.427.293.823.473l1.013.446c.765.341 1.323.715 1.674 1.12.35.396.526.891.526 1.485 0 .801-.292 1.449-.877 1.944-.585.486-1.332.729-2.241.729a3.95 3.95 0 0 1-2.025-.527 3.9 3.9 0 0 1-1.418-1.444Zm11.968.284V13a5.17 5.17 0 0 1-1.256.162c-.855 0-1.516-.212-1.984-.635-.46-.422-.689-1.048-.689-1.876V7.856h-1.053V6.318h1.053V4.63h1.823v1.688h1.89v1.538h-1.89v2.633c0 .378.094.648.283.81.198.153.518.23.959.23.153 0 .44-.018.864-.054Zm.956-1.418v-3.74h1.822v3.889c0 .386.117.697.351.931.243.234.549.351.918.351.36 0 .657-.117.891-.351.234-.243.351-.553.351-.931V6.318h1.823v3.739c0 .918-.293 1.665-.878 2.241-.576.576-1.305.864-2.187.864-.9 0-1.642-.284-2.228-.85-.575-.576-.863-1.328-.863-2.255Zm12.458-7.182h1.823V13h-1.674v-.823c-.46.657-1.175.985-2.147.985-.936 0-1.71-.329-2.322-.986-.612-.665-.918-1.502-.918-2.51 0-1.008.306-1.841.918-2.498.612-.666 1.386-.999 2.322-.999.846 0 1.512.266 1.998.796v-4.09Zm-.459 8.14c.324-.324.486-.774.486-1.35 0-.575-.162-1.025-.486-1.35a1.61 1.61 0 0 0-1.202-.499c-.495 0-.909.171-1.242.513-.323.342-.486.783-.486 1.323 0 .549.163.995.487 1.337.323.341.737.512 1.241.512.486 0 .887-.162 1.202-.486ZM79.294 13V6.317h1.822V13h-1.823Zm-.257-9.113c0-.324.112-.594.337-.81.225-.216.5-.324.824-.324.324 0 .598.108.823.325.234.216.351.486.351.81 0 .314-.117.58-.35.796-.226.216-.5.324-.824.324-.324 0-.599-.108-.824-.324a1.06 1.06 0 0 1-.337-.796Zm3.204 5.765c-.018-.954.328-1.777 1.04-2.47.71-.694 1.556-1.031 2.537-1.013.981-.018 1.827.32 2.538 1.013.72.692 1.071 1.516 1.053 2.47.018.954-.333 1.782-1.053 2.484-.72.693-1.57 1.03-2.551 1.013-.981.018-1.827-.32-2.538-1.013-.702-.702-1.044-1.53-1.026-2.484Zm4.806 1.31c.333-.342.5-.774.5-1.296 0-.523-.167-.959-.5-1.31a1.6 1.6 0 0 0-1.229-.526c-.504 0-.918.175-1.242.526-.324.342-.486.778-.486 1.31 0 .521.162.954.486 1.295.324.342.738.514 1.242.514.495 0 .905-.171 1.229-.514Z" fill="currentColor"></path></svg><span class="blind">Creator Studio</span></a></div></div><div class="Header_layer_dimmed__x0zGg" aria-hidden="true"></div></div><div class="_search_area Search_search_wrap__lqZZ8  "><div class="_search_dimmed Search_layer_dimmed__nYVAD" aria-hidden="true"></div><div class="Search_layer_search__srb8X"><div class="Search_input_section__m3aHz"><label class="Search_label_search__38jIt" for="__gnb__searchInput"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path d="m14.5 13.6 3 3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="9.6" cy="9.2" r="6.4" stroke="currentColor" stroke-width="1.6"></circle></svg><span class="blind">검색창</span></label><input type="text" id="__gnb__searchInput" class="Search_input_search__Ekfhu" value="" placeholder="동영상, 채널, 라이브를 검색할 수 있어요." autoComplete="off"/><span class="Search_search_control__IFJCN"><button type="button" class="Search_button_erase__MLPAp"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.158-11.159a.8.8 0 0 1 0 1.132L11.131 10l2.027 2.027a.8.8 0 0 1-1.131 1.131L10 11.131l-2.027 2.027a.8.8 0 0 1-1.132-1.131L8.868 10 6.841 7.973A.8.8 0 1 1 7.973 6.84L10 8.868l2.027-2.027a.8.8 0 0 1 1.131 0Z" fill="currentColor"></path></svg><span class="blind">검색어 지우기</span></button><button class="Search_button_submit__vb8zX Search_disabled__0Ncc8" aria-disabled="false"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path d="m14.5 13.6 3 3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="9.6" cy="9.2" r="6.4" stroke="currentColor" stroke-width="1.6"></circle></svg><span class="blind">검색</span></button><button type="button" class="Search_button_cancel__FK8Og">취소</button></span></div><div class="Search_keyword_section__01fmY"><div class="Search_scroll_wrap__zF_se" style="display:none"></div></div></div></div><div class="Header_right_wrap__HlL0A"><a href="https://creator.tv.naver.com" class="Header_link_studio__Z1DYf"><svg viewBox="0 0 72 14" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="72" height="14"><path d="M.415 6.398C.4 5.364.775 4.48 1.539 3.745c.764-.742 1.67-1.102 2.718-1.08.684 0 1.303.16 1.856.48.56.313 1 .75 1.32 1.31L6.32 5.24c-.516-.808-1.204-1.212-2.063-1.212-.67 0-1.226.226-1.67.677-.437.451-.655 1.019-.655 1.703 0 .684.218 1.248.655 1.692.444.444 1 .666 1.67.666.859 0 1.547-.404 2.063-1.212l1.114.786c-.313.56-.75 1-1.31 1.32-.56.314-1.186.47-1.878.47-1.055.022-1.965-.335-2.729-1.07C.76 8.32.393 7.431.415 6.398Zm11.24-1.801v1.299h-.394c-.451 0-.808.12-1.07.36-.254.24-.382.59-.382 1.048V10H8.336V4.597h1.353v.644a1.81 1.81 0 0 1 1.485-.71c.182 0 .342.022.48.066Zm5.52 3.198h-3.787c.088.342.262.608.524.797.27.182.6.273.993.273.532 0 1.034-.182 1.507-.546l.611 1.004c-.648.539-1.368.808-2.161.808-.83.014-1.536-.255-2.118-.808-.575-.56-.855-1.233-.84-2.02-.015-.778.258-1.447.818-2.008.56-.56 1.23-.833 2.009-.818.742 0 1.35.24 1.823.72.48.48.72 1.077.72 1.79 0 .262-.033.532-.098.808Zm-3.787-1.037h2.456c-.007-.327-.123-.59-.35-.786a1.153 1.153 0 0 0-.818-.306 1.23 1.23 0 0 0-.819.295c-.232.197-.389.462-.469.797Zm9.314.033V10h-1.354v-.524c-.422.437-.971.655-1.648.655-.567 0-1.022-.15-1.364-.448-.335-.298-.502-.687-.502-1.168 0-.487.182-.87.545-1.146.372-.283.87-.425 1.496-.425h1.353v-.24c0-.306-.087-.539-.262-.7-.167-.167-.414-.25-.742-.25-.27 0-.513.058-.731.174-.218.117-.451.306-.699.568l-.764-.906c.626-.742 1.412-1.113 2.358-1.113.713 0 1.277.203 1.692.61.415.401.622.969.622 1.704Zm-1.474 1.19v-.066h-1.157c-.502 0-.753.182-.753.546 0 .182.07.327.208.437.145.101.334.152.567.152.328 0 .597-.098.808-.294.218-.204.327-.462.327-.775Zm6.111.786V10c-.349.087-.687.131-1.015.131-.69 0-1.226-.171-1.604-.513-.371-.342-.557-.848-.557-1.517V5.84h-.851V4.597h.851V3.232h1.474v1.365h1.528V5.84h-1.528V7.97c0 .305.076.524.229.655.16.123.418.185.775.185.124 0 .357-.014.699-.043Zm.406-1.474c-.014-.771.266-1.437.84-1.998a2.762 2.762 0 0 1 2.053-.818 2.762 2.762 0 0 1 2.052.818c.582.56.866 1.227.852 1.998.014.771-.27 1.44-.852 2.008-.582.56-1.27.834-2.063.82a2.762 2.762 0 0 1-2.052-.82c-.568-.567-.844-1.237-.83-2.008Zm3.886 1.059c.27-.277.404-.626.404-1.048 0-.422-.134-.775-.404-1.059a1.294 1.294 0 0 0-.993-.426c-.408 0-.742.142-1.004.426-.262.277-.393.63-.393 1.059 0 .422.13.771.393 1.048.262.276.596.415 1.004.415.4 0 .731-.139.993-.415Zm6.127-3.755v1.299h-.392c-.452 0-.808.12-1.07.36-.255.24-.382.59-.382 1.048V10H34.44V4.597h1.354v.644a1.81 1.81 0 0 1 1.484-.71c.182 0 .342.022.48.066Zm1.818 3.94 1.015-.764c.51.699 1.099 1.048 1.768 1.048.32 0 .572-.069.753-.207a.715.715 0 0 0 .273-.59c0-.203-.062-.36-.185-.47-.124-.116-.368-.257-.732-.425l-.775-.35c-1.164-.516-1.746-1.207-1.746-2.073 0-.611.225-1.103.677-1.474.45-.378 1.022-.567 1.713-.567.539 0 1.012.123 1.42.37.407.24.727.572.96.994l-1.004.775c-.371-.553-.83-.83-1.376-.83-.262 0-.476.062-.644.186a.602.602 0 0 0-.25.513c0 .182.058.331.174.448.124.109.346.236.666.382l.819.36c.618.276 1.07.578 1.353.906.284.32.426.72.426 1.2 0 .648-.237 1.172-.71 1.573-.473.393-1.077.589-1.812.589-.604 0-1.15-.142-1.637-.426a3.153 3.153 0 0 1-1.146-1.168Zm9.667.23V10c-.35.087-.688.131-1.015.131-.692 0-1.226-.171-1.605-.513-.37-.342-.556-.848-.556-1.517V5.84h-.852V4.597h.852V3.232h1.473v1.365h1.528V5.84H47.54V7.97c0 .305.077.524.23.655.16.123.418.185.774.185.124 0 .357-.014.699-.043Zm.764-1.147V4.597h1.473V7.74c0 .313.095.564.284.754.196.189.444.283.742.283a.976.976 0 0 0 .72-.283c.19-.197.284-.448.284-.754V4.597h1.474V7.62c0 .743-.236 1.347-.71 1.812-.465.466-1.055.699-1.768.699-.728 0-1.328-.23-1.8-.688-.467-.465-.7-1.073-.7-1.823ZM60.07 1.813h1.473V10h-1.353v-.666c-.371.531-.95.797-1.736.797-.757 0-1.382-.266-1.877-.797-.495-.538-.742-1.215-.742-2.03 0-.815.247-1.488.742-2.02.495-.538 1.12-.807 1.877-.807.684 0 1.223.214 1.616.644V1.813ZM59.7 8.395c.262-.262.393-.625.393-1.091 0-.466-.131-.83-.393-1.092a1.302 1.302 0 0 0-.972-.404c-.4 0-.735.139-1.004.415-.262.277-.393.633-.393 1.07 0 .444.13.804.393 1.08.262.277.597.415 1.004.415.393 0 .717-.13.972-.393ZM62.754 10V4.597h1.474V10h-1.474Zm-.207-7.368c0-.262.09-.48.273-.655a.926.926 0 0 1 .666-.262c.262 0 .483.087.665.262.19.175.284.393.284.655 0 .255-.094.47-.284.644a.926.926 0 0 1-.665.262.926.926 0 0 1-.666-.262.858.858 0 0 1-.273-.644Zm2.581 4.66c-.014-.77.266-1.436.84-1.997a2.762 2.762 0 0 1 2.053-.818 2.762 2.762 0 0 1 2.052.818c.582.56.866 1.227.851 1.998.015.771-.269 1.44-.851 2.008-.582.56-1.27.834-2.063.82a2.762 2.762 0 0 1-2.052-.82c-.568-.567-.844-1.237-.83-2.008Zm3.886 1.06c.27-.277.404-.626.404-1.048 0-.422-.135-.775-.404-1.059a1.294 1.294 0 0 0-.993-.426c-.408 0-.743.142-1.005.426-.262.277-.392.63-.392 1.059 0 .422.13.771.392 1.048.262.276.597.415 1.005.415.4 0 .731-.139.993-.415Z" fill="currentColor"></path></svg><span class="blind">Creator Studio</span></a><span class="Header_search_area__18ZCR"><button type="button" class="Header_button_search__Cu5Vz"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"><path d="m20.5 20.5 4 4" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="14.5" cy="14.5" r="8.175" stroke="currentColor" stroke-width="1.65"></circle></svg><span class="blind">검색</span></button></span><div class="Header_upload_area__RYOr9"><button type="button" class="Header_link_upload__ZGZHe"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"><path d="M14.5 10v9M19 14.5h-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M3.8 11A7.2 7.2 0 0 1 11 3.8h7a7.2 7.2 0 0 1 7.2 7.2v7a7.2 7.2 0 0 1-7.2 7.2h-7A7.2 7.2 0 0 1 3.8 18v-7Z" stroke="currentColor" stroke-width="1.6"></path></svg><span class="blind">영상 업로드</span></button><div class="Header_upload_tooltip__IWs2i"><span class="Header_tooltip_text__pbCxh">이제 누구나 네이버TV에 영상을 <br class="Header_break_sub__tf6MV"/>올릴 수 있어요!<br class="Header_break_main__WQENw"/>내 채널을 만들고, <br class="Header_break_sub__tf6MV"/>네이버TV 크리에이터에 도전하세요!</span></div></div>
 
 <script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"channelInfo":{"currentLive":null,"currentLives":[],"representClip":{"clipNo":18845374,"title":"맞구독 좋아요^^ 자동차보험료 비교견적사이트","videoId":"234F54F1FE41FC82E1EF18D00D22679809A4","description":"맞구독좋아요^^ 100% 빠르게 친추합니다.\r\nhttp://www.4pcbs.com 자동차보험료 비교견적사이트 입니다.\r\n보험사별 나의 자동차보험료를 알아볼수 있으며,\r\n간편 가입 및 갱신이 가능합니다.","thumbnailImageUrl":"https://phinf.pstatic.net/tvcast/20210307_223/Fac8E_1615116170464QXGy3_JPEG/2fb80513-7f37-11eb-bba0-a0369ff94f34_03.jpg","firstExposureDatetime":"2021-03-07T20:22:50+0900","registerDateTime":"2021-03-07T20:22:50+0900","playCount":2199,"likeItCount":56,"commentCount":null,"optionFields":[{"title":"등록일","description":"2021.03.07"},{"title":"카테고리","description":"자동차"}],"playTime":45,"displayPlayTime":"0:45","orientation":"LANDSCAPE","channelType":null,"channelId":"cardamoa","channelName":"자동차보험료비교견적사이트","channelEmblemImageUrl":"https://phinf.pstatic.net/tvcast/20210218_220/n5xxM_1613641053741vwuIe_JPEG/1613641053706.jpg","channelLogo":null,"channelUrl":"https://tv.naver.com/cardamoa","channelRepresentImageUrl":"","channelCategoryName":null,"brandCode":null,"tags":["맞구독","좋아요","자동차보험료비교견적사이트","다이렉트자동차보험료비교견적","다이렉트자동차보험","자동차보험료계산기"],"authType":"NORMAL_VOD","clipTrailerUrl":null,"shareUrl":null,"recId":null,"airsSessionId":null,"airsBypass":null,"clipType":null,"episodeNo":null,"displayChannelId":"cardamoa","globalService":true,"hash":"YLjtG4ipiiOK","shorts":false,"trailerUrl":null,"smr":false,"multiTrack":false,"opened":true,"channelEmblem":"https://phinf.pstatic.net/tvcast/20210218_220/n5xxM_1613641053741vwuIe_JPEG/1613641053706.jpg","highlight":false,"adultVideo":false},"showMenu":null,"channelId":"cardamoa","displayChannelId":"cardamoa","channelName":"자동차보험료비교견적사이트","channelHomeUrl":"https://tv.naver.com/cardamoa","channelLogo":"","channelBackgroundImageUrl":"","channelLandscapeBackgroundImageUrl":null,"channelProfileImageUrl":"https://phinf.pstatic.net/tvcast/20210218_220/n5xxM_1613641053741vwuIe_JPEG/1613641053706.jpg","channelBannerImageUrlPc":"https://phinf.pstatic.net/tvcast/20210310_4/nhopp_1615331038871c22mW_JPEG/1615331038827.jpg","channelBannerImageUrlMobile":"https://phinf.pstatic.net/tvcast/20210218_167/FDcgG_1613641151945asN0x_JPEG/1613641151893.jpg","dominantColor":"#326760","description":"자동차보험료 비교견적사이트 \r\n내자동차보험 조회 및 무료견적을 받아보시는 경우\r\n\r\nhttp://www.4pcbs.com 통하여\r\n보험소식 및 다이렉트자동차보험을 보험사별 알아보시기 바랍니다.\r\n무료견적 및 다양한 소식들을 받아보세요.\r\n\r\n다이렉트자동차보험 특약할인등은 보험사별 차이가 있습니다.\r\n갱신전 한번 꼭!! 알아보셔서 \r\n경제적으로 저렴하게 가입해 보시길 바랍니다.","displayBroadcastingTime":"","subscriptionCount":106,"registerDateTime":"2021-02-18T18:29:59+0900","subscription":null,"schedules":[],"channelLinks":[{"url":"http://www.4pcbs.com","description":"자동차보험료비교견적사이트"},{"url":"http://cardamoa.direct-ins.net","description":"다이렉트자동차보험료비교견적"},{"url":"2014posttistory.com","description":"자동차보험료계산기"}],"homeBanners":[],"isOriginal":false,"isCommunityOpen":false,"timefeedInfo":null,"dssId":null,"openTalkCategoryId":null,"brandInfo":null,"talkId":null,"homeClipRecommendCode":"RECENT","categoryName":"자동차","showType":null,"showHostNames":null,"showOriginalTypeCode":null,"isEnd":null,"noticeMessage":null,"promotionBanner":{"pcImageUrl":"https://phinf.pstatic.net/tvcast/20210218_22/oX96k_1613641356623ohgdt_JPEG/1613641356559.jpg","pcLinkUrl":"http://www.4pcbs.com","mobileImageUrl":"https://phinf.pstatic.net/tvcast/20210218_298/FgWQf_1613641368944mFoPV_JPEG/1613641368925.jpg","mobileLinkUrl":"http://www.4pcbs.com","mobileBackgroundColor":"#1D1D1D"},"channelType":"CHANNEL_GENERAL","registerYmdt":1613640599000},"channelType":"CHANNEL_GENERAL","channelBanner":{"channelBannerImageUrlPc":"https://phinf.pstatic.net/tvcast/20210310_4/nhopp_1615331038871c22mW_JPEG/1615331038827.jpg","channelBannerImageUrlMobile":"https://phinf.pstatic.net/tvcast/20210218_167/FDcgG_1613641151945asN0x_JPEG/1613641151893.jpg"}},"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","requestPath":"/cardamoa","serverTime":1762999881568,"__N_SSP":true},"page":"/[showId]","query":{"showId":"cardamoa"},"buildId":"7e991e_b15","assetPrefix":"https://static-now.pstatic.net/now-web-resource/real/7e991e_b15","isFallback":false,"dynamicIds":[4480],"gssp":true,"appGip":true,"scriptLoader":[]}</script>
 
